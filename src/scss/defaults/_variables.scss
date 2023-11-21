@@ -1,0 +1,26 @@
+:root {
+    // page color
+    --login-page-bgColor: #FFFFFF;
+    --dashboard-page-bgColor: #FBFBFB;
+    --header-bgColor: #FFFFFF;
+
+    // button color
+    --btn-color: #39CDCC;
+    --btn-text-color: #FFFFFF;
+
+    // font colors
+    --font-title-color: #213F7D;
+    --font-subtitle-color: #545F7D;
+
+    // login font family
+    --login-font-family: 'Prompt', sans-serif;
+    
+    // dashboard font family
+    --dashboard-font-family: 'Work Sans', sans-serif;
+
+    // dashborad user status color
+    --user-status-inactive-color: #545F7D;
+    --user-status-active-color: #39CD62;
+    --user-status-pending-color: #E9B200;
+    --user-status-blacklisted-color: #E4033B;
+}

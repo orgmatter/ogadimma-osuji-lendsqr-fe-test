@@ -1,0 +1,12 @@
+@import 'defaults/variables';
+@import 'defaults/typography';
+@import 'pages/login';
+@import 'pages/dashboard';
+
+body {
+    margin: 0px 0px;
+
+    #root {
+        margin: 0px 0px;
+    }
+}

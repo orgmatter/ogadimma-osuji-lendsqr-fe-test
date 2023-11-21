@@ -1,0 +1,308 @@
+.dashboard-cover-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .dashboard-cover-item {
+        width: 100%;
+
+        .dashboard-box-cover {
+            width: 100%;
+
+            .header-cover-flex {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .header-cover-item {
+                    width: 100%;
+
+                    .appbar-cover {
+                        width: 100%;
+                        background-color: var(--header-bgColor);
+                        box-shadow: none !important;
+
+                        .toolbar-cover-flex {
+                            width: 100%;
+
+                            .toolbar-content-cover-flex {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .toolbar-content-cover-item {
+                                    width: 50%;
+
+                                    &:first-child {
+
+                                        .content1-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .content1-cover-item {
+                                                height: 35px;
+
+                                                &:first-child {
+                                                    width: 40%;
+
+                                                    .logo-cover-flex {
+                                                        width: 40%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+
+                                                        .logo-cover-item {
+                                                            width: 100%;
+
+                                                            .logo-img {
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &:last-child {
+                                                    width: 60%;
+
+                                                    .search-bar-cover-flex {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+
+                                                        .search-bar-cover-item {
+                                                            width: 100%;
+                                                            height: 100%;
+
+                                                            .search-input {
+                                                                width: 100%;
+                                                                height: 100% !important;
+
+                                                                .MuiInputBase-root {
+
+                                                                    &:hover {
+                                                                        border: none !important
+                                                                    }
+                                                                }
+
+                                                                .MuiOutlinedInput-root {
+                                                                    padding: 0px !important;
+                                                                    height: 100% !important;
+
+                                                                    &:hover {
+                                                                        border: none !important
+                                                                    }
+
+                                                                    .MuiOutlinedInput-input {
+                                                                        padding: 0px !important;
+                                                                        padding-left: 8px !important;
+                                                                    }
+                                                                }
+
+                                                                .input-adorn-cover {
+
+                                                                    .search-btn {
+                                                                        border-top-left-radius: 0px !important;
+                                                                        border-bottom-left-radius: 0px !important;
+                                                                        background-color: var(--btn-color);
+                                                                        box-shadow: none !important;
+                                                                        border-color: var(--btn-color);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:last-child {
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        padding-right: 60px;
+
+                                        .content2-cover-flex {
+                                            width: 38%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .content2-cover-item {
+
+                                                &:nth-child(1) {
+                                                    width: 25%;
+
+                                                    .docs-cover {
+
+                                                        .docs-link {
+                                                            font-size: 0.9rem;
+                                                            font-weight: 400;
+                                                            color: var(--font-title-color);
+                                                        }
+                                                    }
+                                                }
+                                                &:nth-child(2) {
+                                                    width: 25%;
+
+                                                    .notif-cover {
+
+                                                        .notif-bell-icon {
+                                                            color: var(--font-title-color);
+                                                        }
+                                                    }
+                                                }
+                                                &:nth-child(3) {
+                                                    width: 50%;
+
+                                                    .avatar-name-cover-flex {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        justify-content: space-between;
+
+                                                        .avatar-name-cover-item {
+
+                                                            &:first-child {
+                                                                width: 30%;
+
+                                                                .avatar-div-cover {
+
+                                                                    .avatar-cover {
+            
+                                                                        .avatar-img {
+                                                                            width: 100% !important;
+                                                                            object-fit: fill;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            &:last-child {
+                                                                width: 70%;
+
+                                                                .name-arrow-btn-cover {
+
+                                                                    .name-arrow-btn {
+                                                                        font-size: 0.8rem !important;
+                                                                        text-transform: capitalize !important;
+                                                                        color: var(--font-title-color);
+                                                                        font-weight: 600;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .side-drawer-cover-flex {
+                width: 100%;
+
+                .side-drawer-cover-item {
+
+                    .box-cover {
+
+                        .drawer-cover {
+
+                            .drawer-list-comp-cover-flex {
+
+                                .drawer-list-comp-cover-item {
+
+                                    .list-header-cover-flex {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+
+                                        .list-header-cover-item {
+                                            width: 80%;
+
+                                            .header1-cover {
+                                                width: 100%;
+                                                padding-top: 20px;
+
+                                                .list-header-btn {
+                                                    font-size: 0.85rem;
+                                                    font-weight: 600;
+                                                    color: var(--font-title-color);
+                                                    font-family: var(--dashboard-font-family);
+                                                    text-transform: capitalize;
+
+                                                    &:hover {
+                                                        background-color: transparent !important;
+                                                    }
+                                                }
+                                                .list-header-menu {
+
+                                                }
+                                            }
+                                            .header2-cover {
+                                                width: 100%;
+                                                padding-top: 15px;
+
+                                                .page-name-text {
+                                                    font-size: 0.95rem;
+                                                    font-weight: 400;
+                                                    color: var(--font-subtitle-color);
+                                                    font-family: var(--dashboard-font-family);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .list-cover {
+
+                                        .list-item-title-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+
+                                            .list-item-title-cover-item {
+                                                padding-top: 15px;
+                                                padding-bottom: 8px;
+                                                width: 80%;
+                                                font-size: 0.75rem;
+                                                font-weight: 600;
+                                                color: var(--font-subtitle-color);
+                                                font-family: var(--dashboard-font-family);
+                                            }
+
+                                        }
+                                        .list-item-main-cover {
+                                            width: 100%;
+
+                                            .list-item-cover {
+                                                width: 100%;
+                                                padding: 0px !important;
+
+                                                .list-item-btn-cover {
+
+                                                    .list-item-icon-cover {
+
+                                                    }
+                                                    .list-item-text-cover {
+
+                                                    }
+
+                                                    &-active {
+                                                        border-left: 3px solid var(--btn-color);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
