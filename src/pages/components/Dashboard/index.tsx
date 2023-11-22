@@ -3,6 +3,8 @@ import { Box } from "@mui/system";
 import HeaderComponent from "../Header";
 import SideDrawerComponent from "../SideDrawer/SideDrawerComponent";
 import { DashboardCompProps } from "../../../types/dashboard";
+import DashboardSubpages from "./subpages";
+import { Toolbar } from "@mui/material";
 
 export default function DashboardComponent(props: DashboardCompProps) {
 
@@ -39,7 +41,8 @@ export default function DashboardComponent(props: DashboardCompProps) {
                     >
                         <div className="dashboard-content-cover-flex">
                             <div className="dashboard-content-cover-item">
-                                Main dashboard jibirish jgjhgjhcb
+                                <Toolbar />
+                                <DashboardSubpages />
                             </div>
                         </div>
                     </Box>

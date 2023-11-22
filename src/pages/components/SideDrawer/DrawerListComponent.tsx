@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { useRoutes, useLocation, useMatches } from "react-router";
 import { 
     List, 
     ListItem, 
@@ -19,6 +20,7 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
     const { dashboardRouteProps } = props
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const currLocation = useLocation();
 
     const handleMenuOpen = (e: React.MouseEvent<HTMLButtonElement>) => {
         setMenuOpen(prev => !prev)
@@ -34,16 +36,17 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
     const businessRoutes = dashboardRouteProps?.dashboardRoutes.find(dashboardRoute => dashboardRoute.title === "BUSINESSES");
     const settingRoutes = dashboardRouteProps?.dashboardRoutes.find(dashboardRoute => dashboardRoute.title === "SETTINGS");
     
-    console.log("settings props", settingRoutes);
-    
     const customerListItem = (
         <>
             {
                 customerRoutes?.routes.map((customerRoute, index) => (
                     <ListItem className="list-item-cover" key={index}>
-                        <ListItemButton className="list-item-btn-cover list-item-btn-cover-active">
+                        <ListItemButton 
+                            className={`list-item-btn-cover ${customerRoute.url === currLocation.pathname? 'list-item-btn-cover-active':''}`}
+                            href={customerRoute.url}
+                        >
                             <ListItemIcon className="list-item-icon-cover">
-                                <VerifiedUser />
+                                <VerifiedUser className="list-item-icon" />
                             </ListItemIcon>
                             <ListItemText className="list-item-text-cover">
                                 {customerRoute.name}
@@ -60,9 +63,12 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
             {
                 businessRoutes?.routes.map((businessRoute, index) => (
                     <ListItem className="list-item-cover" key={index}>
-                        <ListItemButton className="list-item-btn-cover">
-                            <ListItemIcon>
-                                <VerifiedUser />
+                        <ListItemButton 
+                            className={`list-item-btn-cover ${businessRoute.url === currLocation.pathname? 'list-item-btn-cover-active':''}`}
+                            href={businessRoute.url}
+                        >
+                            <ListItemIcon className="list-item-icon-cover">
+                                <VerifiedUser className="list-item-icon" />
                             </ListItemIcon>
                             <ListItemText className="list-item-text-cover">
                                 {businessRoute.name}
@@ -79,9 +85,12 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
             {
                 settingRoutes?.routes.map((settingRoute, index) => (
                     <ListItem className="list-item-cover" key={index}>
-                        <ListItemButton className="list-item-btn-cover">
-                            <ListItemIcon>
-                                <VerifiedUser />
+                        <ListItemButton 
+                            className={`list-item-btn-cover ${settingRoute.url === currLocation.pathname? 'list-item-btn-cover-active':''}`}
+                            href={settingRoute.url}
+                        >
+                            <ListItemIcon className="list-item-icon-cover">
+                                <VerifiedUser className="list-item-icon" />
                             </ListItemIcon>
                             <ListItemText className="list-item-text-cover">
                                 {settingRoute.name}

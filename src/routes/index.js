@@ -18,42 +18,50 @@ export const Routes = [
                     {
                         url: "/dashboard/customers/users",
                         name: "Users",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/guarantors",
                         name: "Guarantors",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/loans",
                         name: "Loans",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/decision-models",
                         name: "Decision Models",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/savings",
                         name: "Savings",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/loan-requests",
                         name: "Loan Requests",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/whitelist",
                         name: "Whitelist",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/karma",
                         name: "Karma",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                 ]
             },
@@ -63,47 +71,56 @@ export const Routes = [
                     {
                         url: "/dashboard/businesses/organisation",
                         name: "Organisation",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/loan-products",
                         name: "Loan Products",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/savings-products",
                         name: "Savings Products",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/fees-and-charges",
                         name: "Fees and Charges",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/transactions",
                         name: "Transactions",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/services",
                         name: "Services",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/service-account",
                         name: "Service Account",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/settlements",
                         name: "Settlements",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/reports",
                         name: "Reports",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                 ]
             },
@@ -113,17 +130,20 @@ export const Routes = [
                     {
                         url: "/dashboard/settings/preferences",
                         name: "Preferences",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/settings/fees-and-pricing",
                         name: "Fees and Pricing",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/settings/audit-logs",
                         name: "Audit Logs",
-                        icon: ""
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                 ]
             }

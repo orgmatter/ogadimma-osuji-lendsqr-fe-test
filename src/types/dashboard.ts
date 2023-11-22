@@ -36,6 +36,7 @@ export type DashboardRouteProps = {
     dashboardRoutes: {
         title: string
         routes: {
+            url: string
             name: string
             icon?: ""
         }[]

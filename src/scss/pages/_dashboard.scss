@@ -284,18 +284,70 @@
                                                 .list-item-btn-cover {
 
                                                     .list-item-icon-cover {
+                                                        min-width: 25px !important;
+                                                        padding: 0px !important;
+                                                        display: flex;
+                                                        justify-content: flex-start;
 
+                                                        .list-item-icon {
+                                                            width: 72%;
+                                                        }
                                                     }
                                                     .list-item-text-cover {
 
+                                                        .MuiTypography-root {
+                                                            font-size: 0.9rem !important;
+                                                            font-weight: 400;
+                                                            color: var(--font-subtitle-color);
+                                                            font-family: var(--dashboard-font-family);
+                                                        }
                                                     }
 
                                                     &-active {
-                                                        border-left: 3px solid var(--btn-color);
+                                                        border-left: 4px solid var(--btn-color);
+                                                        background-color: var(--dashboard-page-bgColor);
                                                     }
                                                 }
                                             }
                                         }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .dashboard-content-box-cover {
+                width: 100%;
+                padding: 0px;
+                background-color: var(--dashboard-page-bgColor);
+
+                .dashboard-content-cover-flex {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .dashboard-content-cover-item {
+                        width: calc(100% - var(--drawerWidth));
+
+                        .dashboard-subpages-cover-flex {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            .dashboard-subpages-cover-item {
+                                width: 100%;
+                                border: 1px solid blue;
+
+                                .users-cover-flex {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    .users-cover-item {
+                                        width: 85%;
+                                        height: 300px;
+                                        border: 1px solid blue;
                                     }
                                 }
                             }
