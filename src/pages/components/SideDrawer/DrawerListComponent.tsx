@@ -106,7 +106,7 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
         <div className="drawer-list-comp-cover-flex">
             <div className="drawer-list-comp-cover-item">
                 <Toolbar />
-                <Divider />
+                {/* <Divider /> */}
                 <div className="list-header-cover-flex">
                     <div className="list-header-cover-item">
                         <div className="header1-cover">

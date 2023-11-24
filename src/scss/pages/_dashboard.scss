@@ -337,7 +337,6 @@
 
                             .dashboard-subpages-cover-item {
                                 width: 100%;
-                                border: 1px solid blue;
 
                                 .users-cover-flex {
                                     width: 100%;
@@ -346,8 +345,92 @@
 
                                     .users-cover-item {
                                         width: 85%;
-                                        height: 300px;
-                                        border: 1px solid blue;
+
+                                        .users-header-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: flex-start;
+
+                                            .users-header-cover-item {
+                                                width: 10%;
+                                                padding-top: 35px;
+                                                padding-bottom: 15px;
+
+                                                .users-header-text {
+                                                    font-size: 1.15rem;
+                                                    font-weight: 600;
+                                                    color: var(--font-title-color);
+                                                    font-family: var(--dashboard-font-family);
+                                                }
+                                            }
+                                        }
+                                        .users-cards-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+
+                                            .users-cards-cover-item {
+                                                width: 100%;
+
+                                                .card-cover-flex {
+                                                    width: 100%;
+                                                    display: flex;
+                                                    justify-content: space-between;
+
+                                                    .card-cover-item {
+                                                        width: calc(100%/4.3);
+        
+                                                        .card-cover {
+        
+                                                            .card-inner-cover {
+                                                                width: 100%;
+                                                                padding: 10px;
+                                                                padding-left: 20px;
+        
+                                                                .card-icon-cover {
+                                                                    width: 100%;
+                                                                    height: 60px;
+                                                                    display: flex;
+                                                                    justify-content: flex-start;
+                                                                    align-items: center;
+        
+                                                                    .icon-cover {
+                                                                        width: 32px;
+                                                                        height: 32px;
+        
+                                                                        .icon-img {
+                                                                            width: 100%;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .card-name-cover {
+                                                                    width: 100%;
+        
+                                                                    .name-cover {
+                                                                        font-size: 0.8rem;
+                                                                        font-weight: 600;
+                                                                        color: var(--font-subtitle-color);
+                                                                        font-family: var(--dashboard-font-family);
+                                                                    }
+                                                                }
+                                                                .card-value-cover {
+                                                                    width: 100%;
+                                                                    padding-top: 10px;
+                                                                    padding-bottom: 15px;
+        
+                                                                    .value-cover {
+                                                                        font-size: 1.1rem;
+                                                                        font-weight: 600;
+                                                                        color: var(--font-title-color);
+                                                                        font-family: var(--dashboard-font-family);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }

@@ -16,7 +16,7 @@ export default function UserCards(props: UserCardProps) {
     const { userCardProps } = props;
 
     const { dashboard } = Images;
-
+    
     return (
         <div className="card-cover-flex">
             <div className="card-cover-item">
@@ -44,7 +44,7 @@ export default function UserCards(props: UserCardProps) {
                 <Card className="card-cover">
                     <div className="card-inner-cover">
                         <div className="card-icon-cover">
-                            <div className="iCON-cover">
+                            <div className="icon-cover">
                                 <img className="icon-img" src={dashboard.users.cards.icon2} alt="card icon" />
                             </div>
                         </div>

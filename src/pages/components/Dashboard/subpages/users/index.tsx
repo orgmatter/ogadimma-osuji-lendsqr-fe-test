@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import UserCards from "./components/Cards";
+import UsersTable from "./components/Table";
 
 export default function Users() {
 
@@ -22,6 +23,7 @@ export default function Users() {
                 <div className="users-cards-cover-flex">
                     <div className="users-cards-cover-item">
                         <UserCards userCardProps={userCardProps} />
+                        <UsersTable />
                     </div>
                 </div>
             </div>
