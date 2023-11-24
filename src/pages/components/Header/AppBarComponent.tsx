@@ -16,6 +16,8 @@ import NotificationBellIcon from "@mui/icons-material/NotificationsNone";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { AppBarProps } from "../../../types/header-comp";
 import { Images } from "../../../images";
+import useAuth from "../../../hooks/useAuth";
+import { useLocation } from "react-router";
 
 export default function AppBarComponent(props: AppBarProps) {
 
@@ -25,6 +27,10 @@ export default function AppBarComponent(props: AppBarProps) {
 
     const menuOpen = Boolean(anchorEl);
 
+    const { logout, isLogin } = useAuth();
+
+    const location = useLocation();
+
     const handleMenuClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         setAnchorEl(e.currentTarget);
     }
@@ -33,7 +39,14 @@ export default function AppBarComponent(props: AppBarProps) {
         setAnchorEl(null)
     }
 
-    const handleLogout = () => {}
+    const handleLogout = () => {
+
+        logout("users");
+
+        if(!isLogin()) {
+            location.pathname = "/login";
+        }
+    }
     
     return (
         <AppBar 

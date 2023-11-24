@@ -9,12 +9,13 @@ import {
     Paper,
     IconButton,
     TextField,
-    InputAdornment
+    InputAdornment,
+    Button 
  } from '@mui/material';
  import { FilterList, MoreVert } from "@mui/icons-material";
-import { Button } from "@mui/base";
+ import { UserTableProps } from "../../../../../../types/dashboard";
 
-export default function UsersTable() {
+export default function UsersTable(props: UserTableProps) {
 
     type FilterFormProps = {
         isOrgFilterFormOpen: boolean,

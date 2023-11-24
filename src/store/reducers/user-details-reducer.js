@@ -1,4 +1,4 @@
-export default function userDetailsReducer(initialState = {}, action) {
+export default function UserDetailsReducer(initialState = {}, action) {
 
     return {
         ...initialState

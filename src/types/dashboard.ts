@@ -3,27 +3,42 @@ export type Status = {
     isBlacklisted: boolean
 }
 
-export type Users = {
-    id: string,
-    organisation: string,
-    username: string,
-    phoneno: number,
-    date: string,
-    status: Status
-}
-
 export type UserDetails = {
-    id: string,
-    userTier: number,
+    id: string
+    userTier: number
     generalDetails: {
         personalInfo: {
-            fullname: string,
+            fullname: string
         }
     }
 }
 
 export type UserProps = {
-    users: Users
+    status: string
+    msg: string
+    data: {
+        id: string
+        organisation: string
+        username: string
+        phoneno: number
+        isLoans: boolean
+        isSavings: boolean
+        date: string
+        status: Status
+    }[]
+}
+
+export type UserTableProps = {
+    tableData: {
+        id: string
+        organisation: string
+        username: string
+        phoneno: number
+        isLoans: boolean
+        isSavings: boolean
+        date: string
+        status: Status
+    }[]
 }
 
 export type UserDetailsProps = {
@@ -31,8 +46,8 @@ export type UserDetailsProps = {
 }
 
 export type DashboardRouteProps = {
-    url: string,
-    name: string,
+    url: string
+    name: string
     dashboardRoutes: {
         title: string
         routes: {
