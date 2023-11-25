@@ -1,8 +1,8 @@
 import React,{useState, useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { UsersAction } from "../../../../../store/actions/users-action";
-import UserCards from "./components/Cards";
-import UsersTable from "./components/Table";
+import UserCards from "./components/UserCards";
+import UsersTable from "./components/UsersTable";
 import { UserProps } from "../../../../../types/dashboard";
 import { mockyDemo as MOCKY_DEMO } from "./mocky-demo";
 
@@ -14,7 +14,7 @@ export default function Users() {
 
     const [users, setUsers] = useState<UserProps | null>(usersState);
 
-    const sliceUsers = MOCKY_DEMO.users.slice(0,9);
+    const sliceUsers = MOCKY_DEMO.users.slice(0,10);
     const totalUsers = sliceUsers.length;
     const totalActiveUsers = sliceUsers.filter((users) => users.status === "active").length;
     const totalUsersWithLoans = sliceUsers.filter((users) => users.isLoans === true).length;
@@ -44,7 +44,7 @@ export default function Users() {
                 <div className="users-cards-cover-flex">
                     <div className="users-cards-cover-item">
                         <UserCards userCardProps={userCardProps} />
-                        {/* <UsersTable tableData={users} /> */}
+                        <UsersTable tableData={MOCKY_DEMO.users} />
                     </div>
                 </div>
             </div>

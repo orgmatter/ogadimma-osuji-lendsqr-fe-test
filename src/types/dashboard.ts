@@ -20,6 +20,7 @@ export type UserProps = {
         id: string
         organisation: string
         username: string
+        email: string
         phoneno: number
         isLoans: boolean
         isSavings: boolean
@@ -33,11 +34,12 @@ export type UserTableProps = {
         id: string
         organisation: string
         username: string
-        phoneno: number
+        email: string
+        phoneno: string
         isLoans: boolean
         isSavings: boolean
-        date: string
-        status: Status
+        dateJoined: string
+        status: string
     }[]
 }
 

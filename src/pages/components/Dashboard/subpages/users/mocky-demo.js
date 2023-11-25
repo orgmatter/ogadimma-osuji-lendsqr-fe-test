@@ -38,7 +38,7 @@ export const mockyDemo = {
         "organisation": "lendsqr",
         "username": "Sodiq",
         "email": "sodiq@lendsqr.com",
-        "phoneno": "0989788679807",
+        "phoneno": "098978867980",
         "dateJoined": "May 15, 2020 10:00AM",
         "isLoans": false,
         "isSavings": false,
