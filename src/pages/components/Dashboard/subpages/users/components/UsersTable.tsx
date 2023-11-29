@@ -19,10 +19,11 @@ import {
  import FilterForm from "./FilterForm";
  import TableMenu from "./TableMenu";
 import { useLocation } from "react-router";
+import useStorage from "../../../../../../hooks/useStorage";
 
 export default function UsersTable(props: UserTableProps) {
 
-    const { tableData } = props;
+    const { tableData, handleShowUserDetailsPage } = props;
 
     type FilterFormProps = {
         isOrgFilterFormOpen: boolean,
@@ -43,6 +44,7 @@ export default function UsersTable(props: UserTableProps) {
     }
 
     const location = useLocation();
+    const { setUserDetails } = useStorage();
 
     const [filterForm, setFilterForm] = useState<FilterFormProps>(filterFormObj);
 
@@ -78,12 +80,16 @@ export default function UsersTable(props: UserTableProps) {
         setTableMenuId("");
     }
 
-    const handleMenuItemClick = (event: React.MouseEvent<HTMLButtonElement>, user: TableRowData, tableMenuItemType: string) => {
+    const handleMenuItemClick = (event: React.MouseEvent<HTMLButtonElement>, tRowData: TableRowData, tableMenuItemType: string) => {
         
-        if(tableMenuItemType === "view_details") {
-            window.location.assign("/dashboard/customers/users/user-details");
+        // if(tableMenuItemType === "view_details") {
+
+        //     const { userDetails } = tRowData;
+        //     setUserDetails(userDetails);
             
-        }
+        //     window.location.assign("/dashboard/customers/users/user-details");
+            
+        // }
         if(tableMenuItemType === "blacklist_user") {
             
         }
@@ -212,6 +218,7 @@ export default function UsersTable(props: UserTableProps) {
                                                     handleTableMenuClose={handleTableMenuClose}
                                                     handleMenuItemClick={handleMenuItemClick}
                                                     tData={tData}
+                                                    handleShowUserDetailsPage={handleShowUserDetailsPage}
                                                 />
                                             </TableCell>
                                         </TableRow>

@@ -14,7 +14,8 @@ export default function TableMenu(props: any) {
         menuId, 
         tData,
         anchorEl,
-        tableMenuOpen
+        tableMenuOpen,
+        handleShowUserDetailsPage
     } = props;
     
     return (
@@ -29,7 +30,7 @@ export default function TableMenu(props: any) {
             >
                 <MenuItem 
                     className="menu-item-cover"
-                    onClick={(event) => handleMenuItemClick(event, tData, "view_details")}
+                    onClick={(event) => handleShowUserDetailsPage(event, tData, "view_details")}
                 >
                     <VisibilityIcon /> View Details
                 </MenuItem>

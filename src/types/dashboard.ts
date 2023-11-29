@@ -80,7 +80,8 @@ export type UserTableProps = {
         dateJoined: string
         status: string
         userDetails: UserDetailsProps
-    }[]
+    }[],
+    handleShowUserDetailsPage: (event: React.MouseEvent<HTMLButtonElement>, tRowData: TableRowData, tableMenuItemType: string) => void
 }
 
 export type TableRowData = {

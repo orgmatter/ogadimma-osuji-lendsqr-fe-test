@@ -6,6 +6,7 @@ import LoanRequests from "./loan-requests";
 import Loans from "./loans";
 import Savings from "./savings";
 import Whitelist from "./whitelist";
+import UserDetails from "./users/user-details";
 
 export const subpagesData = [
     {
@@ -111,6 +112,6 @@ export const subpagesData = [
     {
         url: "/dashboard/customers/users/user-details",
         name: "User Details",
-        component: () => ""
+        component: () => <UserDetails />
     }
 ]
