@@ -3,12 +3,50 @@ export type Status = {
     isBlacklisted: boolean
 }
 
-export type UserDetails = {
-    id: string
-    userTier: number
-    generalDetails: {
-        personalInfo: {
-            fullname: string
+export type UserDetailsProps = {
+    header: {
+        fullname: string
+        id: string
+        userTier: number
+        monthlyIncome: string
+        bankName: string
+        accountNumber: string
+    },
+    content: {
+        generalDetails: {
+            personalInfo: {
+                fullname: string
+                phoneno: string
+                email: string
+                bvn: string
+                gender: string
+                maritalStatus: string
+                children: string
+                typeOfResidence: string
+            },
+            educationAndEmployment: {
+                educationLevel: string
+                employmentStatus: string
+                employmentSector: string
+                employmentDuration: string
+                officeEmail: string
+                monthlyIncomeRange: {
+                    from: string
+                    to: string
+                },
+                loanRepayment: string
+            },
+            socials: {
+                twitter: string
+                facebook: string
+                instagram: string 
+            },
+            guarantors: {
+                fullname: string
+                phoneno: string
+                emailAddress: string
+                relationship: string
+            }[]
         }
     }
 }
@@ -25,7 +63,8 @@ export type UserProps = {
         isLoans: boolean
         isSavings: boolean
         date: string
-        status: Status
+        status: string
+        userDetails: UserDetailsProps
     }[]
 }
 
@@ -40,11 +79,21 @@ export type UserTableProps = {
         isSavings: boolean
         dateJoined: string
         status: string
+        userDetails: UserDetailsProps
     }[]
 }
 
-export type UserDetailsProps = {
-
+export type TableRowData = {
+    id: string
+    organisation: string
+    username: string
+    email: string
+    phoneno: string
+    isLoans: boolean
+    isSavings: boolean
+    dateJoined: string
+    status: string
+    userDetails: UserDetailsProps
 }
 
 export type DashboardRouteProps = {

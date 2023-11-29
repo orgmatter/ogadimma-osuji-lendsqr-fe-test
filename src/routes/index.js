@@ -22,6 +22,12 @@ export const Routes = [
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
+                        url: "/dashboard/customers/users/user-details",
+                        name: "User Details",
+                        icon: "",
+                        component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
+                    },
+                    {
                         url: "/dashboard/customers/guarantors",
                         name: "Guarantors",
                         icon: "",

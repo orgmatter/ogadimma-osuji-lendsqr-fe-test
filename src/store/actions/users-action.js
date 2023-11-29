@@ -1,7 +1,7 @@
 import React from "react";
 import { useTypes } from "../../hooks/useTypes";
 
-export const UsersAction = () => dispatch => {
+export const UsersAction = () => {
 
     const {
         FETCH_USER_START,
@@ -10,27 +10,32 @@ export const UsersAction = () => dispatch => {
         FETCH_USER_STOP
     } = useTypes();
 
-    dispatch({
-        type: FETCH_USER_START
-    })
+    return (dispatch) => {
 
-    fetch("", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    .then(resp => resp.json())
-    .then(res => {
         dispatch({
-            type: FETCH_USER_SUCCESS,
-            payload: res.data
+            type: FETCH_USER_START
         })
-    })
-    .catch(e => {
-        dispatch({
-            type: FETCH_USER_FAILED,
-            msg: e.getMessage()
+    
+        fetch("https://run.mocky.io/v3/2788d698-656e-4f30-95f9-e882beba2394", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
         })
-    })
+        .then(resp => resp.json())
+        .then(res => {
+            console.log("data: ", res.data)
+            dispatch({
+                type: FETCH_USER_SUCCESS,
+                payload: res.data
+            })
+        })
+        .catch(e => {
+            // console.log("e: ", e)
+            dispatch({
+                type: FETCH_USER_FAILED,
+                msg: ""
+            })
+        })
+    }
 }

@@ -128,15 +128,15 @@ export default function FilterForm(props: any) {
                 <Paper 
                     className="paper-cover"
                     style={{
-                        display: filterForm.isEmailFilterFormOpen?"block":"none"
+                        display: filterForm.isPhoneFilterFormOpen?"block":"none"
                     }}
                 >
                     <div className="filter-cover-flex">
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="email">Phone Number</label>
-                                    <input className="filter-input" id="email" type="email" />
+                                    <label htmlFor="phoneno">Phone Number</label>
+                                    <input className="filter-input" id="phoneno" type="text" />
                                 </div>
                             </div>
                             <div className="btn-cover-flex">

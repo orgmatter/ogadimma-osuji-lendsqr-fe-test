@@ -431,6 +431,114 @@
                                                 }
                                             }
                                         }
+                                        .users-table-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+
+                                            .users-table-cover-item {
+                                                width: 100%;
+                                                padding-top: 45px;
+
+                                                .table-container-cover {
+
+                                                    .table-cover {
+
+                                                        .table-head-cover {
+
+                                                            .table-row-cover {
+
+                                                                .table-cell-cover {
+                                                                    font-size: 0.8rem;
+                                                                    font-weight: 600;
+                                                                    color: var(--font-title-color);
+                                                                    font-family: var(--dashboard-font-family);
+                                                                    padding-top: 10px;
+                                                                    padding-bottom: 10px;
+
+                                                                    .filter-btn {
+
+                                                                        .filter-icon {
+                                                                            font-size: 1.1rem;
+                                                                            font-weight: 400;
+                                                                            color: var(--font-title-color);
+                                                                            font-family: var(--dashboard-font-family);
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        .table-body-cover {
+
+                                                            .tbody-row-cover {
+
+                                                                .tbody-cell-cover {
+                                                                    font-size: 0.8rem;
+                                                                    font-weight: 400;
+                                                                    color: var(--font-subtitle-color);
+                                                                    font-family: var(--dashboard-font-family);
+                                                                    padding-top: 10px;
+                                                                    padding-bottom: 10px;
+                                                                    position: relative;
+
+                                                                    .more-btn {
+
+                                                                        .more-icon {
+                                                                            font-size: 1.1rem;
+                                                                            font-weight: 400;
+                                                                            color: var(--font-subtitle-color);
+                                                                            font-family: var(--dashboard-font-family);
+                                                                        }
+                                                                    }
+                                                                    .table-menu-cover {
+                                                                        position: absolute;
+                                                                        bottom: -100px;
+                                                                        right: 0px;
+                                                                        z-index: 999;
+    
+                                                                        .menu-cover {
+                                                                            position: absolute;
+                                                                            border: 3px solid blue;
+                                                                            width: 400px;
+    
+                                                                            .menu-item-cover {
+    
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .tbody-cell-status-cover {
+                                                                    text-align: center;
+                                                                    text-transform: capitalize;
+
+                                                                    .inactive-status-cover {
+                                                                        background-color: var(--user-status-inactive-color);
+                                                                        height: 20px;
+                                                                        width: 80%;
+                                                                        border-radius: 20px;
+                                                                        color: var(--font-subtitle-color);
+                                                                    }
+                                                                    .active-status-cover {
+                                                                        background-color: var(--user-status-active-bgColor);
+                                                                        height: 20px;
+                                                                        width: 80%;
+                                                                        border-radius: 20px;
+                                                                        color: var(--user-status-active-color);
+                                                                    }
+                                                                    .blacklisted-status-cover {
+                                                                        background-color: var(--user-status-blacklisted-bgColor);
+                                                                        height: 20px;
+                                                                        width: 95%;
+                                                                        border-radius: 20px;
+                                                                        color: var(--user-status-blacklisted-color);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }

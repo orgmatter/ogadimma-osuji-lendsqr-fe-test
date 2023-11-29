@@ -10,9 +10,11 @@ import { mockyDemo as MOCKY_DEMO } from "./mocky-demo";
 export default function Users() {
 
     const usersState = useSelector(({usersState}) => usersState);
-    const dispatch = useDispatch();
+    const dispatch = useDispatch<any>();
 
     const [users, setUsers] = useState<UserProps | null>(usersState);
+
+    console.log("users: ", users)
 
     const sliceUsers = MOCKY_DEMO.users.slice(0,10);
     const totalUsers = sliceUsers.length;
@@ -27,11 +29,11 @@ export default function Users() {
         totalUsersWithSavings
     }
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     dispatch
+        dispatch(UsersAction());
 
-    // }, [users]);
+    }, [users]);
     
     return (
         <div className="users-cover-flex">

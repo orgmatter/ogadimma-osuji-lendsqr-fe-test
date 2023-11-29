@@ -23,8 +23,10 @@
     --dashboard-font-family: 'Work Sans', sans-serif;
 
     // dashborad user status color
-    --user-status-inactive-color: #545F7D;
+    --user-status-inactive-color: #dee0e6;
     --user-status-active-color: #39CD62;
+    --user-status-active-bgColor: #dcebe0;
     --user-status-pending-color: #E9B200;
+    --user-status-blacklisted-bgColor: #f0e0e4;
     --user-status-blacklisted-color: #E4033B;
 }

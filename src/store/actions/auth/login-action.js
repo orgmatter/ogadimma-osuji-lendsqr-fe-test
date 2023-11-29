@@ -2,7 +2,7 @@ import React from "react";
 import { useTypes } from "../../../hooks/useTypes";
 import useAuth from "../../../hooks/useAuth";
 
-export const LoginAction = (params) => dispatch => {
+export const LoginAction = (params) => {
 
     const {
         LOGIN_START,
@@ -10,34 +10,37 @@ export const LoginAction = (params) => dispatch => {
         LOGIN_FAILED,
         LOGIN_STOP
     } = useTypes();
+
+    return dispatch => {
+
+        const { login } = useAuth();
     
-    const { login } = useAuth();
-
-    const { email, password } = params;
-
-    dispatch({
-        type: LOGIN_START
-    })
-
-    fetch("", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    .then(resp => resp.json())
-    .then(res => {
-        if(email === res.data.email && password === res.data.password) {
-            login(res.data)
-        }
+        const { email, password } = params;
+    
         dispatch({
-            type: LOGIN_SUCCESS
+            type: LOGIN_START
         })
-    })
-    .catch(e => {
-        dispatch({
-            type: LOGIN_FAILED,
-            msg: e.getMessage()
+    
+        fetch("", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
         })
-    })
+        .then(resp => resp.json())
+        .then(res => {
+            if(email === res.data.email && password === res.data.password) {
+                login(res.data);
+            }
+            dispatch({
+                type: LOGIN_SUCCESS
+            })
+        })
+        .catch(e => {
+            dispatch({
+                type: LOGIN_FAILED,
+                msg: ""
+            })
+        })
+    }
 }

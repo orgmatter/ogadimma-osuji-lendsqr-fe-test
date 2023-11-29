@@ -107,5 +107,10 @@ export const subpagesData = [
         url: "/dashboard/settings/audit-logs",
         name: "Audit Logs",
         component: () => ""
+    },
+    {
+        url: "/dashboard/customers/users/user-details",
+        name: "User Details",
+        component: () => ""
     }
 ]
