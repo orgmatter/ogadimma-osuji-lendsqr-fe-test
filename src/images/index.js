@@ -13,6 +13,11 @@ export const Images = {
                 icon2: "/images/user-card-icon2.png",
                 icon3: "/images/user-card-icon3.png",
                 icon4: "/images/user-card-icon4.png",
+            },
+            userDetails: {
+                header: {
+                    avatarImg: "/images/user-details-avatar.png"
+                }
             }
         }
     },

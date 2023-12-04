@@ -1,18 +1,18 @@
 const login = (params) => {
-    localStorage.setItem("user", JSON.stringify(params));
+    localStorage.setItem("admin", JSON.stringify(params));
 }
 
 const logout = (param) => {
     localStorage.removeItem(param);
 }
 
-const getUser = () => {
-    const user = localStorage.getItem("user");
-    return JSON.parse(user);
+const getAdmin = () => {
+    const admin = localStorage.getItem("admin");
+    return JSON.parse(admin);
 }
 
 const isLogin = () => {
-    return localStorage.getItem("user")? true:false
+    return localStorage.getItem("admin")? true:false
 }
 
 export default function useAuth() {
@@ -20,7 +20,7 @@ export default function useAuth() {
     return {
         login,
         logout,
-        getUser,
+        getAdmin,
         isLogin
     }
 }

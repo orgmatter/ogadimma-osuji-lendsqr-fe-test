@@ -1,6 +1,7 @@
 export const state = {
     users: {
         status: "",
+        eventType: "",
         msg: "",
         data: []
     },

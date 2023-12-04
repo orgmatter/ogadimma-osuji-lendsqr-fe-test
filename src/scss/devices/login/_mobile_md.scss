@@ -1,0 +1,256 @@
+@media only screen and (min-width: 440px) and (max-width: 498px) {
+    body {
+  
+      .login-page-cover-flex {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .login-page-cover-item {
+            width: 100%;
+            height: 90%;
+    
+            .login-comp-cover-flex {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+    
+                .login-comp-cover-item {
+                    width: 85%;
+    
+                    .login-comp-inner-cover-flex {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+    
+                        .login-comp-inner-cover-item {
+                            width: 100%;
+    
+                            &:first-child {
+    
+                                .login-intro-cover-flex {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+    
+                                    .login-intro-cover-item {
+                                        width: 100%;
+                                        height: 20%;
+        
+                                        &:first-child {
+        
+                                            .intro-header-cover-flex {
+                                                width: 100%;
+                                                height: 100px;
+                                                display: flex;
+                                                justify-content: space-between;
+        
+                                                .intro-header-cover-item {
+                                                    height: 100%;
+            
+                                                    &:first-child {
+                                                        width: 40%;
+            
+                                                        .logo-cover-flex {
+                                                            width: 100%;
+                                                            height: 80%;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+            
+                                                            .logo-cover-item {
+                                                                width: 55%;
+            
+                                                                .logo-img {
+                                                                    width: 100%;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    &:last-child {
+                                                        width: 60%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &:last-child {
+                                            width: 100%;
+        
+                                            .intro-body-cover {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+        
+                                                .body-img-cover-flex {
+                                                    width: 90%;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding-top: 15px;
+                                                    padding-bottom: 15px;
+        
+                                                    .body-img-cover-item {
+                                                        width: 100%;
+    
+                                                        .body-img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child {
+    
+                                .login-form-cover-flex {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+    
+                                    .login-form-cover-item {
+    
+                                        &:first-child {
+                                            width: 100%;
+    
+                                            .login-header-cover {
+                                                width: 100%;
+                                            }
+                                        }
+                                        &:last-child {
+                                            width: 100%;
+    
+                                            .form-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+        
+                                                .form-cover-item {
+                                                    width: 90%;
+                                                    padding-top: 40px;
+        
+                                                    .form-header-cover {
+                                                        width: 100%;
+                                                        padding-bottom: 20px;
+        
+                                                        .form-header-text {
+                                                            font-size: 1.8rem;
+                                                            line-height: 15.64px;
+                                                            font-weight: 700;
+                                                            font-family: var(--login-font-family);
+                                                            color: var(--font-title-color);
+                                                            margin-block-start: 0.5rem;
+                                                            margin-block-end: 1.2rem;
+                                                        }
+                                                        .form-subheader-text {
+                                                            font-size: 0.8rem;
+                                                            line-height: 27.32px;
+                                                            font-weight: 400;
+                                                            font-family: var(--login-font-family);
+                                                            color: var(--font-subtitle-color);
+                                                            margin-block-start: 1.2rem;
+                                                        }
+                                                    }
+                                                    .form-body-cover {
+                                                        width: 100%;
+        
+                                                        .input-cover {
+    
+                                                            &:first-child {
+                                                                padding-bottom: 10px;
+                                                            }
+                                                            &:nth-child(2) {
+                                                                padding-top: 10px;
+    
+                                                                .login-input {
+        
+                                                                    .input-adorn-cover {
+        
+                                                                        .icon-btn-cover {
+                                                                            border-radius: 0px !important;
+                                                                            font-size: 10px !important;
+                                                                            font-weight: 600;
+                                                                            color: var(--btn-color);
+        
+                                                                            &:hover {
+                                                                                background-color: transparent !important;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+        
+                                                            .login-input {
+                                                                border: 1px solid #545F7D26 !important;
+                                                                border-radius: 5px !important;
+                                                                box-shadow: none !important;
+                                                            }
+                                                            .MuiOutlinedInput-input {
+                                                            }
+                                                            .MuiOutlinedInput-root {
+                                                                border: none;
+                                                                height: 42px;
+                                                                font-size: 0.8rem;
+
+                                                                &:hover {
+                                                                    border: none !important;
+                                                                }
+                                                            }
+                                                            .MuiInputBase-colorPrimary {
+
+                                                            }
+                                                        }
+                                                        .forgot-pwd-cover {
+                                                            padding-top: 5px;
+        
+                                                            .forgot-pwd-text {
+                                                                font-weight: 600;
+                                                                font-size: 10px;
+                                                                letter-spacing: 10%;
+                                                                color: var(--btn-color);
+                                                            }
+                                                        }
+                                                        .btn-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            padding-top: 15px;
+        
+                                                            .btn-cover-item {
+                                                                width: 100%;
+        
+                                                                .login-btn {
+                                                                    width: 100%;
+                                                                    background-color: var(--btn-color) !important;
+                                                                    color: var(--btn-text-color);
+                                                                    text-align: center;
+                                                                    font-size: 0.75rem;
+                                                                    height: 40px;
+                                                                    box-shadow: none !important;
+    
+                                                                    &:hover {
+                                                                        box-shadow: none !important;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      }
+    } 
+  }

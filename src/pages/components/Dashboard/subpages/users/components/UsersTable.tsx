@@ -8,95 +8,121 @@ import {
     TableRow,
     Paper,
     IconButton,
-    TextField,
-    InputAdornment,
-    Button, 
-    TableHeadTypeMap
+    TablePagination
  } from '@mui/material';
  import { FilterList, MoreVert } from "@mui/icons-material";
  import { UserTableProps } from "../../../../../../types/dashboard";
  import { TableRowData } from "../../../../../../types/dashboard";
  import FilterForm from "./FilterForm";
  import TableMenu from "./TableMenu";
-import { useLocation } from "react-router";
-import useStorage from "../../../../../../hooks/useStorage";
+ import { useDispatch } from "react-redux";
+ import { TableFilterAction } from "../../../../../../store/actions/table-filter-action";
+ import { TableResetAction } from "../../../../../../store/actions/table-reset-action";
+ import useStorage from "../../../../../../hooks/useStorage";
 
 export default function UsersTable(props: UserTableProps) {
 
-    const { tableData, handleShowUserDetailsPage } = props;
+    const { tableData, eventType, handleShowUserDetailsPage } = props;
 
-    type FilterFormProps = {
-        isOrgFilterFormOpen: boolean,
-        isUsernameFilterFormOpen: boolean,
-        isEmailFilterFormOpen: boolean,
-        isPhoneFilterFormOpen: boolean,
-        isDateFilterFormOpen: boolean,
-        isStatusFilterFormOpen: boolean
+
+    const { getStorageData } = useStorage();
+    
+
+    const dispatchFilter = useDispatch()
+
+    const [userStatus, setUserStatus] = useState<string>("")
+
+    const [tableMenuAnchorEl, setTableMenuAnchorEl] = useState<HTMLElement | null>(null);
+    const [tableMenuId, setTableMenuId] = useState<string>("");
+    const tableMenuOpen = Boolean(tableMenuAnchorEl);
+
+    const [filterFormAnchorEl, setFilterFormAnchorEl] = useState<HTMLElement | null>(null);
+    const [filterFormId, setFilterFormId] = useState<string|null>("");
+    const filterFormOpen = Boolean(filterFormAnchorEl);
+
+    const filterInputObj = {
+        organisation: "",
+        status: "",
+        username: "",
+        email: "",
+        phoneno: "",
+        dateJoined: ""
     }
 
-    const filterFormObj = {
-        isOrgFilterFormOpen: false,
-        isUsernameFilterFormOpen: false,
-        isEmailFilterFormOpen: false,
-        isPhoneFilterFormOpen: false,
-        isDateFilterFormOpen: false,
-        isStatusFilterFormOpen: false
-    }
+    const [filterInputVal, setFilterInputVal] = useState({});
 
-    const location = useLocation();
-    const { setUserDetails } = useStorage();
+    const [page, setPage] = React.useState(0);
+    const [rowsPerPage, setRowsPerPage] = React.useState(50);
 
-    const [filterForm, setFilterForm] = useState<FilterFormProps>(filterFormObj);
 
-    const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
-
-    const tableMenuOpen = Boolean(anchorEl);
-
-    const [tableMenuId, setTableMenuId] = useState<string>("")
-
-    const strToBool = (boolStr: string|null) => {
-        if (boolStr === "false") {
-            return false
-        }else if(boolStr === "true") {
-            return true
-        }
-    }
-
-    const handleFilterClick = (e:React.MouseEvent<HTMLButtonElement>) => {
-        const { id, ariaLabel } = e.currentTarget;
-        setFilterForm({
-            ...filterFormObj,
-            [id]: !strToBool(ariaLabel)
-        })
-    }
-
+    //--> all table menu function handlers
     const handleTableMenuOpen = (event: React.MouseEvent<HTMLButtonElement>, menuId: string) => {
         const elemTarget = event.currentTarget;
-        setAnchorEl(elemTarget);
+        setTableMenuAnchorEl(elemTarget);
         setTableMenuId(menuId);
     }
-
     const handleTableMenuClose = () => {
         setTableMenuId("");
     }
+    const handleTableMenuItemClick = (event: React.MouseEvent<HTMLButtonElement>, tRowData: TableRowData, tRowDataIndex: number, tableMenuItemType: string) => {
 
-    const handleMenuItemClick = (event: React.MouseEvent<HTMLButtonElement>, tRowData: TableRowData, tableMenuItemType: string) => {
-        
-        // if(tableMenuItemType === "view_details") {
-
-        //     const { userDetails } = tRowData;
-        //     setUserDetails(userDetails);
-            
-        //     window.location.assign("/dashboard/customers/users/user-details");
-            
-        // }
         if(tableMenuItemType === "blacklist_user") {
-            
+
+            tableData[tRowDataIndex].status = "blacklisted";
+            setUserStatus("blacklisted");
         }
         if(tableMenuItemType === "activate_user") {
 
+            tableData[tRowDataIndex].status = "active";
+            setUserStatus("active");
         }
     }
+
+    //--> all filter form function handlers
+    const handleFilterFormOpen = (event: React.MouseEvent<HTMLButtonElement>) => {
+        const elemTarget = event.currentTarget;
+        const { ariaLabel } = elemTarget;
+        setFilterFormId(ariaLabel);
+        setFilterFormAnchorEl(elemTarget);
+    }
+    const handleFilterFormClose = () => {
+        setFilterFormId("");
+    }
+
+    const handleFilterFormChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFilterInputVal({
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const handleResetBtnClick = (event:React.MouseEvent<HTMLButtonElement>, btnId:string) => {
+        const resetTableData = JSON.parse(getStorageData("tableData") as any);
+        console.log("reset: ", resetTableData)
+        dispatchFilter(TableResetAction(resetTableData));
+        
+        //--> close the filter form
+        setFilterFormId("");
+    }
+    const handleFilterBtnClick = (event:React.MouseEvent<HTMLButtonElement>, btnId:string) => {
+        const filterTableData = tableData.filter(data => data[btnId as keyof typeof data] === filterInputVal[btnId as keyof typeof filterInputVal]);
+        dispatchFilter(TableFilterAction(filterTableData));
+
+        //--> close the filter form
+        setFilterFormId("");
+    }
+
+    //--> all table pagination function handlers
+    const handleChangePage = (event: unknown, newPage: number) => {
+        setPage(newPage);
+    };
+    const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setRowsPerPage(+event.target.value);
+        setPage(0);
+    };
+
+    useEffect(() => {
+
+    }, [userStatus, tableData])
     
     return (
         <div className="users-table-cover-flex">
@@ -115,81 +141,159 @@ export default function UsersTable(props: UserTableProps) {
                                 <TableCell className="table-cell-cover" component="th">
                                     ORGANISATION 
                                     <IconButton 
-                                        id="isOrgFilterFormOpen" 
-                                        className="filter-btn"
-                                        aria-label={`${filterForm.isOrgFilterFormOpen}`} 
-                                        onClick={handleFilterClick}
+                                        id="org-btn"
+                                        aria-label="org-form"
+                                        className="filter-icon-btn"
+                                        aria-controls={filterFormId === "org-form" ? 'org-form' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={filterFormId === "org-form" ? 'true' : undefined}
+                                        onClick={handleFilterFormOpen}
                                     >
                                         <FilterList className="filter-icon" />
                                     </IconButton>
-                                    <FilterForm filterFormType="organisation" filterForm={filterForm} />
+                                    <FilterForm 
+                                        handleFilterFormOpen={handleFilterFormOpen} 
+                                        handleFilterFormClose={handleFilterFormClose}
+                                        handleFilterFormChange={handleFilterFormChange}
+                                        handleResetBtnClick={handleResetBtnClick}
+                                        handleFilterBtnClick={handleFilterBtnClick}
+                                        filterFormOpen={filterFormOpen}
+                                        filterFormAnchorEl={filterFormAnchorEl} 
+                                        filterFormType="organisation" 
+                                        filterFormId={filterFormId} 
+                                    />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
                                     USERNAME
                                     <IconButton 
-                                        id="isUsernameFilterFormOpen" 
-                                        className="filter-btn"
-                                        aria-label={`${filterForm.isUsernameFilterFormOpen}`} 
-                                        onClick={handleFilterClick}
+                                        id="username-btn"
+                                        aria-label="username-form"
+                                        className="filter-icon-btn"
+                                        aria-controls={filterFormId === "username-form" ? 'username-form' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={filterFormId === "username-form" ? 'true' : undefined}
+                                        onClick={handleFilterFormOpen}
                                     >
                                         <FilterList className="filter-icon" />
                                     </IconButton>
-                                    <FilterForm filterFormType="username" filterForm={filterForm} />
+                                    <FilterForm 
+                                        handleFilterFormOpen={handleFilterFormOpen} 
+                                        handleFilterFormClose={handleFilterFormClose}
+                                        handleFilterFormChange={handleFilterFormChange}
+                                        handleResetBtnClick={handleResetBtnClick}
+                                        handleFilterBtnClick={handleFilterBtnClick}
+                                        filterFormOpen={filterFormOpen} 
+                                        filterFormAnchorEl={filterFormAnchorEl} 
+                                        filterFormType="username" 
+                                        filterFormId={filterFormId} 
+                                    />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
                                     EMAIL
                                     <IconButton 
-                                        id="isEmailFilterFormOpen" 
-                                        className="filter-btn"
-                                        aria-label={`${filterForm.isEmailFilterFormOpen}`} 
-                                        onClick={handleFilterClick}
+                                        id="email-btn"
+                                        aria-label="email-form"
+                                        className="filter-icon-btn"
+                                        aria-controls={filterFormId === "email-form" ? 'email-form' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={filterFormId === "email-form" ? 'true' : undefined}
+                                        onClick={handleFilterFormOpen}
                                     >
                                         <FilterList className="filter-icon" />
                                     </IconButton>
-                                    <FilterForm filterFormType="email" filterForm={filterForm} />
+                                    <FilterForm 
+                                        handleFilterFormOpen={handleFilterFormOpen} 
+                                        handleFilterFormClose={handleFilterFormClose}
+                                        handleFilterFormChange={handleFilterFormChange}
+                                        handleResetBtnClick={handleResetBtnClick}
+                                        handleFilterBtnClick={handleFilterBtnClick}
+                                        filterFormOpen={filterFormOpen} 
+                                        filterFormAnchorEl={filterFormAnchorEl} 
+                                        filterFormType="email" 
+                                        filterFormId={filterFormId} 
+                                    />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
                                     PHONE NUMBER
                                     <IconButton 
-                                        id="isPhoneFilterFormOpen" 
-                                        className="filter-btn"
-                                        aria-label={`${filterForm.isPhoneFilterFormOpen}`} 
-                                        onClick={handleFilterClick}
+                                        id="phoneno-btn"
+                                        aria-label="phoneno-form"
+                                        className="filter-icon-btn"
+                                        aria-controls={filterFormId === "phoneno-form" ? 'phoneno-form' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={filterFormId === "phoneno-form" ? 'true' : undefined}
+                                        onClick={handleFilterFormOpen}
                                     >
                                         <FilterList className="filter-icon" />
                                     </IconButton>
-                                    <FilterForm filterFormType="phoneno" filterForm={filterForm} />
+                                    <FilterForm 
+                                        handleFilterFormOpen={handleFilterFormOpen} 
+                                        handleFilterFormClose={handleFilterFormClose}
+                                        handleFilterFormChange={handleFilterFormChange}
+                                        handleResetBtnClick={handleResetBtnClick}
+                                        handleFilterBtnClick={handleFilterBtnClick}
+                                        filterFormOpen={filterFormOpen} 
+                                        filterFormAnchorEl={filterFormAnchorEl} 
+                                        filterFormType="phoneno" 
+                                        filterFormId={filterFormId} 
+                                    />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
                                     DATE JOINED
                                     <IconButton 
-                                        id="isDateFilterFormOpen" 
-                                        className="filter-btn"
-                                        aria-label={`${filterForm.isDateFilterFormOpen}`} 
-                                        onClick={handleFilterClick}
+                                        id="date-btn"
+                                        aria-label="date-form"
+                                        className="filter-icon-btn"
+                                        aria-controls={filterFormId === "date-form" ? 'date-form' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={filterFormId === "date-form" ? 'true' : undefined}
+                                        onClick={handleFilterFormOpen}
                                     >
                                         <FilterList className="filter-icon" />
                                     </IconButton>
-                                    <FilterForm filterFormType="date_joined" filterForm={filterForm} />
+                                    <FilterForm 
+                                        handleFilterFormOpen={handleFilterFormOpen} 
+                                        handleFilterFormClose={handleFilterFormClose}
+                                        handleFilterFormChange={handleFilterFormChange}
+                                        handleResetBtnClick={handleResetBtnClick}
+                                        handleFilterBtnClick={handleFilterBtnClick}
+                                        filterFormOpen={filterFormOpen} 
+                                        filterFormAnchorEl={filterFormAnchorEl} 
+                                        filterFormType="date_joined" 
+                                        filterFormId={filterFormId} 
+                                    />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
                                     STATUS
                                     <IconButton 
-                                        id="isStatusFilterFormOpen" 
-                                        className="filter-btn"
-                                        aria-label={`${filterForm.isStatusFilterFormOpen}`} 
-                                        onClick={handleFilterClick}
+                                        id="status-btn"
+                                        aria-label="status-form"
+                                        className="filter-icon-btn"
+                                        aria-controls={filterFormId === "status-form" ? 'status-form' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={filterFormId === "status-form" ? 'true' : undefined}
+                                        onClick={handleFilterFormOpen}
                                     >
                                         <FilterList className="filter-icon" />
                                     </IconButton>
-                                    <FilterForm filterFormType="status" filterForm={filterForm} />
+                                    <FilterForm 
+                                        handleFilterFormOpen={handleFilterFormOpen} 
+                                        handleFilterFormClose={handleFilterFormClose}
+                                        handleFilterFormChange={handleFilterFormChange}
+                                        handleResetBtnClick={handleResetBtnClick}
+                                        handleFilterBtnClick={handleFilterBtnClick}
+                                        filterFormOpen={filterFormOpen} 
+                                        filterFormAnchorEl={filterFormAnchorEl} 
+                                        filterFormType="status" 
+                                        filterFormId={filterFormId} 
+                                    />
                                 </TableCell>
                                 <TableCell className="table-cell-cover"></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody className="table-body-cover">
                             {
-                                tableData.map((tData, index) => {
+                                tableData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((tData, index) => {
 
                                     const menuId = `table_menu${index}`;
 
@@ -213,11 +317,12 @@ export default function UsersTable(props: UserTableProps) {
                                                 <TableMenu 
                                                     tableMenuId={tableMenuId} 
                                                     menuId={menuId}
-                                                    anchorEl={anchorEl}
+                                                    tableMenuAnchorEl={tableMenuAnchorEl}
                                                     tableMenuOpen={tableMenuOpen}
                                                     handleTableMenuClose={handleTableMenuClose}
-                                                    handleMenuItemClick={handleMenuItemClick}
+                                                    handleTableMenuItemClick={handleTableMenuItemClick}
                                                     tData={tData}
+                                                    tDataIndex={index}
                                                     handleShowUserDetailsPage={handleShowUserDetailsPage}
                                                 />
                                             </TableCell>
@@ -228,6 +333,16 @@ export default function UsersTable(props: UserTableProps) {
                         </TableBody>
                     </Table>
                 </TableContainer>
+                <TablePagination
+                    rowsPerPageOptions={[50, 100, 150, 200]}
+                    component="div"
+                    count={tableData.length}
+                    rowsPerPage={rowsPerPage}
+                    page={page}
+                    onPageChange={handleChangePage}
+                    onRowsPerPageChange={handleChangeRowsPerPage}
+                    labelRowsPerPage={<p>Showing</p>}
+                />
             </div>
         </div>
     )

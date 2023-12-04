@@ -21,6 +21,21 @@ export default function UsersReducer(initialState = state.users, action) {
             return {
                 ...state.users,
                 status: "fetch_success",
+                eventType: "initial_fetch",
+                data: action.payload
+            }
+        case "TABLE_FILTER":
+            return {
+                ...state.users,
+                status: "filter_success",
+                eventType: "filter_btn_click",
+                data: action.payload
+            }
+        case "TABLE_RESET":
+            return {
+                ...state.users,
+                status: "reset_success",
+                eventType: "reset_btn_click",
                 data: action.payload
             }
         case FETCH_USER_FAILED:

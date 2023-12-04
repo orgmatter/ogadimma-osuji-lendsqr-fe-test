@@ -27,7 +27,7 @@ export default function AppBarComponent(props: AppBarProps) {
 
     const menuOpen = Boolean(anchorEl);
 
-    const { logout, isLogin } = useAuth();
+    const { logout, isLogin, getAdmin } = useAuth();
 
     const location = useLocation();
 
@@ -40,11 +40,9 @@ export default function AppBarComponent(props: AppBarProps) {
     }
 
     const handleLogout = () => {
-
-        logout("users");
-
+        logout("admin");
         if(!isLogin()) {
-            location.pathname = "/login";
+            window.location.assign('/login');
         }
     }
     
@@ -138,7 +136,7 @@ export default function AppBarComponent(props: AppBarProps) {
                                                 aria-expanded={menuOpen ? 'true' : undefined}
                                                 onClick={handleMenuClick}
                                             >
-                                                Ayodeji <ArrowDropDownIcon />
+                                                {getAdmin().firstname} <ArrowDropDownIcon />
                                             </Button>
                                             <Menu
                                                 id="basic-menu"

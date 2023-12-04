@@ -16,13 +16,15 @@ export const UsersAction = () => {
             type: FETCH_USER_START
         })
     
-        fetch("https://run.mocky.io/v3/2788d698-656e-4f30-95f9-e882beba2394", {
+        fetch("https://9799e9290dfd44798e3c139abfdb94e3.api.mockbin.io/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
             }
         })
-        .then(resp => resp.json())
+        .then(resp => {
+            return resp.json()
+        })
         .then(res => {
             console.log("data: ", res.data)
             dispatch({
@@ -31,7 +33,6 @@ export const UsersAction = () => {
             })
         })
         .catch(e => {
-            // console.log("e: ", e)
             dispatch({
                 type: FETCH_USER_FAILED,
                 msg: ""

@@ -11,17 +11,17 @@ export const LoginAction = (params) => {
         LOGIN_STOP
     } = useTypes();
 
-    return dispatch => {
+    const { login } = useAuth();
 
-        const { login } = useAuth();
-    
+    return (dispatch) => {
+
         const { email, password } = params;
     
         dispatch({
             type: LOGIN_START
         })
     
-        fetch("", {
+        fetch("https://8cdb4d4ccf7b4659975655ecf5dc7820.api.mockbin.io/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -29,9 +29,9 @@ export const LoginAction = (params) => {
         })
         .then(resp => resp.json())
         .then(res => {
-            if(email === res.data.email && password === res.data.password) {
-                login(res.data);
-            }
+            const admin = res.admin.find(admin => admin.email === email && admin.password === password);
+            login(admin);
+
             dispatch({
                 type: LOGIN_SUCCESS
             })

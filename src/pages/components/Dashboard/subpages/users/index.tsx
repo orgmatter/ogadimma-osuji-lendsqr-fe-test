@@ -14,14 +14,16 @@ import UserDetails from "./user-details";
 
 export default function Users() {
 
-    const usersState = useSelector(({usersState}) => usersState);
+    const usersState:UserProps = useSelector(({usersState}) => usersState);
+    
     const dispatch = useDispatch<any>();
     
     const currLocation = useLocation();
     const subpage = subpagesData.find(subpageData => subpageData.url === currLocation.pathname);
-    const { setUserDetails } = useStorage();
+    const { setUserDetails, setStorageData } = useStorage();
 
-    const [users, setUsers] = useState<UserProps | null>(usersState);
+    // const [users, setUsers] = useState<UserProps>(usersState);
+    // console.log("users: ", usersState)
 
     const [subpageUrl, setSubpageUrl] = useState(subpage?.url);
 
@@ -32,13 +34,11 @@ export default function Users() {
         setSubpageUrl(tableMenuItemType)
     }
 
-    console.log("users: ", users)
-
-    const sliceUsers = MOCKY_DEMO.users.slice(0,10);
-    const totalUsers = sliceUsers.length;
-    const totalActiveUsers = sliceUsers.filter((users) => users.status === "active").length;
-    const totalUsersWithLoans = sliceUsers.filter((users) => users.isLoans === true).length;
-    const totalUsersWithSavings = sliceUsers.filter((users) => users.isSavings === true).length;
+    const totalUsers = usersState.data.length;
+    // alert(totalState)
+    const totalActiveUsers = usersState.data.filter((user) => user.status === "active").length;
+    const totalUsersWithLoans = usersState.data.filter((user) => user.isLoans === true).length;
+    const totalUsersWithSavings = usersState.data.filter((user) => user.isSavings === true).length;
 
     const userCardProps = {
         totalUsers,
@@ -50,8 +50,13 @@ export default function Users() {
     useEffect(() => {
 
         dispatch(UsersAction());
+        const tableDataParam = {
+            key: "tableData",
+            value: JSON.stringify(usersState.data)
+        }
+        setStorageData(tableDataParam);
 
-    }, [users]);
+    }, [dispatch]);
 
     switch(subpageUrl) {
         case "/dashboard/customers/users":
@@ -66,7 +71,11 @@ export default function Users() {
                         <div className="users-cards-cover-flex">
                             <div className="users-cards-cover-item">
                                 <UserCards userCardProps={userCardProps} />
-                                <UsersTable tableData={MOCKY_DEMO.users} handleShowUserDetailsPage={handleShowUserDetailsPage} />
+                                <UsersTable 
+                                    tableData={usersState.data} 
+                                    eventType={usersState.eventType}
+                                    handleShowUserDetailsPage={handleShowUserDetailsPage} 
+                                />
                             </div>
                         </div>
                     </div>

@@ -456,7 +456,7 @@
                                                                     padding-top: 10px;
                                                                     padding-bottom: 10px;
 
-                                                                    .filter-btn {
+                                                                    .filter-icon-btn {
 
                                                                         .filter-icon {
                                                                             font-size: 1.1rem;
@@ -531,6 +531,380 @@
                                                                         width: 95%;
                                                                         border-radius: 20px;
                                                                         color: var(--user-status-blacklisted-color);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .user-details-cover-flex {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    .user-details-cover-item {
+                                        width: 85%;
+
+                                        .page-header-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding-top: 50px;
+
+                                            .page-header-cover-item {
+                                                
+                                                &:first-child {
+
+                                                    .header-link-cover-flex {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+
+                                                        .header-link-cover-item {
+                                                            width: 20%;
+
+                                                            .back-link-btn-cover {
+                                                                width: 100%;
+
+                                                                .back-link-btn {
+                                                                    font-size: 0.85rem;
+                                                                    color: var(--font-subtitle-color);
+                                                                    font-weight: 400;
+                                                                    text-transform: capitalize;
+                                                                    font-family: var(--dashboard-font-family);
+                                                                    padding: 0px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &:last-child {
+
+                                                    .header-desc-cover-flex {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        padding-top: 15px;
+
+                                                        .header-desc-cover-item {
+                                                            width: 50%;
+
+                                                            &:first-child {
+
+                                                                .desc-text {
+                                                                    font-size: 1.1rem;
+                                                                    color: var(--font-title-color);
+                                                                    font-weight: 600;
+                                                                    font-family: var(--dashboard-font-family);
+                                                                }
+                                                            }
+                                                            &:last-child {
+                                                                display: flex;
+                                                                justify-content: flex-end;
+
+                                                                .header-desc-btn-cover-flex {
+                                                                    width: 57%;
+                                                                    display: flex;
+                                                                    justify-content: space-between;
+
+                                                                    .header-desc-btn-cover-item {
+
+                                                                        .desc-btn {
+                                                                            font-size: 0.87rem;
+                                                                            font-weight: 600;
+                                                                            font-family: var(--dashboard-font-family);
+                                                                            border-radius: 8px;
+
+                                                                            &-blacklisted {
+                                                                                border: 1.8px solid var(--user-status-blacklisted-color);
+                                                                                color: var(--user-status-blacklisted-color);
+                                                                            }
+                                                                            &-activate {
+                                                                                border: 1.8px solid var(--btn-color);
+                                                                                color: var(--btn-color);
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .page-content-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+
+                                            .page-content-cover-item {
+                                                width: 100%;
+                                                padding-top: 30px;
+
+                                                .paper-header-cover {
+                                                    width: 100%;
+
+                                                    .paper-cover {
+                                                        width: 100%;
+                                                        padding-top: 30px;
+
+                                                        .user-details-header-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+    
+                                                            .user-details-header-cover-item {
+                                                                width: 95%;
+    
+                                                                .header-intro-cover-flex {
+                                                                    width: 100%;
+                                                                    display: flex;
+                                                                    justify-content: flex-start;
+    
+                                                                    .header-intro-cover-item {
+                                                                        width: 70%;
+    
+                                                                        .intro-cover-flex {
+                                                                            width: 100%;
+                                                                            display: flex;
+                                                                            justify-content: space-between;
+    
+                                                                            .intro-cover-item {
+    
+                                                                                &:first-child {
+                                                                                    width: 35%;
+    
+                                                                                    .avatar-name-cover-flex {
+                                                                                        width: 100%;
+                                                                                        display: flex;
+                                                                                        justify-content: space-between;
+    
+                                                                                        .avatar-name-cover-item {
+    
+                                                                                            &:first-child {
+                                                                                                width: 48%;
+    
+                                                                                                .avatar-img {
+                                                                                                    width: 100%;
+                                                                                                }
+                                                                                            }
+                                                                                            &:last-child {
+                                                                                                width: 70%;
+                                                                                                font-family: var(--dashboard-font-family);
+                                                                                                padding-left: 15px;
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                justify-content: center;
+    
+                                                                                                .name-text {
+                                                                                                    font-size: 1.4rem;
+                                                                                                    font-weight: 600;
+                                                                                                    color: var(--font-title-color);
+                                                                                                    margin-block-end: 0.3rem;
+                                                                                                }
+                                                                                                .userid-text {
+                                                                                                    font-size: 0.8rem;
+                                                                                                    font-weight: 500;
+                                                                                                    color: var(--font-subtitle-color);
+                                                                                                    margin-block-start: 0.3rem;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                &:nth-child(2) {
+                                                                                    width: 20%;
+                                                                                    display: flex;
+                                                                                    justify-content: center;
+                                                                                    align-items: center;
+                                                                                    border-right: 1px solid rgba(225, 225, 225, 0.8);
+                                                                                    border-left: 1px solid rgba(225, 225, 225, 0.8);
+    
+                                                                                    .user-tier-cover {
+                                                                                        font-family: var(--dashboard-font-family);
+    
+                                                                                        .user-tier-text {
+                                                                                            font-size: 1rem;
+                                                                                            font-weight: 400;
+                                                                                            color: var(--font-title-color);
+                                                                                            margin-block-end: 0.8rem;
+                                                                                        }
+                                                                                        .rating-cover {
+                                                                                            font-size: 1.1rem;
+                                                                                            margin-block-start: 0rem;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                &:last-child {
+                                                                                    width: 45%;
+                                                                                    display: flex;
+                                                                                    justify-content: flex-start;
+                                                                                    align-items: center;
+    
+                                                                                    .bank-acct-info-cover {
+                                                                                        font-family: var(--dashboard-font-family);
+                                                                                        margin-left: 25px;
+    
+                                                                                        .income-text {
+                                                                                            font-size: 1.7rem;
+                                                                                            font-weight: 500;
+                                                                                            color: var(--font-title-color);
+                                                                                            margin-block-end: 0.5rem;
+                                                                                        }
+                                                                                        .acct-info-text {
+                                                                                            font-size: 0.75rem;
+                                                                                            font-weight: 600;
+                                                                                            color: var(--font-subtitle-color);
+                                                                                            margin-block-start: 0.3rem;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .header-tabs-cover-flex {
+                                                                    width: 100%;
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    padding-top: 30px;
+    
+                                                                    .header-tabs-cover-item {
+                                                                        width: 100%;
+    
+                                                                        .tab-box-cover {
+                                                                            width: 100%;
+    
+                                                                            .tabs-cover {
+                                                                                width: 100%;
+    
+                                                                                .tab-cover {
+                                                                                    width: (100%/6);
+                                                                                    text-transform: capitalize;
+                                                                                    padding-bottom: 0px;
+
+                                                                                    &-active {
+                                                                                        color: var(--btn-color);
+                                                                                    }
+                                                                                }
+                                                                                .css-1aquho2-MuiTabs-indicator {
+                                                                                    background-color: var(--btn-color) !important;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .paper-content-cover {
+                                                    width: 100%;
+                                                    padding-top: 30px;
+
+                                                    .paper-cover {
+
+                                                        .user-details-content-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+
+                                                            .user-details-content-cover-item {
+                                                                width: 95%;
+    
+                                                                .custom-tab-panel-cover {
+                                                                    width: 100%;
+
+                                                                    .tabpanel-cover {
+                                                                        width: 100%;
+
+                                                                        .tabpanel-cover-flex {
+                                                                            width: 100%;
+                                                                            display: flex;
+                                                                            justify-content: center;
+                                                                            
+                                                                            .tabpanel-cover-item {
+                                                                                width: 100%;
+    
+                                                                                .gen-details-cover-flex {
+                                                                                    width: 100%;
+                                                                                    display: flex;
+                                                                                    justify-content: center;
+    
+                                                                                    .gen-details-cover-item {
+                                                                                        width: 100%;
+
+                                                                                        .gen-details-divider {
+                                                                                            width: 100%;
+                                                                                            padding-top: 20px;
+                                                                                            padding-bottom: 20px;
+
+                                                                                            .details-header-cover-flex {
+                                                                                                width: 100%;
+                                                                                                display: flex;
+                                                                                                justify-content: flex-start;
+        
+                                                                                                .details-header-cover-item {
+                                                                                                    width: 40%;
+                                                                                                    padding-bottom: 8px;
+        
+                                                                                                    .header-text {
+                                                                                                        font-size: 0.9rem;
+                                                                                                        font-weight: 600;
+                                                                                                        color: var(--font-title-color);
+                                                                                                        font-family: var(--dashboard-font-family);
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            .details-content-cover-flex {
+                                                                                                width: 100%;
+                                                                                                display: flex;
+                                                                                                flex-flow: row wrap;
+        
+                                                                                                .details-content-cover-item {
+                                                                                                    width: 20%;
+        
+                                                                                                    .details-text-cover {
+        
+                                                                                                        .key-text {
+                                                                                                            font-size: 0.7rem;
+                                                                                                            font-weight: 400;
+                                                                                                            color: var(--font-subtitle-color);
+                                                                                                            font-family: var(--dashboard-font-family);
+                                                                                                            margin-block-end: 0.5rem;
+                                                                                                        }
+                                                                                                        .value-text {
+                                                                                                            font-size: 0.75rem;
+                                                                                                            font-weight: 600;
+                                                                                                            color: var(--font-title-color);
+                                                                                                            font-family: var(--dashboard-font-family);
+                                                                                                            margin-block-start: 0.5rem;
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+
+                                                                                            .guarantor-cover-flex {
+
+                                                                                                .guarantor-cover-item {
+                                                                                                    
+                                                                                                    &:first-child {
+                                                                                                        padding-bottom: 20px;
+                                                                                                    }
+                                                                                                    &:last-child {
+                                                                                                        padding-top: 20px;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
                                                                     }
                                                                 }
                                                             }

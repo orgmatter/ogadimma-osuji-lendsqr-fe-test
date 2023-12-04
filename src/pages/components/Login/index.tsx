@@ -7,8 +7,12 @@ import {
 } from "@mui/material";
 import { Images } from "../../../images";
 import { InputVal } from "../../../types/login";
+import { useDispatch, useSelector, connect} from "react-redux";
+import { LoginAction } from "../../../store/actions/auth/login-action";
 
-export default function LoginComponent() {
+function LoginComponent(props: any) {
+
+    const { loginDispatchAction } = props;
 
     const inputObj = {
         email: "",
@@ -18,12 +22,54 @@ export default function LoginComponent() {
     const [inputVal, setInputVal] = useState<InputVal>(inputObj);
     const [isPasswordShow, setIsPasswordShow] = useState<boolean>(false);
 
+    const loginState = useSelector(({loginState}) => loginState);
+
+    const LoginButton = () => {
+        switch(loginState.status) {
+            case "login_start":
+                return (
+                    <Button
+                        className="login-btn"
+                        variant="contained"
+                        color="primary"
+                        type="button"
+                        disabled
+                    ><i>...Loggin in</i></Button>
+                )
+            case "login_failed":
+                return (
+                    <Button
+                        className="login-btn"
+                        variant="contained"
+                        color="primary"
+                        type="button"
+                        onClick={handleLoginBtnClick}
+                    >LOG IN</Button>
+                )
+            default:
+                return (
+                    <Button
+                        className="login-btn"
+                        variant="contained"
+                        color="primary"
+                        type="button"
+                        onClick={handleLoginBtnClick}
+                    >LOG IN</Button>
+                )
+        }
+    }
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
         setInputVal({
             ...inputVal,
             [e.target.name]: e.target.value
         })
+    }
+
+    const handleLoginBtnClick = (e:React.MouseEvent<HTMLButtonElement>) => {
+        const params = inputVal;
+        loginDispatchAction(params);
     }
 
     const handleClickShowPassword = () => {
@@ -33,6 +79,14 @@ export default function LoginComponent() {
     const handleMouseDownShowPassword = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
     }
+
+    useEffect(() => {
+
+        if(loginState.status === "login_success") {
+            window.location.assign("/dashboard")
+        }
+
+    }, [loginState.status])
     
     return (
         <div className="login-comp-cover-flex">
@@ -116,12 +170,7 @@ export default function LoginComponent() {
                                             </div>
                                             <div className="btn-cover-flex">
                                                 <div className="btn-cover-item">
-                                                    <Button
-                                                        className="login-btn"
-                                                        variant="contained"
-                                                        color="primary"
-                                                        type="button"
-                                                    >LOG IN</Button>
+                                                    <LoginButton />
                                                 </div>
                                             </div>
                                         </div>
@@ -135,3 +184,9 @@ export default function LoginComponent() {
         </div>
     )
 }
+
+const mapDispatchToProps = () => (dispatch:any) => ({
+    loginDispatchAction: (params:any) => dispatch(LoginAction(params))
+})
+
+export default connect(null, mapDispatchToProps)(LoginComponent);

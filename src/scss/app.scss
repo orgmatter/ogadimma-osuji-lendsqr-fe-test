@@ -1,7 +1,18 @@
 @import 'defaults/variables';
 @import 'defaults/typography';
-@import 'pages/login';
+// @import 'pages/login';
 @import 'pages/dashboard';
+@import 'pages/patials/menu';
+@import 'devices/login/laptop_lg';
+@import 'devices/login/laptop_md';
+@import 'devices/login/laptop_sm';
+@import 'devices/login/laptop_xsm';
+@import 'devices/login/tablet_lg';
+@import 'devices/login/tablet_sm';
+@import 'devices/login/mobile_lg';
+@import 'devices/login/mobile_md';
+@import 'devices/login/mobile_sm';
+@import 'devices/login/mobile_xsm';
 
 body {
     margin: 0px 0px;

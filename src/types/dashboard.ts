@@ -53,16 +53,17 @@ export type UserDetailsProps = {
 
 export type UserProps = {
     status: string
+    eventType: string
     msg: string
     data: {
         id: string
         organisation: string
         username: string
         email: string
-        phoneno: number
+        phoneno: string
         isLoans: boolean
         isSavings: boolean
-        date: string
+        dateJoined: string
         status: string
         userDetails: UserDetailsProps
     }[]
@@ -81,6 +82,7 @@ export type UserTableProps = {
         status: string
         userDetails: UserDetailsProps
     }[],
+    eventType: string
     handleShowUserDetailsPage: (event: React.MouseEvent<HTMLButtonElement>, tRowData: TableRowData, tableMenuItemType: string) => void
 }
 

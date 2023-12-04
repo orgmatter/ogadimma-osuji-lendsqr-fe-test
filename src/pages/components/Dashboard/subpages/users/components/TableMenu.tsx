@@ -8,22 +8,22 @@ export default function TableMenu(props: any) {
 
     const { 
         tableMenuId, 
-        handleMenuItemClick, 
+        handleTableMenuItemClick, 
         handleTableMenuClose, 
-        indexKey, 
+        tDataIndex, 
         menuId, 
         tData,
-        anchorEl,
+        tableMenuAnchorEl,
         tableMenuOpen,
         handleShowUserDetailsPage
     } = props;
     
     return (
-        <div className="table-menu-cover" key={indexKey}>
+        <div className="table-menu-cover" key={tDataIndex}>
             <Menu
                 id={menuId}
                 className="menu-cover"
-                anchorEl={anchorEl}
+                anchorEl={tableMenuAnchorEl}
                 open={tableMenuId === menuId}
                 onClose={handleTableMenuClose}
                 
@@ -36,13 +36,13 @@ export default function TableMenu(props: any) {
                 </MenuItem>
                 <MenuItem 
                     className="menu-item-cover"
-                    onClick={(event) => handleMenuItemClick(event, tData, "blacklist_user")}
+                    onClick={(event) => handleTableMenuItemClick(event, tData, tDataIndex, "blacklist_user")}
                 >
                     <PersonOffIcon /> Blacklist User
                 </MenuItem>
                 <MenuItem 
                     className="menu-item-cover"
-                    onClick={(event) => handleMenuItemClick(event, tData, "activate_user")}
+                    onClick={(event) => handleTableMenuItemClick(event, tData, tDataIndex, "activate_user")}
                 >
                     <PersonAddIcon /> Activate User
                 </MenuItem>

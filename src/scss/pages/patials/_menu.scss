@@ -1,0 +1,91 @@
+.filter-form-menu-cover {
+
+    .MuiMenu-paper {
+        margin-left: -80px;
+        width: 13%;
+        padding-top: 8px;
+        padding-bottom: 15px;
+        box-shadow: none;
+        border: 1px solid rgba(200, 200, 200, 0.8);
+
+        .filter-cover-flex {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .filter-cover-item  {
+                width: 90%;
+    
+                .form-cover-flex {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+    
+                    .form-cover-item {
+                        width: 100%;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        font-family: var(--dashboard-font-family);
+                        color: var(--font-title-color);
+                        line-height: 22px;
+    
+                        .filter-input-select {
+                            width: 100%;
+                            height: 30px;
+                            border: 1px solid rgba(200, 200, 200, 0.8);
+                            border-radius: 5px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                        .filter-input-text {
+                            width: 88%;
+                            height: 30px;
+                            border: 1px solid rgba(200, 200, 200, 0.8);
+                            border-radius: 5px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .btn-cover-flex {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 25px;
+    
+                    .btn-cover-item {
+                        width: 50%;
+
+                        .filter-btn {
+                            width: 100%;
+                            height: 33px;
+                            font-size: 0.8rem;
+                            font-family: var(--dashboard-font-family);
+                            font-weight: 600;
+                            box-shadow: none;
+                            text-transform: capitalize;
+                        }
+
+                        &:first-child {
+                            padding-right: 6px;
+
+                            .filter-btn {
+                                border: 1px solid var(--font-title-color);
+                                color: var(--font-title-color);
+                            }
+                        }
+                        &:last-child {
+                            padding-left: 6px;
+
+                            .filter-btn {
+                                border: none;
+                                color: #fff;
+                                background-color: var(--btn-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
