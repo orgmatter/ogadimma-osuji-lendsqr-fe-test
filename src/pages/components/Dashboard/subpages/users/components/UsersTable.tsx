@@ -25,7 +25,7 @@ export default function UsersTable(props: UserTableProps) {
     const { tableData, eventType, handleShowUserDetailsPage } = props;
 
 
-    const { getStorageData } = useStorage();
+    const { getStorageData, clearStorageData } = useStorage();
     
 
     const dispatchFilter = useDispatch()
@@ -99,6 +99,9 @@ export default function UsersTable(props: UserTableProps) {
         const resetTableData = JSON.parse(getStorageData("tableData") as any);
         console.log("reset: ", resetTableData)
         dispatchFilter(TableResetAction(resetTableData));
+
+        // --> clear storage data
+        clearStorageData("tableData" as any);
         
         //--> close the filter form
         setFilterFormId("");

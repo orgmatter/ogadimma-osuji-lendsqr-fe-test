@@ -10,17 +10,22 @@ import {
     Menu,
     MenuItem,
     Toolbar,
-    Divider
+    Divider,
+    IconButton
 } from "@mui/material";
 import { KeyboardArrowDown, VerifiedUser } from "@mui/icons-material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { DrawerListCompProps } from "../../../types/side-drawer-comp";
+import { useMedia } from "../../../hooks/useMedia";
 
 export default function DrawerListComponent(props: DrawerListCompProps) {
 
-    const { dashboardRouteProps } = props
+    const { dashboardRouteProps, handleDrawerToggle } = props
 
     const [menuOpen, setMenuOpen] = useState(false);
     const currLocation = useLocation();
+
+    const { media } = useMedia("(max-width: 680.20px)");
 
     const handleMenuOpen = (e: React.MouseEvent<HTMLButtonElement>) => {
         setMenuOpen(prev => !prev)
@@ -105,8 +110,19 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
     return (
         <div className="drawer-list-comp-cover-flex">
             <div className="drawer-list-comp-cover-item">
-                <Toolbar />
+                <Toolbar>
                 {/* <Divider /> */}
+                    <IconButton
+                        className="header-drawer-btn"
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        sx={{ mr: 2, display: media.matches?"block":"none" }}
+                    >
+                        <MenuIcon className="header-menu-icon" />
+                    </IconButton>
+                </Toolbar>
                 <div className="list-header-cover-flex">
                     <div className="list-header-cover-item">
                         <div className="header1-cover">

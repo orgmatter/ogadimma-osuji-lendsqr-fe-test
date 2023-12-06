@@ -1,5 +1,6 @@
 import React from "react";
 import { useTypes } from "../../hooks/useTypes";
+import { mockyDemo } from "../../pages/components/Dashboard/subpages/users/mocky-demo";
 
 export const UsersAction = () => {
 
@@ -23,6 +24,7 @@ export const UsersAction = () => {
             }
         })
         .then(resp => {
+            console.log('resp ok: ', resp.ok)
             return resp.json()
         })
         .then(res => {
@@ -34,8 +36,8 @@ export const UsersAction = () => {
         })
         .catch(e => {
             dispatch({
-                type: FETCH_USER_FAILED,
-                msg: ""
+                type: "FETCH_DEMO_USER_SUCCESS",
+                payload: mockyDemo.users
             })
         })
     }

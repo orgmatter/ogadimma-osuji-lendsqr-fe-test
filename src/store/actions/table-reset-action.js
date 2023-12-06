@@ -1,4 +1,8 @@
-export const TableResetAction = (data) => ({
-    type: "TABLE_RESET",
-    payload: data
-})
+export const TableResetAction = (data) => {
+    console.log("reset data: ", data);
+
+    return {
+        type: "TABLE_RESET",
+        payload: data
+    }
+}

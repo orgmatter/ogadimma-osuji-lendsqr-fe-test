@@ -7,13 +7,7 @@ const setUserDetails = (userDetails) => {
 }
 
 const setStorageData = (param) => {
-    if(param.action === "reset") {
-        localStorage.setItem(param.key, param.value);
-    }else if(param.action === "fetch_user") {
-        localStorage.setItem(param.key, param.value);
-    }else if(param.action === "filter") {
-        return null
-    }
+    localStorage.setItem(param.key, param.value);
 }
 
 const getStorageData = (key) => {
@@ -28,12 +22,17 @@ const getUserDetails = () => {
     return JSON.parse(localStorage.getItem("user-details"));
 }
 
+const clearStorageData = (key = null) => {
+    localStorage.removeItem(key);
+}
+
 export default function useStorage() {
 
     return {
         setUserDetails,
         getUserDetails,
         setStorageData,
-        getStorageData
+        getStorageData,
+        clearStorageData
     }
 }

@@ -18,6 +18,7 @@ import { AppBarProps } from "../../../types/header-comp";
 import { Images } from "../../../images";
 import useAuth from "../../../hooks/useAuth";
 import { useLocation } from "react-router";
+import { useMedia } from "../../../hooks/useMedia";
 
 export default function AppBarComponent(props: AppBarProps) {
 
@@ -30,6 +31,8 @@ export default function AppBarComponent(props: AppBarProps) {
     const { logout, isLogin, getAdmin } = useAuth();
 
     const location = useLocation();
+
+    const { media } = useMedia("(max-width: 680.20px)");
 
     const handleMenuClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         setAnchorEl(e.currentTarget);
@@ -58,13 +61,14 @@ export default function AppBarComponent(props: AppBarProps) {
         >
             <Toolbar className="toolbar-cover-flex">
                 <IconButton
+                    className="header-drawer-btn"
                     color="inherit"
                     aria-label="open drawer"
                     edge="start"
                     onClick={handleDrawerToggle}
-                    sx={{ mr: 2, display: { sm: 'none' } }}
+                    sx={{ mr: 2, display: media.matches?"block":"none" }}
                 >
-                    <MenuIcon />
+                    <MenuIcon className="header-menu-icon" />
                 </IconButton>
                 <div className="toolbar-content-cover-flex">
                     <div className="toolbar-content-cover-item">
@@ -95,7 +99,7 @@ export default function AppBarComponent(props: AppBarProps) {
                                                         variant="contained"
                                                         color="primary"
                                                     >
-                                                        <SearchIcon />
+                                                        <SearchIcon className="search-icon" />
                                                     </Button>
                                                 </InputAdornment>
                                             }}
@@ -136,7 +140,7 @@ export default function AppBarComponent(props: AppBarProps) {
                                                 aria-expanded={menuOpen ? 'true' : undefined}
                                                 onClick={handleMenuClick}
                                             >
-                                                {getAdmin().firstname} <ArrowDropDownIcon />
+                                                {getAdmin()?.firstname} <ArrowDropDownIcon />
                                             </Button>
                                             <Menu
                                                 id="basic-menu"

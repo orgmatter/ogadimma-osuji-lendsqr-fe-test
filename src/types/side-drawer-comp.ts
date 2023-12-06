@@ -14,4 +14,5 @@ export type SideDrawerCompProps = {
 
 export type DrawerListCompProps = {
     dashboardRouteProps: DashboardRouteProps | undefined
+    handleDrawerToggle: () => void
 }

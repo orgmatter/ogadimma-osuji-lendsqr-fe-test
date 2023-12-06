@@ -38,6 +38,13 @@ export default function UsersReducer(initialState = state.users, action) {
                 eventType: "reset_btn_click",
                 data: action.payload
             }
+        case "FETCH_DEMO_USER_SUCCESS":
+            return {
+                ...state.users,
+                status: "fetch_demo_success",
+                eventType: "initial_fetch",
+                data: action.payload
+            }
         case FETCH_USER_FAILED:
             return {
                 ...state.users,
