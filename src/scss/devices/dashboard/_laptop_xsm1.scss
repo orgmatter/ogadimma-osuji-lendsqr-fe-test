@@ -30,9 +30,9 @@
     
                             .toolbar-cover-flex {
                                 width: 100%;
-
+  
                                 .header-drawer-btn {
-                                    display: none;
+                                  display: none;
                                 }
     
                                 .toolbar-content-cover-flex {
@@ -41,9 +41,9 @@
                                     justify-content: space-between;
     
                                     .toolbar-content-cover-item {
+                                        width: 50%;
     
                                         &:first-child {
-                                            width: 56%;
     
                                             .content1-cover-flex {
                                                 width: 100%;
@@ -55,26 +55,26 @@
                                                     height: 35px;
     
                                                     &:first-child {
-                                                        width: 44%;
+                                                        width: 40%;
     
                                                         .logo-cover-flex {
-                                                            width: 35%;
+                                                            width: 40%;
                                                             height: 100%;
                                                             display: flex;
                                                             justify-content: flex-start;
                                                             align-items: center;
     
                                                             .logo-cover-item {
-                                                                width: 100%;
+                                                                width: 100px;
     
                                                                 .logo-img {
-                                                                    width: 100%;
+                                                                    width: 100px;
                                                                 }
                                                             }
                                                         }
                                                     }
                                                     &:last-child {
-                                                        width: 56%;
+                                                        width: 60%;
     
                                                         .search-bar-cover-flex {
                                                             width: 100%;
@@ -84,11 +84,11 @@
                                                             align-items: center;
     
                                                             .search-bar-cover-item {
-                                                                width: 90%;
+                                                                width: 100%;
                                                                 height: 100%;
     
                                                                 .search-input {
-                                                                    width: 100%;
+                                                                    width: 400px;
                                                                     height: 100% !important;
     
                                                                     .MuiInputBase-root {
@@ -100,8 +100,7 @@
     
                                                                     .MuiOutlinedInput-root {
                                                                         padding: 0px !important;
-                                                                        height: 92% !important;
-                                                                        font-size: 0.9rem;
+                                                                        height: 100% !important;
     
                                                                         &:hover {
                                                                             border: none !important
@@ -121,10 +120,6 @@
                                                                             background-color: var(--btn-color);
                                                                             box-shadow: none !important;
                                                                             border-color: var(--btn-color);
-
-                                                                            .search-icon {
-                                                                                font-size: 1.25rem;
-                                                                            }
                                                                         }
                                                                     }
                                                                 }
@@ -135,13 +130,12 @@
                                             }
                                         }
                                         &:last-child {
-                                            width: 44%;
                                             display: flex;
                                             justify-content: flex-end;
                                             padding-right: 60px;
     
                                             .content2-cover-flex {
-                                                width: 55%;
+                                                width: 38%;
                                                 display: flex;
                                                 justify-content: space-between;
                                                 align-items: center;
@@ -154,7 +148,7 @@
                                                         .docs-cover {
     
                                                             .docs-link {
-                                                                font-size: 0.8rem;
+                                                                font-size: 0.9rem;
                                                                 font-weight: 400;
                                                                 color: var(--font-title-color);
                                                             }
@@ -164,12 +158,9 @@
                                                         width: 25%;
     
                                                         .notif-cover {
-                                                            display: flex;
-                                                            align-items: center;
     
                                                             .notif-bell-icon {
                                                                 color: var(--font-title-color);
-                                                                font-size: 1.4rem;
                                                             }
                                                         }
                                                     }
@@ -189,8 +180,6 @@
                                                                     .avatar-div-cover {
     
                                                                         .avatar-cover {
-                                                                            height: 35px;
-                                                                            width: 35px;
                 
                                                                             .avatar-img {
                                                                                 width: 100% !important;
@@ -205,7 +194,7 @@
                                                                     .name-arrow-btn-cover {
     
                                                                         .name-arrow-btn {
-                                                                            font-size: 0.75rem !important;
+                                                                            font-size: 0.8rem !important;
                                                                             text-transform: capitalize !important;
                                                                             color: var(--font-title-color);
                                                                             font-weight: 600;
@@ -232,7 +221,7 @@
                         .box-cover {
     
                             .drawer-cover {
-                                display: block;
+                              display: block;
     
                                 .drawer-list-comp-cover-flex {
     
@@ -251,7 +240,7 @@
                                                     padding-top: 20px;
     
                                                     .list-header-btn {
-                                                        font-size: 0.75rem;
+                                                        font-size: 0.85rem;
                                                         font-weight: 600;
                                                         color: var(--font-title-color);
                                                         font-family: var(--dashboard-font-family);
@@ -270,7 +259,7 @@
                                                     padding-top: 15px;
     
                                                     .page-name-text {
-                                                        font-size: 0.8rem;
+                                                        font-size: 0.95rem;
                                                         font-weight: 400;
                                                         color: var(--font-subtitle-color);
                                                         font-family: var(--dashboard-font-family);
@@ -289,7 +278,7 @@
                                                     padding-top: 15px;
                                                     padding-bottom: 8px;
                                                     width: 80%;
-                                                    font-size: 0.6rem;
+                                                    font-size: 0.75rem;
                                                     font-weight: 600;
                                                     color: var(--font-subtitle-color);
                                                     font-family: var(--dashboard-font-family);
@@ -312,13 +301,13 @@
                                                             justify-content: flex-start;
     
                                                             .list-item-icon {
-                                                                width: 57%;
+                                                                width: 72%;
                                                             }
                                                         }
                                                         .list-item-text-cover {
     
                                                             .MuiTypography-root {
-                                                                font-size: 0.7rem !important;
+                                                                font-size: 0.9rem !important;
                                                                 font-weight: 400;
                                                                 color: var(--font-subtitle-color);
                                                                 font-family: var(--dashboard-font-family);

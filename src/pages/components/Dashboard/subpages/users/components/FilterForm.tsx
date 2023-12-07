@@ -159,7 +159,7 @@ export default function FilterForm(props: any) {
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="email">Email</label><br/>
+                                    <label htmlFor="">Email</label><br/>
                                     <input className="filter-input-text" id="email" type="email" name="email" onChange={handleFilterFormChange} />
                                 </div>
                             </div>

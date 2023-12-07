@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1225.5px) and (max-width: 1260px) {
+@media only screen and (min-width: 1225.5px) and (max-width: 1465.20px) {
   body {
     overflow: hidden; 
     border: 2px solid red;
@@ -16,324 +16,318 @@
               width: 100%;
   
               .header-cover-flex {
-                  width: 100%;
-                  display: flex;
-                  justify-content: center;
-  
-                  .header-cover-item {
-                      width: 100%;
-  
-                      .appbar-cover {
-                          width: 100%;
-                          background-color: var(--header-bgColor);
-                          box-shadow: none !important;
-  
-                          .toolbar-cover-flex {
-                              width: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
 
-                              .header-drawer-btn {
-                                display: none;
-                              }
-  
-                              .toolbar-content-cover-flex {
-                                  width: 100%;
-                                  display: flex;
-                                  justify-content: space-between;
-  
-                                  .toolbar-content-cover-item {
-  
-                                      &:first-child {
-                                        width: 56%;
-  
-                                          .content1-cover-flex {
-                                              width: 100%;
-                                              display: flex;
-                                              justify-content: space-between;
-                                              align-items: center;
-  
-                                              .content1-cover-item {
-                                                  height: 35px;
-  
-                                                  &:first-child {
-                                                      width: 40%;
-  
-                                                      .logo-cover-flex {
-                                                          width: 36%;
-                                                          height: 100%;
-                                                          display: flex;
-                                                          justify-content: flex-start;
-                                                          align-items: center;
-  
-                                                          .logo-cover-item {
-                                                              width: 100%;
-  
-                                                              .logo-img {
-                                                                  width: 100%;
-                                                              }
-                                                          }
-                                                      }
-                                                  }
-                                                  &:last-child {
-                                                      width: 60%;
-  
-                                                      .search-bar-cover-flex {
-                                                          width: 100%;
-                                                          height: 100%;
-                                                          display: flex;
-                                                          justify-content: center;
-                                                          align-items: center;
-  
-                                                          .search-bar-cover-item {
-                                                              width: 100%;
-                                                              height: 100%;
-  
-                                                              .search-input {
-                                                                  width: 100%;
-                                                                  height: 100% !important;
-  
-                                                                  .MuiInputBase-root {
-  
-                                                                      &:hover {
-                                                                          border: none !important
-                                                                      }
-                                                                  }
-  
-                                                                  .MuiOutlinedInput-root {
-                                                                      padding: 0px !important;
-                                                                      height: 100% !important;
-                                                                      font-size: 0.95rem;
-  
-                                                                      &:hover {
-                                                                          border: none !important
-                                                                      }
-  
-                                                                      .MuiOutlinedInput-input {
-                                                                          padding: 0px !important;
-                                                                          padding-left: 8px !important;
-                                                                      }
-                                                                  }
-  
-                                                                  .input-adorn-cover {
-  
-                                                                      .search-btn {
-                                                                          border-top-left-radius: 0px !important;
-                                                                          border-bottom-left-radius: 0px !important;
-                                                                          background-color: var(--btn-color);
-                                                                          box-shadow: none !important;
-                                                                          border-color: var(--btn-color);
+                .header-cover-item {
+                    width: 100%;
 
-                                                                          .search-icon {
-                                                                            font-size: 1.35rem;
+                    .appbar-cover {
+                        width: 100%;
+                        background-color: var(--header-bgColor);
+                        box-shadow: none !important;
+
+                        .toolbar-cover-flex {
+                            width: 100%;
+
+                            .header-drawer-btn {
+                              display: none;
+                            }
+
+                            .toolbar-content-cover-flex {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .toolbar-content-cover-item {
+                                    width: 50%;
+
+                                    &:first-child {
+
+                                        .content1-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .content1-cover-item {
+                                                height: 35px;
+
+                                                &:first-child {
+                                                    width: 40%;
+
+                                                    .logo-cover-flex {
+                                                        width: 40%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+
+                                                        .logo-cover-item {
+                                                            width: 100px;
+
+                                                            .logo-img {
+                                                                width: 100px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &:last-child {
+                                                    width: 60%;
+
+                                                    .search-bar-cover-flex {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+
+                                                        .search-bar-cover-item {
+                                                            width: 100%;
+                                                            height: 100%;
+
+                                                            .search-input {
+                                                                width: 400px;
+                                                                height: 100% !important;
+
+                                                                .MuiInputBase-root {
+
+                                                                    &:hover {
+                                                                        border: none !important
+                                                                    }
+                                                                }
+
+                                                                .MuiOutlinedInput-root {
+                                                                    padding: 0px !important;
+                                                                    height: 100% !important;
+
+                                                                    &:hover {
+                                                                        border: none !important
+                                                                    }
+
+                                                                    .MuiOutlinedInput-input {
+                                                                        padding: 0px !important;
+                                                                        padding-left: 8px !important;
+                                                                    }
+                                                                }
+
+                                                                .input-adorn-cover {
+
+                                                                    .search-btn {
+                                                                        border-top-left-radius: 0px !important;
+                                                                        border-bottom-left-radius: 0px !important;
+                                                                        background-color: var(--btn-color);
+                                                                        box-shadow: none !important;
+                                                                        border-color: var(--btn-color);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:last-child {
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        padding-right: 60px;
+
+                                        .content2-cover-flex {
+                                            width: 300px;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .content2-cover-item {
+
+                                                &:nth-child(1) {
+                                                    width: 25%;
+
+                                                    .docs-cover {
+
+                                                        .docs-link {
+                                                            font-size: 0.9rem;
+                                                            font-weight: 400;
+                                                            color: var(--font-title-color);
+                                                        }
+                                                    }
+                                                }
+                                                &:nth-child(2) {
+                                                    width: 25%;
+
+                                                    .notif-cover {
+
+                                                        .notif-bell-icon {
+                                                            color: var(--font-title-color);
+                                                        }
+                                                    }
+                                                }
+                                                &:nth-child(3) {
+                                                    width: 50%;
+
+                                                    .avatar-name-cover-flex {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        justify-content: space-between;
+
+                                                        .avatar-name-cover-item {
+
+                                                            &:first-child {
+                                                                width: 30%;
+
+                                                                .avatar-div-cover {
+
+                                                                    .avatar-cover {
+            
+                                                                        .avatar-img {
+                                                                            width: 100% !important;
+                                                                            object-fit: fill;
                                                                         }
-                                                                      }
-                                                                  }
-                                                              }
-                                                          }
-                                                      }
-                                                  }
-                                              }
-                                          }
-                                      }
-                                      &:last-child {
-                                          width: 44%;
-                                          display: flex;
-                                          justify-content: flex-end;
-                                          padding-right: 60px;
-  
-                                          .content2-cover-flex {
-                                              width: 50%;
-                                              display: flex;
-                                              justify-content: space-between;
-                                              align-items: center;
-  
-                                              .content2-cover-item {
-  
-                                                  &:nth-child(1) {
-                                                      width: 25%;
-  
-                                                      .docs-cover {
-  
-                                                          .docs-link {
-                                                              font-size: 0.9rem;
-                                                              font-weight: 400;
-                                                              color: var(--font-title-color);
-                                                          }
-                                                      }
-                                                  }
-                                                  &:nth-child(2) {
-                                                      width: 25%;
-  
-                                                      .notif-cover {
-  
-                                                          .notif-bell-icon {
-                                                              color: var(--font-title-color);
-                                                          }
-                                                      }
-                                                  }
-                                                  &:nth-child(3) {
-                                                      width: 50%;
-  
-                                                      .avatar-name-cover-flex {
-                                                          width: 100%;
-                                                          display: flex;
-                                                          justify-content: space-between;
-  
-                                                          .avatar-name-cover-item {
-  
-                                                              &:first-child {
-                                                                  width: 30%;
-  
-                                                                  .avatar-div-cover {
-  
-                                                                      .avatar-cover {
-              
-                                                                          .avatar-img {
-                                                                              width: 100% !important;
-                                                                              object-fit: fill;
-                                                                          }
-                                                                      }
-                                                                  }
-                                                              }
-                                                              &:last-child {
-                                                                  width: 70%;
-  
-                                                                  .name-arrow-btn-cover {
-  
-                                                                      .name-arrow-btn {
-                                                                          font-size: 0.8rem !important;
-                                                                          text-transform: capitalize !important;
-                                                                          color: var(--font-title-color);
-                                                                          font-weight: 600;
-                                                                      }
-                                                                  }
-                                                              }
-                                                          }
-                                                      }
-                                                  }
-                                              }
-                                          }
-                                      }
-                                  }
-                              }
-                          }
-                      }
-                  }
+                                                                    }
+                                                                }
+                                                            }
+                                                            &:last-child {
+                                                                width: 70%;
+
+                                                                .name-arrow-btn-cover {
+
+                                                                    .name-arrow-btn {
+                                                                        font-size: 0.8rem !important;
+                                                                        text-transform: capitalize !important;
+                                                                        color: var(--font-title-color);
+                                                                        font-weight: 600;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
               }
               .side-drawer-cover-flex {
-                  width: 100%;
-  
-                  .side-drawer-cover-item {
-  
-                      .box-cover {
-  
-                          .drawer-cover {
-                            display: block;
-  
-                              .drawer-list-comp-cover-flex {
-  
-                                  .drawer-list-comp-cover-item {
-  
-                                      .list-header-cover-flex {
-                                          width: 100%;
-                                          display: flex;
-                                          justify-content: center;
-  
-                                          .list-header-cover-item {
-                                              width: 80%;
-  
-                                              .header1-cover {
-                                                  width: 100%;
-                                                  padding-top: 20px;
-  
-                                                  .list-header-btn {
-                                                      font-size: 0.83rem;
-                                                      font-weight: 600;
-                                                      color: var(--font-title-color);
-                                                      font-family: var(--dashboard-font-family);
-                                                      text-transform: capitalize;
-  
-                                                      &:hover {
-                                                          background-color: transparent !important;
-                                                      }
-                                                  }
-                                                  .list-header-menu {
-  
-                                                  }
-                                              }
-                                              .header2-cover {
-                                                  width: 100%;
-                                                  padding-top: 15px;
-  
-                                                  .page-name-text {
-                                                      font-size: 0.88rem;
-                                                      font-weight: 400;
-                                                      color: var(--font-subtitle-color);
-                                                      font-family: var(--dashboard-font-family);
-                                                  }
-                                              }
-                                          }
-                                      }
-                                      .list-cover {
-  
-                                          .list-item-title-cover-flex {
-                                              width: 100%;
-                                              display: flex;
-                                              justify-content: center;
-  
-                                              .list-item-title-cover-item {
-                                                  padding-top: 15px;
-                                                  padding-bottom: 8px;
-                                                  width: 80%;
-                                                  font-size: 0.7rem;
-                                                  font-weight: 600;
-                                                  color: var(--font-subtitle-color);
-                                                  font-family: var(--dashboard-font-family);
-                                              }
-  
-                                          }
-                                          .list-item-main-cover {
-                                              width: 100%;
-  
-                                              .list-item-cover {
-                                                  width: 100%;
-                                                  padding: 0px !important;
-  
-                                                  .list-item-btn-cover {
-  
-                                                      .list-item-icon-cover {
-                                                          min-width: 25px !important;
-                                                          padding: 0px !important;
-                                                          display: flex;
-                                                          justify-content: flex-start;
-  
-                                                          .list-item-icon {
-                                                              width: 65%;
-                                                          }
-                                                      }
-                                                      .list-item-text-cover {
-  
-                                                          .MuiTypography-root {
-                                                              font-size: 0.8rem !important;
-                                                              font-weight: 400;
-                                                              color: var(--font-subtitle-color);
-                                                              font-family: var(--dashboard-font-family);
-                                                          }
-                                                      }
-  
-                                                      &-active {
-                                                          border-left: 4px solid var(--btn-color);
-                                                          background-color: var(--dashboard-page-bgColor);
-                                                      }
-                                                  }
-                                              }
-                                          }
-                                      }
-                                  }
-                              }
-                          }
-                      }
-                  }
-              }
+                width: 100%;
+
+                .side-drawer-cover-item {
+
+                    .box-cover {
+
+                        .drawer-cover {
+                          display: block;
+
+                            .drawer-list-comp-cover-flex {
+
+                                .drawer-list-comp-cover-item {
+
+                                    .list-header-cover-flex {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+
+                                        .list-header-cover-item {
+                                            width: 80%;
+
+                                            .header1-cover {
+                                                width: 100%;
+                                                padding-top: 20px;
+
+                                                .list-header-btn {
+                                                    font-size: 0.85rem;
+                                                    font-weight: 600;
+                                                    color: var(--font-title-color);
+                                                    font-family: var(--dashboard-font-family);
+                                                    text-transform: capitalize;
+
+                                                    &:hover {
+                                                        background-color: transparent !important;
+                                                    }
+                                                }
+                                                .list-header-menu {
+
+                                                }
+                                            }
+                                            .header2-cover {
+                                                width: 100%;
+                                                padding-top: 15px;
+
+                                                .page-name-text {
+                                                    font-size: 0.95rem;
+                                                    font-weight: 400;
+                                                    color: var(--font-subtitle-color);
+                                                    font-family: var(--dashboard-font-family);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .list-cover {
+
+                                        .list-item-title-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+
+                                            .list-item-title-cover-item {
+                                                padding-top: 15px;
+                                                padding-bottom: 8px;
+                                                width: 80%;
+                                                font-size: 0.75rem;
+                                                font-weight: 600;
+                                                color: var(--font-subtitle-color);
+                                                font-family: var(--dashboard-font-family);
+                                            }
+
+                                        }
+                                        .list-item-main-cover {
+                                            width: 100%;
+
+                                            .list-item-cover {
+                                                width: 100%;
+                                                padding: 0px !important;
+
+                                                .list-item-btn-cover {
+
+                                                    .list-item-icon-cover {
+                                                        min-width: 25px !important;
+                                                        padding: 0px !important;
+                                                        display: flex;
+                                                        justify-content: flex-start;
+
+                                                        .list-item-icon {
+                                                            width: 72%;
+                                                        }
+                                                    }
+                                                    .list-item-text-cover {
+
+                                                        .MuiTypography-root {
+                                                            font-size: 0.9rem !important;
+                                                            font-weight: 400;
+                                                            color: var(--font-subtitle-color);
+                                                            font-family: var(--dashboard-font-family);
+                                                        }
+                                                    }
+
+                                                    &-active {
+                                                        border-left: 4px solid var(--btn-color);
+                                                        background-color: var(--dashboard-page-bgColor);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
               .dashboard-content-box-cover {
                   width: 100%;
                   padding: 0px;
@@ -449,117 +443,131 @@
                                               }
                                           }
                                           .users-table-cover-flex {
-                                              width: 100%;
-                                              display: flex;
-                                              justify-content: center;
-  
-                                              .users-table-cover-item {
-                                                  width: 100%;
-                                                  padding-top: 35px;
-  
-                                                  .table-container-cover {
-  
-                                                      .table-cover {
-  
-                                                          .table-head-cover {
-  
-                                                              .table-row-cover {
-  
-                                                                  .table-cell-cover {
-                                                                      font-size: 0.7rem;
-                                                                      font-weight: 600;
-                                                                      color: var(--font-title-color);
-                                                                      font-family: var(--dashboard-font-family);
-                                                                      text-align: center;
-                                                                      padding-top: 10px;
-                                                                      padding-bottom: 10px;
-                                                                      padding-left: 5px;
-                                                                      padding-right: 0px;
-                                                                      width: (100%/6);
-  
-                                                                      .filter-icon-btn {
-  
-                                                                          .filter-icon {
-                                                                              font-size: 1.1rem;
-                                                                              font-weight: 400;
-                                                                              color: var(--font-title-color);
-                                                                              font-family: var(--dashboard-font-family);
-                                                                          }
-                                                                      }
-                                                                  }
-                                                              }
-                                                          }
-                                                          .table-body-cover {
-  
-                                                              .tbody-row-cover {
-  
-                                                                  .tbody-cell-cover {
-                                                                      font-size: 0.72rem;
-                                                                      font-weight: 400;
-                                                                      color: var(--font-subtitle-color);
-                                                                      font-family: var(--dashboard-font-family);
-                                                                      padding-top: 10px;
-                                                                      padding-bottom: 10px;
-                                                                      position: relative;
-  
-                                                                      .more-btn {
-  
-                                                                          .more-icon {
-                                                                              font-size: 1.1rem;
-                                                                              font-weight: 400;
-                                                                              color: var(--font-subtitle-color);
-                                                                              font-family: var(--dashboard-font-family);
-                                                                          }
-                                                                      }
-                                                                      .table-menu-cover {
-                                                                          position: absolute;
-                                                                          bottom: -100px;
-                                                                          right: 0px;
-                                                                          z-index: 999;
-      
-                                                                          .menu-cover {
-                                                                              position: absolute;
-                                                                              border: 3px solid blue;
-                                                                              width: 400px;
-      
-                                                                              .menu-item-cover {
-      
-                                                                              }
-                                                                          }
-                                                                      }
-                                                                  }
-                                                                  .tbody-cell-status-cover {
-                                                                      text-align: center;
-                                                                      text-transform: capitalize;
-  
-                                                                      .inactive-status-cover {
-                                                                          background-color: var(--user-status-inactive-color);
-                                                                          height: 16px;
-                                                                          width: 68%;
-                                                                          border-radius: 20px;
-                                                                          color: var(--font-subtitle-color);
-                                                                      }
-                                                                      .active-status-cover {
-                                                                          background-color: var(--user-status-active-bgColor);
-                                                                          height: 16px;
-                                                                          width: 68%;
-                                                                          border-radius: 20px;
-                                                                          color: var(--user-status-active-color);
-                                                                      }
-                                                                      .blacklisted-status-cover {
-                                                                          background-color: var(--user-status-blacklisted-bgColor);
-                                                                          height: 16px;
-                                                                          width: 82%;
-                                                                          border-radius: 20px;
-                                                                          color: var(--user-status-blacklisted-color);
-                                                                      }
-                                                                  }
-                                                              }
-                                                          }
-                                                      }
-                                                  }
-                                              }
-                                          }
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+
+                                            .users-table-cover-item {
+                                                width: 100%;
+                                                padding-top: 35px;
+
+                                                .table-container-cover {
+                                                    border: 1px solid rgba(205, 205, 205, 0.8);
+                                                    overflow-x: scroll;
+
+                                                    .table-cover {
+                                                      width: 1100px;
+
+                                                        .table-head-cover {
+
+                                                            .table-row-cover {
+
+                                                                .table-cell-cover {
+                                                                    font-size: 0.75rem;
+                                                                    font-weight: 600;
+                                                                    color: var(--font-title-color);
+                                                                    font-family: var(--dashboard-font-family);
+                                                                    text-align: center;
+                                                                    padding-top: 10px;
+                                                                    padding-bottom: 10px;
+
+                                                                    .filter-icon-btn {
+
+                                                                        .filter-icon {
+                                                                            font-size: 1.1rem;
+                                                                            font-weight: 400;
+                                                                            color: var(--font-title-color);
+                                                                            font-family: var(--dashboard-font-family);
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        .table-body-cover {
+
+                                                            .tbody-row-cover {
+
+                                                                .tbody-cell-cover {
+                                                                    font-size: 0.76rem;
+                                                                    font-weight: 400;
+                                                                    color: var(--font-subtitle-color);
+                                                                    font-family: var(--dashboard-font-family);
+                                                                    padding-top: 10px;
+                                                                    padding-bottom: 10px;
+                                                                    position: relative;
+                                                                    padding-left: 30px;
+
+                                                                    .more-btn {
+
+                                                                        .more-icon {
+                                                                            font-size: 1.1rem;
+                                                                            font-weight: 400;
+                                                                            color: var(--font-subtitle-color);
+                                                                            font-family: var(--dashboard-font-family);
+                                                                        }
+                                                                    }
+                                                                    .table-menu-cover {
+                                                                        position: absolute;
+                                                                        bottom: -100px;
+                                                                        right: 0px;
+                                                                        z-index: 999;
+    
+                                                                        .menu-cover {
+                                                                            position: absolute;
+                                                                            border: 3px solid blue;
+                                                                            width: 400px;
+    
+                                                                            .menu-item-cover {
+    
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .tbody-cell-status-cover {
+                                                                    text-align: center;
+                                                                    text-transform: capitalize;
+                                                                    font-size: 0.75rem;
+
+                                                                    .inactive-status-cover {
+                                                                        background-color: var(--user-status-inactive-color);
+                                                                        height: 17px;
+                                                                        width: 55px;
+                                                                        border-radius: 20px;
+                                                                        color: var(--font-subtitle-color);
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        margin-block-start: 0rem;
+                                                                    }
+                                                                    .active-status-cover {
+                                                                        background-color: var(--user-status-active-bgColor);
+                                                                        height: 17px;
+                                                                        width: 50px;
+                                                                        border-radius: 20px;
+                                                                        color: var(--user-status-active-color);
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        margin-block-start: 0rem;
+                                                                    }
+                                                                    .blacklisted-status-cover {
+                                                                        background-color: var(--user-status-blacklisted-bgColor);
+                                                                        height: 17px;
+                                                                        width: 70px;
+                                                                        border-radius: 20px;
+                                                                        color: var(--user-status-blacklisted-color);
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        margin-block-start: 0rem;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                       }
                                   }
                                   .user-details-cover-flex {

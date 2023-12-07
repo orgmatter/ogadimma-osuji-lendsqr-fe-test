@@ -7,6 +7,7 @@
 @import 'pages/patials/drawer';
 
 // pages and devices
+// --> Login
 @import 'devices/login/laptop_lg';
 @import 'devices/login/laptop_md';
 @import 'devices/login/laptop_sm';
@@ -18,6 +19,7 @@
 @import 'devices/login/mobile_sm';
 @import 'devices/login/mobile_xsm';
 
+// --> Dashboard
 @import 'devices/dashboard/laptop_lg';
 @import 'devices/dashboard/laptop_md';
 @import 'devices/dashboard/laptop_md1';
@@ -25,10 +27,11 @@
 @import 'devices/dashboard/laptop_sm';
 @import 'devices/dashboard/laptop_sm1';
 @import 'devices/dashboard/laptop_xsm';
-@import 'devices/dashboard/laptop_xsm1';
-@import 'devices/dashboard/laptop_xsm2';
-@import 'devices/dashboard/tablet_lg';
+// @import 'devices/dashboard/laptop_xsm1';
+// @import 'devices/dashboard/laptop_xsm2';
+// @import 'devices/dashboard/tablet_lg';
 @import 'devices/dashboard/tablet_sm';
+@import 'devices/dashboard/mobile_lg';
 
 body {
     margin: 0px 0px;

@@ -140,7 +140,7 @@ export default function AppBarComponent(props: AppBarProps) {
                                                 aria-expanded={menuOpen ? 'true' : undefined}
                                                 onClick={handleMenuClick}
                                             >
-                                                {getAdmin()?.firstname} <ArrowDropDownIcon />
+                                                {getAdmin()?.firstname} Adedeji <ArrowDropDownIcon />
                                             </Button>
                                             <Menu
                                                 id="basic-menu"

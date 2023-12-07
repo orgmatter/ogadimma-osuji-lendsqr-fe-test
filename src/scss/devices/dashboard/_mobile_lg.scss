@@ -1,0 +1,992 @@
+@media only screen and (max-width: 600px) {
+
+    .dashboard-cover-flex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        .dashboard-cover-item {
+            width: 100%;
+    
+            .dashboard-box-cover {
+                width: 100%;
+    
+                .header-cover-flex {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+    
+                    .header-cover-item {
+                        width: 100%;
+    
+                        .appbar-cover {
+                            width: 100%;
+                            background-color: var(--header-bgColor);
+                            box-shadow: none !important;
+    
+                            .toolbar-cover-flex {
+                                width: 100%;
+
+                                .header-drawer-btn {
+                                    display: block;
+                                    color: var(--btn-color);
+                                
+                                    .header-menu-icon {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+    
+                                .toolbar-content-cover-flex {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+    
+                                    .toolbar-content-cover-item {
+                                        width: 50%;
+    
+                                        &:first-child {
+    
+                                            .content1-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+    
+                                                .content1-cover-item {
+                                                    height: 35px;
+    
+                                                    &:first-child {
+                                                        width: 40%;
+    
+                                                        .logo-cover-flex {
+                                                            width: 40%;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: center;
+    
+                                                            .logo-cover-item {
+                                                                width: 80px;
+    
+                                                                .logo-img {
+                                                                    width: 90px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    &:last-child {
+                                                        width: 60%;
+    
+                                                        .search-bar-cover-flex {
+                                                            display: none !important;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+    
+                                                            .search-bar-cover-item {
+                                                                width: 100%;
+                                                                height: 100%;
+    
+                                                                .search-input {
+                                                                    width: 400px;
+                                                                    height: 100% !important;
+    
+                                                                    .MuiInputBase-root {
+    
+                                                                        &:hover {
+                                                                            border: none !important
+                                                                        }
+                                                                    }
+    
+                                                                    .MuiOutlinedInput-root {
+                                                                        padding: 0px !important;
+                                                                        height: 100% !important;
+    
+                                                                        &:hover {
+                                                                            border: none !important
+                                                                        }
+    
+                                                                        .MuiOutlinedInput-input {
+                                                                            padding: 0px !important;
+                                                                            padding-left: 8px !important;
+                                                                        }
+                                                                    }
+    
+                                                                    .input-adorn-cover {
+    
+                                                                        .search-btn {
+                                                                            border-top-left-radius: 0px !important;
+                                                                            border-bottom-left-radius: 0px !important;
+                                                                            background-color: var(--btn-color);
+                                                                            box-shadow: none !important;
+                                                                            border-color: var(--btn-color);
+                                                                        }
+                                                                    }
+                                                                }
+                                                                @media only screen and (max-width: 967.20px) {
+                                                                    .search-input {
+                                                                        width: 135%;
+                                                                        font-size: 0.8rem;
+                                                                    }
+
+                                                                    .MuiOutlinedInput-root {
+                                                                        padding: 0px !important;
+                                                                        height: 90% !important;
+                                                                        font-size: 0.9rem;
+    
+                                                                        &:hover {
+                                                                            border: none !important
+                                                                        }
+    
+                                                                        .MuiOutlinedInput-input {
+                                                                            padding: 0px !important;
+                                                                            padding-left: 8px !important;
+                                                                        }
+                                                                    }
+
+                                                                    .input-adorn-cover {
+    
+                                                                        .search-btn {
+                                                                            border-top-left-radius: 0px !important;
+                                                                            border-bottom-left-radius: 0px !important;
+                                                                            background-color: var(--btn-color);
+                                                                            box-shadow: none !important;
+                                                                            border-color: var(--btn-color);
+
+                                                                            .search-icon {
+                                                                                font-size: 1.35rem;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &:last-child {
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            padding-right: 60px;
+    
+                                            .content2-cover-flex {
+                                                width: 300px;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+    
+                                                .content2-cover-item {
+    
+                                                    &:nth-child(1) {
+                                                        width: 25%;
+    
+                                                        .docs-cover {
+    
+                                                            .docs-link {
+                                                                font-size: 0.9rem;
+                                                                font-weight: 400;
+                                                                color: var(--font-title-color);
+                                                            }
+                                                        }
+                                                    }
+                                                    &:nth-child(2) {
+                                                        width: 25%;
+    
+                                                        .notif-cover {
+    
+                                                            .notif-bell-icon {
+                                                                color: var(--font-title-color);
+                                                                font-size: 1.4rem;
+                                                            }
+                                                        }
+                                                    }
+                                                    &:nth-child(3) {
+                                                        width: 50%;
+    
+                                                        .avatar-name-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: space-between;
+    
+                                                            .avatar-name-cover-item {
+    
+                                                                &:first-child {
+                                                                    width: 30%;
+    
+                                                                    .avatar-div-cover {
+    
+                                                                        .avatar-cover {
+                                                                            height: 35px;
+                                                                            width: 35px;
+                
+                                                                            .avatar-img {
+                                                                                width: 100% !important;
+                                                                                object-fit: fill;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                &:last-child {
+                                                                    width: 70%;
+    
+                                                                    .name-arrow-btn-cover {
+    
+                                                                        .name-arrow-btn {
+                                                                            font-size: 0.75rem !important;
+                                                                            text-transform: capitalize !important;
+                                                                            color: var(--font-title-color);
+                                                                            font-weight: 600;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            @media only screen and (max-width: 967.20px) {
+
+                                                .content2-cover-flex {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .side-drawer-cover-flex {
+                    width: 100%;
+    
+                    .side-drawer-cover-item {
+    
+                        .box-cover {
+    
+                            .drawer-cover {
+    
+                                .drawer-list-comp-cover-flex {
+    
+                                    .drawer-list-comp-cover-item {
+    
+                                        .list-header-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+    
+                                            .list-header-cover-item {
+                                                width: 80%;
+    
+                                                .header1-cover {
+                                                    width: 100%;
+                                                    padding-top: 20px;
+    
+                                                    .list-header-btn {
+                                                        font-size: 0.83rem;
+                                                        font-weight: 600;
+                                                        color: var(--font-title-color);
+                                                        font-family: var(--dashboard-font-family);
+                                                        text-transform: capitalize;
+    
+                                                        &:hover {
+                                                            background-color: transparent !important;
+                                                        }
+                                                    }
+                                                    .list-header-menu {
+    
+                                                    }
+                                                }
+                                                .header2-cover {
+                                                    width: 100%;
+                                                    padding-top: 15px;
+    
+                                                    .page-name-text {
+                                                        font-size: 0.88rem;
+                                                        font-weight: 400;
+                                                        color: var(--font-subtitle-color);
+                                                        font-family: var(--dashboard-font-family);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .list-cover {
+    
+                                            .list-item-title-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+    
+                                                .list-item-title-cover-item {
+                                                    padding-top: 15px;
+                                                    padding-bottom: 8px;
+                                                    width: 80%;
+                                                    font-size: 0.7rem;
+                                                    font-weight: 600;
+                                                    color: var(--font-subtitle-color);
+                                                    font-family: var(--dashboard-font-family);
+                                                }
+    
+                                            }
+                                            .list-item-main-cover {
+                                                width: 100%;
+    
+                                                .list-item-cover {
+                                                    width: 100%;
+                                                    padding: 0px !important;
+    
+                                                    .list-item-btn-cover {
+    
+                                                        .list-item-icon-cover {
+                                                            min-width: 25px !important;
+                                                            padding: 0px !important;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+    
+                                                            .list-item-icon {
+                                                                width: 65%;
+                                                            }
+                                                        }
+                                                        .list-item-text-cover {
+    
+                                                            .MuiTypography-root {
+                                                                font-size: 0.8rem !important;
+                                                                font-weight: 400;
+                                                                color: var(--font-subtitle-color);
+                                                                font-family: var(--dashboard-font-family);
+                                                            }
+                                                        }
+    
+                                                        &-active {
+                                                            border-left: 4px solid var(--btn-color);
+                                                            background-color: var(--dashboard-page-bgColor);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .dashboard-content-box-cover {
+                    width: 100%;
+                    padding: 0px;
+                    background-color: var(--dashboard-page-bgColor);
+    
+                    .dashboard-content-cover-flex {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+    
+                        .dashboard-content-cover-item {
+                            width: 100%;
+    
+                            .dashboard-subpages-cover-flex {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+    
+                                .dashboard-subpages-cover-item {
+                                    width: 100%;
+    
+                                    .users-cover-flex {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+    
+                                        .users-cover-item {
+                                            width: 85%;
+    
+                                            .users-header-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: flex-start;
+    
+                                                .users-header-cover-item {
+                                                    width: 10%;
+                                                    padding-top: 35px;
+                                                    padding-bottom: 15px;
+    
+                                                    .users-header-text {
+                                                        font-size: 1.15rem;
+                                                        font-weight: 600;
+                                                        color: var(--font-title-color);
+                                                        font-family: var(--dashboard-font-family);
+                                                    }
+                                                }
+                                            }
+                                            .users-cards-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+    
+                                                .users-cards-cover-item {
+                                                    width: 100%;
+    
+                                                    .card-cover-flex {
+                                                        width: 100%;
+                                                        height: 275px;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-content: space-between;
+                                                        flex-flow: row wrap;
+    
+                                                        .card-cover-item {
+                                                            width: calc(100%/2.05);
+            
+                                                            .card-cover {
+            
+                                                                .card-inner-cover {
+                                                                    width: 100%;
+                                                                    padding: 5px;
+                                                                    padding-left: 20px;
+            
+                                                                    .card-icon-cover {
+                                                                        width: 100%;
+                                                                        height: 60px;
+                                                                        display: flex;
+                                                                        justify-content: flex-start;
+                                                                        align-items: center;
+            
+                                                                        .icon-cover {
+                                                                            width: 32px;
+                                                                            height: 32px;
+            
+                                                                            .icon-img {
+                                                                                width: 100%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    .card-name-cover {
+                                                                        width: 100%;
+            
+                                                                        .name-cover {
+                                                                            font-size: 0.75rem;
+                                                                            white-space: pre-wrap;
+                                                                            font-weight: 600;
+                                                                            color: var(--font-subtitle-color);
+                                                                            font-family: var(--dashboard-font-family);
+                                                                        }
+                                                                    }
+                                                                    .card-value-cover {
+                                                                        width: 100%;
+                                                                        padding-top: 10px;
+                                                                        padding-bottom: 15px;
+            
+                                                                        .value-cover {
+                                                                            font-size: 1.05rem;
+                                                                            font-weight: 600;
+                                                                            color: var(--font-title-color);
+                                                                            font-family: var(--dashboard-font-family);
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .users-table-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+    
+                                                .users-table-cover-item {
+                                                    width: 100%;
+                                                    padding-top: 35px;
+    
+                                                    .table-container-cover {
+                                                        border: 1px solid rgba(205, 205, 205, 0.8);
+                                                        overflow-x: scroll;
+    
+                                                        .table-cover {
+                                                            width: 960px;
+    
+                                                            .table-head-cover {
+    
+                                                                .table-row-cover {
+    
+                                                                    .table-cell-cover {
+                                                                        font-size: 0.7rem;
+                                                                        font-weight: 600;
+                                                                        color: var(--font-title-color);
+                                                                        font-family: var(--dashboard-font-family);
+                                                                        text-align: center;
+                                                                        padding-top: 10px;
+                                                                        padding-bottom: 10px;
+                                                                        // width: (100%/6);
+    
+                                                                        .filter-icon-btn {
+    
+                                                                            .filter-icon {
+                                                                                font-size: 1.1rem;
+                                                                                font-weight: 400;
+                                                                                color: var(--font-title-color);
+                                                                                font-family: var(--dashboard-font-family);
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            .table-body-cover {
+    
+                                                                .tbody-row-cover {
+    
+                                                                    .tbody-cell-cover {
+                                                                        font-size: 0.72rem;
+                                                                        font-weight: 400;
+                                                                        color: var(--font-subtitle-color);
+                                                                        font-family: var(--dashboard-font-family);
+                                                                        padding-top: 10px;
+                                                                        padding-bottom: 10px;
+                                                                        position: relative;
+    
+                                                                        .more-btn {
+    
+                                                                            .more-icon {
+                                                                                font-size: 1.1rem;
+                                                                                font-weight: 400;
+                                                                                color: var(--font-subtitle-color);
+                                                                                font-family: var(--dashboard-font-family);
+                                                                            }
+                                                                        }
+                                                                        .table-menu-cover {
+                                                                            position: absolute;
+                                                                            bottom: -100px;
+                                                                            right: 0px;
+                                                                            z-index: 999;
+        
+                                                                            .menu-cover {
+                                                                                position: absolute;
+                                                                                border: 3px solid blue;
+                                                                                width: 400px;
+        
+                                                                                .menu-item-cover {
+        
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    .tbody-cell-status-cover {
+                                                                        text-align: center;
+                                                                        text-transform: capitalize;
+    
+                                                                        .inactive-status-cover {
+                                                                            background-color: var(--user-status-inactive-color);
+                                                                            height: 16px;
+                                                                            width: 68%;
+                                                                            border-radius: 20px;
+                                                                            color: var(--font-subtitle-color);
+                                                                        }
+                                                                        .active-status-cover {
+                                                                            background-color: var(--user-status-active-bgColor);
+                                                                            height: 16px;
+                                                                            width: 68%;
+                                                                            border-radius: 20px;
+                                                                            color: var(--user-status-active-color);
+                                                                        }
+                                                                        .blacklisted-status-cover {
+                                                                            background-color: var(--user-status-blacklisted-bgColor);
+                                                                            height: 16px;
+                                                                            width: 82%;
+                                                                            border-radius: 20px;
+                                                                            color: var(--user-status-blacklisted-color);
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .user-details-cover-flex {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+    
+                                        .user-details-cover-item {
+                                            width: 85%;
+    
+                                            .page-header-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                padding-top: 50px;
+    
+                                                .page-header-cover-item {
+                                                    
+                                                    &:first-child {
+    
+                                                        .header-link-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+    
+                                                            .header-link-cover-item {
+                                                                width: 20%;
+    
+                                                                .back-link-btn-cover {
+                                                                    width: 100%;
+    
+                                                                    .back-link-btn {
+                                                                        font-size: 0.85rem;
+                                                                        color: var(--font-subtitle-color);
+                                                                        font-weight: 400;
+                                                                        text-transform: capitalize;
+                                                                        font-family: var(--dashboard-font-family);
+                                                                        padding: 0px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    &:last-child {
+    
+                                                        .header-desc-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: space-between;
+                                                            padding-top: 15px;
+    
+                                                            .header-desc-cover-item {
+                                                                width: 50%;
+    
+                                                                &:first-child {
+    
+                                                                    .desc-text {
+                                                                        font-size: 1.1rem;
+                                                                        color: var(--font-title-color);
+                                                                        font-weight: 600;
+                                                                        font-family: var(--dashboard-font-family);
+                                                                    }
+                                                                }
+                                                                &:last-child {
+                                                                    display: flex;
+                                                                    justify-content: flex-end;
+    
+                                                                    .header-desc-btn-cover-flex {
+                                                                        width: 57%;
+                                                                        display: flex;
+                                                                        justify-content: space-between;
+    
+                                                                        .header-desc-btn-cover-item {
+    
+                                                                            .desc-btn {
+                                                                                font-size: 0.87rem;
+                                                                                font-weight: 600;
+                                                                                font-family: var(--dashboard-font-family);
+                                                                                border-radius: 8px;
+    
+                                                                                &-blacklisted {
+                                                                                    border: 1.8px solid var(--user-status-blacklisted-color);
+                                                                                    color: var(--user-status-blacklisted-color);
+                                                                                }
+                                                                                &-activate {
+                                                                                    border: 1.8px solid var(--btn-color);
+                                                                                    color: var(--btn-color);
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .page-content-cover-flex {
+                                                width: 100%;
+                                                display: flex;
+                                                justify-content: center;
+    
+                                                .page-content-cover-item {
+                                                    width: 100%;
+                                                    padding-top: 30px;
+    
+                                                    .paper-header-cover {
+                                                        width: 100%;
+    
+                                                        .paper-cover {
+                                                            width: 100%;
+                                                            padding-top: 30px;
+    
+                                                            .user-details-header-cover-flex {
+                                                                width: 100%;
+                                                                display: flex;
+                                                                justify-content: center;
+        
+                                                                .user-details-header-cover-item {
+                                                                    width: 95%;
+        
+                                                                    .header-intro-cover-flex {
+                                                                        width: 100%;
+                                                                        display: flex;
+                                                                        justify-content: flex-start;
+        
+                                                                        .header-intro-cover-item {
+                                                                            width: 70%;
+        
+                                                                            .intro-cover-flex {
+                                                                                width: 100%;
+                                                                                display: flex;
+                                                                                justify-content: space-between;
+        
+                                                                                .intro-cover-item {
+        
+                                                                                    &:first-child {
+                                                                                        width: 35%;
+        
+                                                                                        .avatar-name-cover-flex {
+                                                                                            width: 100%;
+                                                                                            display: flex;
+                                                                                            justify-content: space-between;
+        
+                                                                                            .avatar-name-cover-item {
+        
+                                                                                                &:first-child {
+                                                                                                    width: 48%;
+        
+                                                                                                    .avatar-img {
+                                                                                                        width: 100%;
+                                                                                                    }
+                                                                                                }
+                                                                                                &:last-child {
+                                                                                                    width: 70%;
+                                                                                                    font-family: var(--dashboard-font-family);
+                                                                                                    padding-left: 15px;
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    justify-content: center;
+        
+                                                                                                    .name-text {
+                                                                                                        font-size: 1.4rem;
+                                                                                                        font-weight: 600;
+                                                                                                        color: var(--font-title-color);
+                                                                                                        margin-block-end: 0.3rem;
+                                                                                                    }
+                                                                                                    .userid-text {
+                                                                                                        font-size: 0.8rem;
+                                                                                                        font-weight: 500;
+                                                                                                        color: var(--font-subtitle-color);
+                                                                                                        margin-block-start: 0.3rem;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    &:nth-child(2) {
+                                                                                        width: 20%;
+                                                                                        display: flex;
+                                                                                        justify-content: center;
+                                                                                        align-items: center;
+                                                                                        border-right: 1px solid rgba(225, 225, 225, 0.8);
+                                                                                        border-left: 1px solid rgba(225, 225, 225, 0.8);
+        
+                                                                                        .user-tier-cover {
+                                                                                            font-family: var(--dashboard-font-family);
+        
+                                                                                            .user-tier-text {
+                                                                                                font-size: 1rem;
+                                                                                                font-weight: 400;
+                                                                                                color: var(--font-title-color);
+                                                                                                margin-block-end: 0.8rem;
+                                                                                            }
+                                                                                            .rating-cover {
+                                                                                                font-size: 1.1rem;
+                                                                                                margin-block-start: 0rem;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    &:last-child {
+                                                                                        width: 45%;
+                                                                                        display: flex;
+                                                                                        justify-content: flex-start;
+                                                                                        align-items: center;
+        
+                                                                                        .bank-acct-info-cover {
+                                                                                            font-family: var(--dashboard-font-family);
+                                                                                            margin-left: 25px;
+        
+                                                                                            .income-text {
+                                                                                                font-size: 1.7rem;
+                                                                                                font-weight: 500;
+                                                                                                color: var(--font-title-color);
+                                                                                                margin-block-end: 0.5rem;
+                                                                                            }
+                                                                                            .acct-info-text {
+                                                                                                font-size: 0.75rem;
+                                                                                                font-weight: 600;
+                                                                                                color: var(--font-subtitle-color);
+                                                                                                margin-block-start: 0.3rem;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    .header-tabs-cover-flex {
+                                                                        width: 100%;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        padding-top: 30px;
+        
+                                                                        .header-tabs-cover-item {
+                                                                            width: 100%;
+        
+                                                                            .tab-box-cover {
+                                                                                width: 100%;
+        
+                                                                                .tabs-cover {
+                                                                                    width: 100%;
+        
+                                                                                    .tab-cover {
+                                                                                        width: (100%/6);
+                                                                                        text-transform: capitalize;
+                                                                                        padding-bottom: 0px;
+    
+                                                                                        &-active {
+                                                                                            color: var(--btn-color);
+                                                                                        }
+                                                                                    }
+                                                                                    .css-1aquho2-MuiTabs-indicator {
+                                                                                        background-color: var(--btn-color) !important;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .paper-content-cover {
+                                                        width: 100%;
+                                                        padding-top: 30px;
+    
+                                                        .paper-cover {
+    
+                                                            .user-details-content-cover-flex {
+                                                                width: 100%;
+                                                                display: flex;
+                                                                justify-content: center;
+    
+                                                                .user-details-content-cover-item {
+                                                                    width: 95%;
+        
+                                                                    .custom-tab-panel-cover {
+                                                                        width: 100%;
+    
+                                                                        .tabpanel-cover {
+                                                                            width: 100%;
+    
+                                                                            .tabpanel-cover-flex {
+                                                                                width: 100%;
+                                                                                display: flex;
+                                                                                justify-content: center;
+                                                                                
+                                                                                .tabpanel-cover-item {
+                                                                                    width: 100%;
+        
+                                                                                    .gen-details-cover-flex {
+                                                                                        width: 100%;
+                                                                                        display: flex;
+                                                                                        justify-content: center;
+        
+                                                                                        .gen-details-cover-item {
+                                                                                            width: 100%;
+    
+                                                                                            .gen-details-divider {
+                                                                                                width: 100%;
+                                                                                                padding-top: 20px;
+                                                                                                padding-bottom: 20px;
+    
+                                                                                                .details-header-cover-flex {
+                                                                                                    width: 100%;
+                                                                                                    display: flex;
+                                                                                                    justify-content: flex-start;
+            
+                                                                                                    .details-header-cover-item {
+                                                                                                        width: 40%;
+                                                                                                        padding-bottom: 8px;
+            
+                                                                                                        .header-text {
+                                                                                                            font-size: 0.9rem;
+                                                                                                            font-weight: 600;
+                                                                                                            color: var(--font-title-color);
+                                                                                                            font-family: var(--dashboard-font-family);
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                                .details-content-cover-flex {
+                                                                                                    width: 100%;
+                                                                                                    display: flex;
+                                                                                                    flex-flow: row wrap;
+            
+                                                                                                    .details-content-cover-item {
+                                                                                                        width: 20%;
+            
+                                                                                                        .details-text-cover {
+            
+                                                                                                            .key-text {
+                                                                                                                font-size: 0.7rem;
+                                                                                                                font-weight: 400;
+                                                                                                                color: var(--font-subtitle-color);
+                                                                                                                font-family: var(--dashboard-font-family);
+                                                                                                                margin-block-end: 0.5rem;
+                                                                                                            }
+                                                                                                            .value-text {
+                                                                                                                font-size: 0.75rem;
+                                                                                                                font-weight: 600;
+                                                                                                                color: var(--font-title-color);
+                                                                                                                font-family: var(--dashboard-font-family);
+                                                                                                                margin-block-start: 0.5rem;
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+    
+                                                                                                .guarantor-cover-flex {
+    
+                                                                                                    .guarantor-cover-item {
+                                                                                                        
+                                                                                                        &:first-child {
+                                                                                                            padding-bottom: 20px;
+                                                                                                        }
+                                                                                                        &:last-child {
+                                                                                                            padding-top: 20px;
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

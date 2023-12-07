@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1260px) and (max-width: 1599px) {
+@media only screen and (min-width: 1465.20px) and (max-width: 1599px) {
   body {
     overflow: hidden; 
     border: 2px solid green;
@@ -65,10 +65,10 @@
                                                           align-items: center;
   
                                                           .logo-cover-item {
-                                                              width: 100%;
+                                                              width: 100px;
   
                                                               .logo-img {
-                                                                  width: 100%;
+                                                                width: 100px;
                                                               }
                                                           }
                                                       }
@@ -88,7 +88,7 @@
                                                               height: 100%;
   
                                                               .search-input {
-                                                                  width: 100%;
+                                                                  width: 400px;
                                                                   height: 100% !important;
   
                                                                   .MuiInputBase-root {
@@ -135,7 +135,7 @@
                                           padding-right: 60px;
   
                                           .content2-cover-flex {
-                                              width: 38%;
+                                              width: 300px;
                                               display: flex;
                                               justify-content: space-between;
                                               align-items: center;
@@ -467,9 +467,6 @@
                                                                       text-align: center;
                                                                       padding-top: 10px;
                                                                       padding-bottom: 10px;
-                                                                      padding-left: 5px;
-                                                                      padding-right: 0px;
-                                                                      width: (100%/6);
   
                                                                       .filter-icon-btn {
   
@@ -495,6 +492,7 @@
                                                                       padding-top: 10px;
                                                                       padding-bottom: 10px;
                                                                       position: relative;
+                                                                      padding-left: 30px;
   
                                                                       .more-btn {
   
@@ -525,27 +523,40 @@
                                                                   .tbody-cell-status-cover {
                                                                       text-align: center;
                                                                       text-transform: capitalize;
+                                                                      font-size: 0.75rem;
   
                                                                       .inactive-status-cover {
                                                                           background-color: var(--user-status-inactive-color);
-                                                                          height: 16px;
-                                                                          width: 65%;
+                                                                          height: 17px;
+                                                                          width: 55px;
                                                                           border-radius: 20px;
                                                                           color: var(--font-subtitle-color);
+                                                                          display: flex;
+                                                                          justify-content: center;
+                                                                          align-items: center;
+                                                                          margin-block-start: 0rem;
                                                                       }
                                                                       .active-status-cover {
                                                                           background-color: var(--user-status-active-bgColor);
-                                                                          height: 16px;
-                                                                          width: 65%;
+                                                                          height: 17px;
+                                                                          width: 50px;
                                                                           border-radius: 20px;
                                                                           color: var(--user-status-active-color);
+                                                                          display: flex;
+                                                                          justify-content: center;
+                                                                          align-items: center;
+                                                                          margin-block-start: 0rem;
                                                                       }
                                                                       .blacklisted-status-cover {
                                                                           background-color: var(--user-status-blacklisted-bgColor);
-                                                                          height: 16px;
-                                                                          width: 80%;
+                                                                          height: 17px;
+                                                                          width: 70px;
                                                                           border-radius: 20px;
                                                                           color: var(--user-status-blacklisted-color);
+                                                                          display: flex;
+                                                                          justify-content: center;
+                                                                          align-items: center;
+                                                                          margin-block-start: 0rem;
                                                                       }
                                                                   }
                                                               }

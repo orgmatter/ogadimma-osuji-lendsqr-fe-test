@@ -64,7 +64,7 @@
                                                                 width: 100%;
     
                                                                 .logo-img {
-                                                                    width: 100%;
+                                                                    width: 100px;
                                                                 }
                                                             }
                                                         }
@@ -228,7 +228,7 @@
                         .box-cover {
     
                             .drawer-cover {
-                                display: block;
+                              display: block;
     
                                 .drawer-list-comp-cover-flex {
     
@@ -247,7 +247,7 @@
                                                     padding-top: 20px;
     
                                                     .list-header-btn {
-                                                        font-size: 0.83rem;
+                                                        font-size: 0.85rem;
                                                         font-weight: 600;
                                                         color: var(--font-title-color);
                                                         font-family: var(--dashboard-font-family);
@@ -266,7 +266,7 @@
                                                     padding-top: 15px;
     
                                                     .page-name-text {
-                                                        font-size: 0.88rem;
+                                                        font-size: 0.95rem;
                                                         font-weight: 400;
                                                         color: var(--font-subtitle-color);
                                                         font-family: var(--dashboard-font-family);
@@ -285,7 +285,7 @@
                                                     padding-top: 15px;
                                                     padding-bottom: 8px;
                                                     width: 80%;
-                                                    font-size: 0.7rem;
+                                                    font-size: 0.75rem;
                                                     font-weight: 600;
                                                     color: var(--font-subtitle-color);
                                                     font-family: var(--dashboard-font-family);
@@ -308,13 +308,13 @@
                                                             justify-content: flex-start;
     
                                                             .list-item-icon {
-                                                                width: 65%;
+                                                                width: 72%;
                                                             }
                                                         }
                                                         .list-item-text-cover {
     
                                                             .MuiTypography-root {
-                                                                font-size: 0.8rem !important;
+                                                                font-size: 0.9rem !important;
                                                                 font-weight: 400;
                                                                 color: var(--font-subtitle-color);
                                                                 font-family: var(--dashboard-font-family);

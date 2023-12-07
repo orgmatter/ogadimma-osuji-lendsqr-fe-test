@@ -7,5 +7,5 @@ export default function AuthController(props) {
 
     const { isLogin } = useAuth();
     
-    return isLogin()? (<DashboardPage {...props} />):(<Navigate replace to="/login" />)
+    return !isLogin()? (<DashboardPage {...props} />):(<Navigate replace to="/login" />)
 }
