@@ -17,6 +17,7 @@ import { KeyboardArrowDown, VerifiedUser } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { DrawerListCompProps } from "../../../types/side-drawer-comp";
 import { useMedia } from "../../../hooks/useMedia";
+import { Images } from "../../../images";
 
 export default function DrawerListComponent(props: DrawerListCompProps) {
 
@@ -122,6 +123,11 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                     >
                         <MenuIcon className="header-menu-icon" />
                     </IconButton>
+                    <div className="logo-cover-flex">
+                        <div className="logo-cover-item">
+                            <img className="logo-img" src={Images.central.logo} alt="lendsqr logo" />
+                        </div>
+                    </div>
                 </Toolbar>
                 <div className="list-header-cover-flex">
                     <div className="list-header-cover-item">

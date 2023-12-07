@@ -3,7 +3,7 @@ import LoginPage from "../pages/LoginPage";
 
 export const Routes = [
     {
-        url: "/login",
+        url: "/",
         name: "Login",
         component: (props) => <LoginPage {...props} />
     },

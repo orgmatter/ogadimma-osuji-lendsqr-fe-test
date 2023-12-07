@@ -45,7 +45,7 @@ export default function AppBarComponent(props: AppBarProps) {
     const handleLogout = () => {
         logout("admin");
         if(!isLogin()) {
-            window.location.assign('/login');
+            window.location.assign('/');
         }
     }
     
