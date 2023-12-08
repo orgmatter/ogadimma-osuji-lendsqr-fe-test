@@ -25,6 +25,19 @@
                     font-size: 1.2rem;
                 }
             }
+            .logo-cover-flex {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+
+                .logo-cover-item {
+                    width: 55%;
+
+                    .logo-img {
+                        width: 100%;
+                    }
+                }
+            }
 
             .list-header-cover-flex {
                 width: 100%;
