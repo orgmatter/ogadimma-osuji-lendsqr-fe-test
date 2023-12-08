@@ -1,4 +1,4 @@
-@media only screen and (min-width: 568px) and (max-width: 625px) {
+@media only screen and (min-width: 568px) and (max-width: 680px) {
     body {
   
       .login-page-cover-flex {
@@ -61,10 +61,10 @@
                                                             align-items: center;
             
                                                             .logo-cover-item {
-                                                                width: 52%;
-            
+                                                                width: 120px;
+        
                                                                 .logo-img {
-                                                                    width: 100%;
+                                                                    width: 120px;
                                                                 }
                                                             }
                                                         }
@@ -93,10 +93,12 @@
                                                     padding-bottom: 15px;
         
                                                     .body-img-cover-item {
-                                                        width: 100%;
+                                                        width: 520px;
+                                                        height: 290px;
     
                                                         .body-img {
-                                                            width: 100%;
+                                                          width: 520px;
+                                                          height: 290px;
                                                         }
                                                     }
                                                 }
@@ -194,7 +196,7 @@
                                                             }
                                                             .MuiOutlinedInput-root {
                                                                 border: none;
-                                                                height: 42px;
+                                                                height: 52px;
                                                                 font-size: 0.8rem;
 
                                                                 &:hover {
@@ -230,7 +232,7 @@
                                                                     color: var(--btn-text-color);
                                                                     text-align: center;
                                                                     font-size: 0.75rem;
-                                                                    height: 40px;
+                                                                    height: 45px;
                                                                     box-shadow: none !important;
     
                                                                     &:hover {
