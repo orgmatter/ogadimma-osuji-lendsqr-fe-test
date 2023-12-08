@@ -32,7 +32,7 @@ export default function FilterForm(props: any) {
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="org">Organisation</label><br/>
+                                    <span>Organisation</span><br/>
                                     <select className="filter-input-select" id="org" name="organisation" onChange={handleFilterFormChange}>
                                         <option value="">Select</option>
                                     </select>
@@ -75,7 +75,7 @@ export default function FilterForm(props: any) {
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="status">Status</label><br/>
+                                    <span>Status</span><br/>
                                     <select className="filter-input-select" id="status" name="status" onChange={handleFilterFormChange}>
                                         <option value="">Select</option>
                                     </select>
@@ -118,7 +118,7 @@ export default function FilterForm(props: any) {
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="username">Username</label><br/>
+                                    <span>Username</span><br/>
                                     <input className="filter-input-text" id="username" type="text" name="username" onChange={handleFilterFormChange} />
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ export default function FilterForm(props: any) {
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="">Email</label><br/>
+                                    <span>Email</span><br/>
                                     <input className="filter-input-text" id="email" type="email" name="email" onChange={handleFilterFormChange} />
                                 </div>
                             </div>
@@ -200,7 +200,7 @@ export default function FilterForm(props: any) {
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="phoneno">Phone Number</label><br/>
+                                    <span>Phone Number</span><br/>
                                     <input className="filter-input-text" id="phoneno" type="text" name="phoneno" onChange={handleFilterFormChange} />
                                 </div>
                             </div>
@@ -241,7 +241,7 @@ export default function FilterForm(props: any) {
                         <div className="filter-cover-item">
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
-                                    <label htmlFor="date-joined">Date Joined</label><br/>
+                                    <span>Date Joined</span><br/>
                                     <input className="filter-input-text" id="date-joined" type="date" name="dateJoined" onChange={handleFilterFormChange} />
                                 </div>
                             </div>
