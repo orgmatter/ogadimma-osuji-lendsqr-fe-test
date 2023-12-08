@@ -18,7 +18,7 @@
               justify-content: center;
   
               .login-comp-cover-item {
-                  width: 1250px;
+                  width: 1150px;
                   max-width: 1250px;
                   border: 2px solid red;
   
@@ -65,10 +65,10 @@
                                                           align-items: flex-end;
           
                                                           .logo-cover-item {
-                                                            width: 120px;
+                                                            width: 130px;
     
                                                             .logo-img {
-                                                                width: 120px;
+                                                                width: 130px;
                                                             }
                                                         }
                                                       }
@@ -97,13 +97,14 @@
                                                   justify-content: center;
       
                                                   .body-img-cover-item {
-                                                      width: 100%;
-                                                      height: 100%;
-  
-                                                      .body-img {
-                                                          width: 100%;
-                                                      }
-                                                  }
+                                                    width: 520px;
+                                                    height: 290px;
+
+                                                    .body-img {
+                                                      width: 520px;
+                                                      height: 290px;
+                                                    }
+                                                }
                                               }
                                           }
                                       }
@@ -199,6 +200,22 @@
                                                               border-radius: 5px !important;
                                                               box-shadow: none !important;
                                                           }
+
+                                                        .MuiOutlinedInput-input {
+
+                                                        }
+                                                        .MuiOutlinedInput-root {
+                                                            border: none;
+                                                            height: 48px;
+                                                            font-size: 0.8rem;
+
+                                                            &:hover {
+                                                                border: none !important;
+                                                            }
+                                                        }
+                                                        .MuiInputBase-colorPrimary {
+
+                                                        }
                                                       }
                                                       .forgot-pwd-cover {
                                                           padding-top: 10px;
@@ -224,7 +241,7 @@
                                                                   background-color: var(--btn-color) !important;
                                                                   color: var(--btn-text-color);
                                                                   text-align: center;
-                                                                  height: 48px;
+                                                                  height: 52px;
                                                                   box-shadow: none !important;
   
                                                                   &:hover {
