@@ -18,7 +18,7 @@
               justify-content: center;
   
               .login-comp-cover-item {
-                  width: 1150px;
+                  width: 1450px;
                   max-width: 1250px;
                   border: 2px solid red;
   
@@ -91,18 +91,18 @@
                                               align-items: center;
       
                                               .body-img-cover-flex {
-                                                  width: 95%;
-                                                  height: 75%;
-                                                  display: flex;
-                                                  justify-content: center;
-      
-                                                  .body-img-cover-item {
-                                                    width: 520px;
-                                                    height: 290px;
+                                                width: 95%;
+                                                height: 75%;
+                                                display: flex;
+                                                justify-content: center;
+    
+                                                .body-img-cover-item {
+                                                    width: 550px;
+                                                    height: 340px;
 
                                                     .body-img {
-                                                      width: 520px;
-                                                      height: 290px;
+                                                        width: 550px;
+                                                        height: 340px;
                                                     }
                                                 }
                                               }
@@ -206,7 +206,7 @@
                                                         }
                                                         .MuiOutlinedInput-root {
                                                             border: none;
-                                                            height: 48px;
+                                                            height: 52px;
                                                             font-size: 0.8rem;
 
                                                             &:hover {
