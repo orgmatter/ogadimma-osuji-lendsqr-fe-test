@@ -18,9 +18,8 @@
               justify-content: center;
   
               .login-comp-cover-item {
-                  width: 1550px;
+                  width: 1750px;
                   max-width: 1250px;
-                  border: 2px solid red;
   
                   .login-comp-inner-cover-flex {
                       width: 100%;
@@ -66,10 +65,10 @@
                                                           padding-left: 50px;
           
                                                           .logo-cover-item {
-                                                            width: 130px;
+                                                            width: 140px;
     
                                                             .logo-img {
-                                                                width: 130px;
+                                                                width: 140px;
                                                             }
                                                         }
                                                       }
@@ -92,7 +91,7 @@
                                               align-items: center;
       
                                               .body-img-cover-flex {
-                                                width: 95%;
+                                                width: 100%;
                                                 height: 75%;
                                                 display: flex;
                                                 justify-content: center;
@@ -151,7 +150,7 @@
                                                       padding-bottom: 35px;
       
                                                       .form-header-text {
-                                                          font-size: 2.5rem;
+                                                          font-size: 2.7rem;
                                                           line-height: 15.64px;
                                                           font-weight: 700;
                                                           font-family: var(--login-font-family);
@@ -159,7 +158,7 @@
                                                           margin-block-start: 0.5rem;
                                                       }
                                                       .form-subheader-text {
-                                                          font-size: 1.2rem;
+                                                          font-size: 1.25rem;
                                                           line-height: 27.32px;
                                                           font-weight: 400;
                                                           font-family: var(--login-font-family);
@@ -207,7 +206,7 @@
                                                         }
                                                         .MuiOutlinedInput-root {
                                                             border: none;
-                                                            height: 52px;
+                                                            height: 56px;
                                                             font-size: 0.8rem;
 
                                                             &:hover {
@@ -242,7 +241,7 @@
                                                                   background-color: var(--btn-color) !important;
                                                                   color: var(--btn-text-color);
                                                                   text-align: center;
-                                                                  height: 52px;
+                                                                  height: 54px;
                                                                   box-shadow: none !important;
   
                                                                   &:hover {
