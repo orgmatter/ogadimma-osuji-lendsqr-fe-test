@@ -10,7 +10,7 @@ export default function DashboardComponent(props: DashboardCompProps) {
 
     const { dashboardRouteProps, drawerWidth } = props;
 
-    const [mobileOpen, setMobileOpen] = useState<boolean>(true);
+    const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
     const handleDrawerToggle = () => {
         setMobileOpen(prev => !prev);

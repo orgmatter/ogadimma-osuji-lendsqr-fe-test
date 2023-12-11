@@ -595,7 +595,7 @@
                                                             justify-content: flex-start;
     
                                                             .header-link-cover-item {
-                                                                width: 20%;
+                                                                width: 180px;
     
                                                                 .back-link-btn-cover {
                                                                     width: 100%;
@@ -637,7 +637,7 @@
                                                                     justify-content: flex-end;
     
                                                                     .header-desc-btn-cover-flex {
-                                                                        width: 57%;
+                                                                        width: 320px;
                                                                         display: flex;
                                                                         justify-content: space-between;
     
@@ -808,9 +808,10 @@
         
                                                                             .tab-box-cover {
                                                                                 width: 100%;
+                                                                                overflow-x: scroll;
         
                                                                                 .tabs-cover {
-                                                                                    width: 100%;
+                                                                                    width: 1000px;
         
                                                                                     .tab-cover {
                                                                                         width: (100%/6);

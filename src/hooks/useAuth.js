@@ -2,6 +2,8 @@ const login = (params) => {
     localStorage.setItem("admin", JSON.stringify(params));
 }
 
+// localStorage.removeItem("admin")
+
 const logout = (param) => {
     localStorage.removeItem(param);
 }

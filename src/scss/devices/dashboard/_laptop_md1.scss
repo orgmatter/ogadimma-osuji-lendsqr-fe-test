@@ -1,6 +1,5 @@
 @media only screen and (min-width: 1192px) and (max-width: 1225.5px) {
     body {
-      overflow: hidden; 
       border: 2px solid blue;
     }
   
@@ -594,7 +593,7 @@
                                                             justify-content: flex-start;
     
                                                             .header-link-cover-item {
-                                                                width: 20%;
+                                                                width: 180px;
     
                                                                 .back-link-btn-cover {
                                                                     width: 100%;
@@ -636,7 +635,7 @@
                                                                     justify-content: flex-end;
     
                                                                     .header-desc-btn-cover-flex {
-                                                                        width: 57%;
+                                                                        width: 320px;
                                                                         display: flex;
                                                                         justify-content: space-between;
     
@@ -695,7 +694,7 @@
                                                                         justify-content: flex-start;
         
                                                                         .header-intro-cover-item {
-                                                                            width: 70%;
+                                                                            width: 700px;
         
                                                                             .intro-cover-flex {
                                                                                 width: 100%;
@@ -807,9 +806,10 @@
         
                                                                             .tab-box-cover {
                                                                                 width: 100%;
+                                                                                overflow-x: scroll;
         
                                                                                 .tabs-cover {
-                                                                                    width: 100%;
+                                                                                    width: 1000px;
         
                                                                                     .tab-cover {
                                                                                         width: (100%/6);
@@ -844,9 +844,10 @@
     
                                                                 .user-details-content-cover-item {
                                                                     width: 95%;
+                                                                    overflow-x: scroll;
         
                                                                     .custom-tab-panel-cover {
-                                                                        width: 100%;
+                                                                        width: 1000px !important;
     
                                                                         .tabpanel-cover {
                                                                             width: 100%;

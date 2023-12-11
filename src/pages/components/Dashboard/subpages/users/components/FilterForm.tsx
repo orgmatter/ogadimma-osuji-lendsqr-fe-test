@@ -146,14 +146,11 @@ export default function FilterForm(props: any) {
         case "email":
             return (
                 <Menu 
-                    id="email-form"
                     className="filter-form-menu-cover"
                     anchorEl={filterFormAnchorEl}
                     open={filterFormId === "email-form"}
                     onClose={handleFilterFormClose}
-                    MenuListProps={{
-                    'aria-labelledby': 'email-btn',
-                    }}
+                    
                 >
                     <div className="filter-cover-flex">
                         <div className="filter-cover-item">

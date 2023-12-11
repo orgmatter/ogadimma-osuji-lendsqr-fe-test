@@ -1,7 +1,6 @@
 @media only screen and (min-width: 1465.20px) and (max-width: 1599px) {
   body {
-    overflow: hidden; 
-    border: 2px solid green;
+    // border: 2px solid green;
   }
 
   .dashboard-cover-flex {
@@ -591,7 +590,7 @@
                                                           justify-content: flex-start;
   
                                                           .header-link-cover-item {
-                                                              width: 20%;
+                                                            width: 180px;
   
                                                               .back-link-btn-cover {
                                                                   width: 100%;
@@ -633,7 +632,7 @@
                                                                   justify-content: flex-end;
   
                                                                   .header-desc-btn-cover-flex {
-                                                                      width: 57%;
+                                                                      width: 320px;
                                                                       display: flex;
                                                                       justify-content: space-between;
   
@@ -692,7 +691,7 @@
                                                                       justify-content: flex-start;
       
                                                                       .header-intro-cover-item {
-                                                                          width: 70%;
+                                                                          width: 700px;
       
                                                                           .intro-cover-flex {
                                                                               width: 100%;

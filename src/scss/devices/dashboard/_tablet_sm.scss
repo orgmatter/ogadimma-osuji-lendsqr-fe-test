@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) and (max-width: 680.20px) {
+@media only screen and (min-width: 400px) and (max-width: 680.20px) {
 
     .dashboard-cover-flex {
         width: 100%;
@@ -162,6 +162,11 @@
                                                                 }
                                                             }
                                                         }
+                                                        @media only screen and (max-width: 520px) {
+                                                            .search-bar-cover-flex {
+                                                                display: none !important;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
@@ -251,6 +256,11 @@
                                                 .content2-cover-flex {
                                                     width: 70%;
                                                 }
+                                            }
+                                        }
+                                        @media only screen and (max-width: 520px) {
+                                            .content2-cover-flex {
+                                                width: 400px !important;
                                             }
                                         }
                                     }
@@ -629,7 +639,7 @@
                                                             justify-content: flex-start;
     
                                                             .header-link-cover-item {
-                                                                width: 20%;
+                                                                width: 180px;
     
                                                                 .back-link-btn-cover {
                                                                     width: 100%;
@@ -655,9 +665,9 @@
                                                             padding-top: 15px;
     
                                                             .header-desc-cover-item {
-                                                                width: 50%;
     
                                                                 &:first-child {
+                                                                    width: 30%;
     
                                                                     .desc-text {
                                                                         font-size: 1.1rem;
@@ -667,18 +677,19 @@
                                                                     }
                                                                 }
                                                                 &:last-child {
+                                                                    width: 70%;
                                                                     display: flex;
                                                                     justify-content: flex-end;
     
                                                                     .header-desc-btn-cover-flex {
-                                                                        width: 57%;
+                                                                        width: 295px;
                                                                         display: flex;
                                                                         justify-content: space-between;
     
                                                                         .header-desc-btn-cover-item {
     
                                                                             .desc-btn {
-                                                                                font-size: 0.87rem;
+                                                                                font-size: 0.8rem;
                                                                                 font-weight: 600;
                                                                                 font-family: var(--dashboard-font-family);
                                                                                 border-radius: 8px;
@@ -690,6 +701,18 @@
                                                                                 &-activate {
                                                                                     border: 1.8px solid var(--btn-color);
                                                                                     color: var(--btn-color);
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    @media only screen and (max-width: 477.7px) {
+                                                                        .header-desc-btn-cover-flex {
+                                                                            width: 245px !important;
+
+                                                                            .header-desc-btn-cover-item {
+    
+                                                                                .desc-btn {
+                                                                                    font-size: 0.65rem !important;
                                                                                 }
                                                                             }
                                                                         }
@@ -735,22 +758,25 @@
                                                                             .intro-cover-flex {
                                                                                 width: 100%;
                                                                                 display: flex;
-                                                                                justify-content: space-between;
+                                                                                flex-direction: column !important;
         
                                                                                 .intro-cover-item {
         
                                                                                     &:first-child {
-                                                                                        width: 35%;
+                                                                                        width: 100% !important;
+                                                                                        display: flex;
+                                                                                        justify-content: flex-start;
         
                                                                                         .avatar-name-cover-flex {
                                                                                             width: 100%;
                                                                                             display: flex;
-                                                                                            justify-content: space-between;
+                                                                                            justify-content: flex-start !important;
+                                                                                            padding-bottom: 10px;
         
                                                                                             .avatar-name-cover-item {
         
                                                                                                 &:first-child {
-                                                                                                    width: 48%;
+                                                                                                    width: 100px;
         
                                                                                                     .avatar-img {
                                                                                                         width: 100%;
@@ -763,6 +789,7 @@
                                                                                                     display: flex;
                                                                                                     flex-direction: column;
                                                                                                     justify-content: center;
+                                                                                                    text-align: left;
         
                                                                                                     .name-text {
                                                                                                         font-size: 1.4rem;
@@ -781,12 +808,15 @@
                                                                                         }
                                                                                     }
                                                                                     &:nth-child(2) {
-                                                                                        width: 20%;
+                                                                                        width: 100% !important;
                                                                                         display: flex;
-                                                                                        justify-content: center;
+                                                                                        justify-content: flex-start;
                                                                                         align-items: center;
-                                                                                        border-right: 1px solid rgba(225, 225, 225, 0.8);
-                                                                                        border-left: 1px solid rgba(225, 225, 225, 0.8);
+                                                                                        border-top: 1px solid rgba(225, 225, 225, 0.8);
+                                                                                        border-bottom: 1px solid rgba(225, 225, 225, 0.8);
+                                                                                        border-right: none !important;
+                                                                                        border-left: none !important;
+                                                                                        padding-bottom: 15px;
         
                                                                                         .user-tier-cover {
                                                                                             font-family: var(--dashboard-font-family);
@@ -804,14 +834,14 @@
                                                                                         }
                                                                                     }
                                                                                     &:last-child {
-                                                                                        width: 45%;
+                                                                                        width: 100% !important;
                                                                                         display: flex;
                                                                                         justify-content: flex-start;
                                                                                         align-items: center;
         
                                                                                         .bank-acct-info-cover {
                                                                                             font-family: var(--dashboard-font-family);
-                                                                                            margin-left: 25px;
+                                                                                            margin-left: 0px !important;
         
                                                                                             .income-text {
                                                                                                 font-size: 1.7rem;
@@ -835,16 +865,17 @@
                                                                         width: 100%;
                                                                         display: flex;
                                                                         justify-content: center;
-                                                                        padding-top: 30px;
+                                                                        padding-top: 10px;
         
                                                                         .header-tabs-cover-item {
                                                                             width: 100%;
         
                                                                             .tab-box-cover {
                                                                                 width: 100%;
+                                                                                overflow-x: scroll;
         
                                                                                 .tabs-cover {
-                                                                                    width: 100%;
+                                                                                    width: 1000px;
         
                                                                                     .tab-cover {
                                                                                         width: (100%/6);
@@ -879,9 +910,10 @@
     
                                                                 .user-details-content-cover-item {
                                                                     width: 95%;
+                                                                    overflow-x: scroll;
         
                                                                     .custom-tab-panel-cover {
-                                                                        width: 100%;
+                                                                        width: 1000px;
     
                                                                         .tabpanel-cover {
                                                                             width: 100%;

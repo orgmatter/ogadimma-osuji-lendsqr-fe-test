@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1199px) and (max-width: 1599px) {
   body {
-    overflow: hidden; 
+
   }
 
   .login-page-cover-flex {
@@ -192,6 +192,38 @@
                                                                     }
                                                                 }
                                                             }
+                                                        }
+                                                        
+                                                        &-error-email {
+
+                                                            &:first-child {
+
+                                                                .login-input {
+                                                                    border: 2px solid red !important;
+                                                                }
+
+                                                                .error-validation-msg {
+                                                                    font-size: 0.9rem;
+                                                                    font-family: var(--login-font-family);
+                                                                    color: red;
+                                                                }
+                                                            }
+                                                        }
+                                                        &-error-password {
+
+                                                            &:nth-child(2) {
+
+                                                                .login-input {
+                                                                    border: 2px solid red !important;
+                                                                }
+
+                                                                .error-validation-msg {
+                                                                    font-size: 0.9rem;
+                                                                    font-family: var(--login-font-family);
+                                                                    color: red;
+                                                                }
+                                                            }
+                                                            
                                                         }
     
                                                         .login-input {
