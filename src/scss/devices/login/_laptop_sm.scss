@@ -192,6 +192,38 @@
                                                                     }
                                                                 }
                                                             }
+
+                                                            &-error-email {
+
+                                                                &:first-child {
+    
+                                                                    .login-input {
+                                                                        border: 2px solid red !important;
+                                                                    }
+    
+                                                                    .error-validation-msg {
+                                                                        font-size: 0.85rem;
+                                                                        font-family: var(--login-font-family);
+                                                                        color: red;
+                                                                    }
+                                                                }
+                                                            }
+                                                            &-error-password {
+    
+                                                                &:nth-child(2) {
+    
+                                                                    .login-input {
+                                                                        border: 2px solid red !important;
+                                                                    }
+    
+                                                                    .error-validation-msg {
+                                                                        font-size: 0.85rem;
+                                                                        font-family: var(--login-font-family);
+                                                                        color: red;
+                                                                    }
+                                                                }
+                                                                
+                                                            }
         
                                                             .login-input {
                                                                 border: 1px solid #545F7D26 !important;
