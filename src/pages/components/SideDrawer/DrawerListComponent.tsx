@@ -11,10 +11,13 @@ import {
     MenuItem,
     Toolbar,
     Divider,
-    IconButton
+    IconButton,
+    TextField,
+    InputAdornment
 } from "@mui/material";
 import { KeyboardArrowDown, VerifiedUser } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
 import { DrawerListCompProps } from "../../../types/side-drawer-comp";
 import { useMedia } from "../../../hooks/useMedia";
 import { Images } from "../../../images";
@@ -126,6 +129,33 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                     <div className="logo-cover-flex">
                         <div className="logo-cover-item">
                             <img className="logo-img" src={Images.central.logo} alt="lendsqr logo" />
+                        </div>
+                    </div>
+                </Toolbar>
+                <Toolbar className="search-toolbar-cover">
+                    <div className="drawer-search-bar-cover-flex">
+                        <div className="search-bar-cover-item">
+                            <TextField
+                                type="text"
+                                className="search-input"
+                                value={""}
+                                name="search"
+                                placeholder="Search for anything"
+                                fullWidth
+                                InputProps={{
+                                    endAdornment: 
+                                    <InputAdornment className="input-adorn-cover" position="end">
+                                        <Button
+                                            className="search-btn"
+                                            type="button"
+                                            variant="contained"
+                                            color="primary"
+                                        >
+                                            <SearchIcon className="search-icon" />
+                                        </Button>
+                                    </InputAdornment>
+                                }}
+                            />
                         </div>
                     </div>
                 </Toolbar>

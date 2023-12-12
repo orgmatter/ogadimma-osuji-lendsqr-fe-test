@@ -19,7 +19,7 @@ export default function DrawerComponent(props: DrawerProps) {
                 open={mobileOpen}
                 onClose={handleDrawerToggle}
                 ModalProps={{
-                    keepMounted: true, // Better open performance on mobile.
+                    keepMounted: true,
                 }}
                 sx={{
                     display: media.matches? "block":"none",
