@@ -52,7 +52,8 @@ This application would not have been easily put together without the help of som
 ## How To Run The Application
 This application is built with ReactJS and Typescript;\ Below are steps to follow when setting it up to run on your local machine.
 - First and foremost, make sure you are running on a node version of 14 and above for a smooth and stable operation then;
-- Clone the repo into your local machine, you can do that with this command -\ **git clone https://github.com/orgmatter/ogadimma-osuji-lendsqr-fe-test.git** which will create a new directory called **ogadimma-osuji-lendsqr-fe-test** in your computer
+- Clone the repo into your local machine, you can do that with this command -
+ **git clone https://github.com/orgmatter/ogadimma-osuji-lendsqr-fe-test.git** which will create a new directory called **ogadimma-osuji-lendsqr-fe-test** in your computer
 - CD into your new project directory and run **`npm install`** to install all dependencies used by the application
 - After installing all the dependencies with the above command, you can launch the application on a localhost:3000 using this command **`npm start`**
 
