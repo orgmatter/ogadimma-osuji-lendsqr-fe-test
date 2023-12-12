@@ -1,47 +1,76 @@
-# Getting Started with Create React App
+# Project Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Lendsqr frontend test, is a project that requires the candidate to implement several screens related to the corebanking dashboard of an organisation.\
+The screen comprises of several UI flows and the candidate is expected to implement them as well as their functionalities.
 
-In the project directory, you can run:
+## Software and technical requirements
 
-### `npm start`
+The project is built with ReactJS/TypeScript and it requires a node version of 14 and above to run optimally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project boilerplates and roadmaps
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Below we would be looking at the various project folder structures and how best to navigate through it efficiently.
 
-### `npm test`
+### `The App entry point`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is the basic App.tsx file where every other tsx files are launched from, and it is found within the root of the src directory.
 
-### `npm run build`
+### `The pages and component`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As the name implies, these folders is where all pages and components of the application are designed from respectively.\
+The pages folder include the Login and the Dashboard files as well as the **auth-controller file** which serves as a middleware that controlles both authenticated and unaunthorised access to the app, and can be accessed thus; **src->pages->Login.tsx|Dashboard.tsx|auth-controller.js**\
+The component folder includes all components related to the the Dashboard, Login, Header and Side Drawer of the application. It can be accessed thus; **src->components->Dashboard|Login|Header|SideDrawer** respectively
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `The hooks`
+The hooks folder includes all custom or user defined hooks used accross the application. It can be accessed thus; **src->hooks->useAuth.js|useFormValidation.js|useMedia.js|useStorage.js|useTypes.js** respectively
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `The images`
+The images folder includes an index.js file that maps to all image resources found in the public asset folder of the application. It can be accessed thus; **src->images->index.js**
 
-### `npm run eject`
+### `The URL routes`
+The routes folder carries the index.js file that list all url routes and subroutes of the application and it can be accessed thus: **src->routes->index.js**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `The store`
+This is the folder where all operations related to the react redux state management are handled. It comprises of the actions and reducers folders, initial states and types js files and can be accessed by navigating into the **src->store->index.js|actions|reducers|types|states.js** respectively
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `The types`
+The types folder is where all datatypes and interfaces related to the various components are declared. It can be accessed by going into the **src->types->dashboard.ts|login.ts|header-comp.ts|side-drawer-comp.ts** respectively
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `The styles`
+The styling of this application was built using SASS a robust and highly programmable css library. Accessing this folder would various subfolders that are used in styling the application such as the pages->partials, the defaults that holds the variables|typographies files, and most importantly the device folder for all styles related to the device screens and responsiveness. To access this folder you can navigate into the **src->sass->pages|defaults|devices|app.scss** respectively.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Third party integration - credits
+This application would not have been easily put together without the help of some third party support. So I'd like to use this opportunity to give credits to the following vendors listed below:\
+- [Material UI - for all UI support](https://mui.com)
+- [Mockbin - for all API mocks and simulations](https://mockbin.io)
+- [Netlify - for all hosting services](https://netlify.app)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# Documentation for Lendsqr Frontend Test
+## How to run the application
+This application is built with ReactJS and Typescript; Below are steps to follow when setting it up to run on your local device.
+- First and foremost, make sure you are running on a node version of 14 and above for a smooth and stable operation then;
+- Clone the repo into your local machine, you can do that with this command - **git clone https://github.com/orgmatter/ogadimma-osuji-lendsqr-fe-test.git** which will create a new directory called **ogadimma-osuji-lendsqr-fe-test** in your computer
+- CD into your new project directory and run **`npm install`** to install all dependencies used by the application
+- After installing all the dependencies with the above command, you can run the command **`npm start`** to launch the application on a localhost:3000.
+
+
+## Usage and Demo
+The app is currently being hosted on Netlify, the url and login credentials to the app are provided below;
+
+### `The Url`
+
+[Ogadimma Osuji Lendsqr Frontend Test](https://ogadimma-osuji-lendsqr-fe-test.netlify.app)
+
+### `The login credentials`
+
+-   email: "admin1@lendsqr.com"
+    password: "password1"
+
+-   email: "admin2@lendsqr.com"
+    password: "password2"
+
+-   email: "admin3@lendsqr.com"
+    password: "password3"

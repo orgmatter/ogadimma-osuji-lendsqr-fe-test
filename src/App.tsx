@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import { Routes as ROUTES } from "./routes";
-import './scss/app.scss';
+import './sass/app.scss';
 
 const dashboardRouteProps = ROUTES.find(dashboardRouteProp => dashboardRouteProp.name === "Dashboard");
 
