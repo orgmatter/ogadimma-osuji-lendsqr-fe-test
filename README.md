@@ -43,14 +43,14 @@ The styling of this application was built using SASS a robust and highly program
 
 
 ## Third Party Integration - Credits
-This application would not have been easily put together without the help of some third party support. So I'd like to use this opportunity to give credits to the following vendors listed below:\
+This application would not have been easily put together without the help of some third party support. So I'd like to use this opportunity to give credits to the following vendors listed below:
 - [Material UI - for all UI support](https://mui.com)
 - [Mockbin - for all API mocks and simulations](https://mockbin.io)
 - [Netlify - for all hosting services](https://netlify.app)
 
 
 ## How To Run The Application
-This application is built with ReactJS and Typescript; Below are steps to follow when setting it up to run on your local device.
+This application is built with ReactJS and Typescript;\ Below are steps to follow when setting it up to run on your local machine.
 - First and foremost, make sure you are running on a node version of 14 and above for a smooth and stable operation then;
 - Clone the repo into your local machine, you can do that with this command - **git clone https://github.com/orgmatter/ogadimma-osuji-lendsqr-fe-test.git** which will create a new directory called **ogadimma-osuji-lendsqr-fe-test** in your computer
 - CD into your new project directory and run **`npm install`** to install all dependencies used by the application
