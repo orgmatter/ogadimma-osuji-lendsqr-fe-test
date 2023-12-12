@@ -111,7 +111,11 @@
 
 .menu-cover {
     width: 400px;
-    margin-left: -25px;
+    margin-left: -15px;
+
+    .MuiMenu-list {
+        width: 170px;
+    }
 
     .menu-item-cover {
         font-size: 0.85rem;

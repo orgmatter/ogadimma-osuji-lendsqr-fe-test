@@ -10,6 +10,7 @@ export default function DashboardComponent(props: DashboardCompProps) {
 
     const { dashboardRouteProps, drawerWidth } = props;
 
+    //--> this sets the states for the side drawer on mobile screen
     const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
     const handleDrawerToggle = () => {

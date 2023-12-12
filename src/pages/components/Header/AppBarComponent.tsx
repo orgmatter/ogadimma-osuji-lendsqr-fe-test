@@ -17,7 +17,6 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { AppBarProps } from "../../../types/header-comp";
 import { Images } from "../../../images";
 import useAuth from "../../../hooks/useAuth";
-import { useLocation } from "react-router";
 import { useMedia } from "../../../hooks/useMedia";
 
 export default function AppBarComponent(props: AppBarProps) {
@@ -29,8 +28,6 @@ export default function AppBarComponent(props: AppBarProps) {
     const menuOpen = Boolean(anchorEl);
 
     const { logout, isLogin, getAdmin } = useAuth();
-
-    const location = useLocation();
 
     const { media } = useMedia("(max-width: 680.20px)");
 

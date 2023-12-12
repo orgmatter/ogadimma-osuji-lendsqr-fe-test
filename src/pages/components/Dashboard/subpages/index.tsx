@@ -6,6 +6,7 @@ export default function DashboardSubpages() {
 
     const location = useLocation();
 
+    //--> get the properties of the subpage when the url is active
     const subpagesObj = SUBPAGES_DATA.find(subpage => subpage.url === location.pathname);
 
     const subpageComp = subpagesObj? subpagesObj.component(): (

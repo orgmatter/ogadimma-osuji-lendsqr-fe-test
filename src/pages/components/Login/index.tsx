@@ -27,8 +27,6 @@ function LoginComponent(props: any) {
 
     const [errorValidation, setErrorValidation] = useState<any>(null);
 
-    console.log("error validation: ", errorValidation)
-
     const loginState = useSelector(({loginState}) => loginState);
 
     const { isLoginFormValid, getInvalidField } = useFormValidation();
@@ -45,7 +43,7 @@ function LoginComponent(props: any) {
     const handleLoginBtnClick = (e:React.MouseEvent<HTMLButtonElement>) => {
         const params = inputVal;
         
-        // login form validation here
+        //--> login form validation here
         const validateParams = [
             {
                 email: inputVal.email,

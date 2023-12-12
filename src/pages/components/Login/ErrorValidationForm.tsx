@@ -5,6 +5,7 @@ import {
     IconButton
 } from "@mui/material";
 
+//--> declare error validation type here
 type ErrorValidationProps = {
     errorValidation: {
         email?: string

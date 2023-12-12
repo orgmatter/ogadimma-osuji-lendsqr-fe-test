@@ -8,6 +8,7 @@ import Savings from "./savings";
 import Whitelist from "./whitelist";
 import UserDetails from "./users/user-details";
 
+//--> this is a list of all subpages link in dashboard side drawer
 export const subpagesData = [
     {
         url: "/dashboard/customers/users",

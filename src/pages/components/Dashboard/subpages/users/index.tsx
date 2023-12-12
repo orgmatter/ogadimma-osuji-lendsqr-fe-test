@@ -19,7 +19,7 @@ export default function Users() {
     
     const currLocation = useLocation();
     const subpage = subpagesData.find(subpageData => subpageData.url === currLocation.pathname);
-    const { setUserDetails, setStorageData, getStorageData } = useStorage();
+    const { setUserDetails, setStorageData } = useStorage();
 
     const tableDataParam = {
         key: "tableData",
