@@ -11,8 +11,14 @@ export default function FilterForm(props: any) {
         handleFilterFormClose,
         handleResetBtnClick,
         handleFilterBtnClick,
-        handleFilterFormChange
+        handleFilterFormChange,
+        filterInputVal,
+        tableData
     } = props
+
+    const optionTableData = tableData.filter((tData: any, index: any, self: any) => {
+        return index === self.findIndex((data: any) => data.organisation === tData.organisation)
+    })
     
     switch(filterFormType) {
 
@@ -35,6 +41,11 @@ export default function FilterForm(props: any) {
                                     <span>Organisation</span><br/>
                                     <select className="filter-input-select" id="org" name="organisation" onChange={handleFilterFormChange}>
                                         <option value="">Select</option>
+                                        {
+                                            optionTableData.map((tData:any, index:any) => {
+                                                return <option value={tData.organisation}>{tData.organisation}</option>
+                                            })
+                                        }
                                     </select>
                                 </div>
                             </div>
@@ -78,6 +89,9 @@ export default function FilterForm(props: any) {
                                     <span>Status</span><br/>
                                     <select className="filter-input-select" id="status" name="status" onChange={handleFilterFormChange}>
                                         <option value="">Select</option>
+                                        <option value="active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                        <option value="blacklisted">Blacklisted</option>
                                     </select>
                                 </div>
                             </div>
@@ -119,7 +133,7 @@ export default function FilterForm(props: any) {
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
                                     <span>Username</span><br/>
-                                    <input className="filter-input-text" id="username" type="text" name="username" onChange={handleFilterFormChange} />
+                                    <TextField className="filter-input-text" id="username" type="text" name="username" value={filterInputVal?.username} onChange={handleFilterFormChange} fullWidth/>
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
@@ -157,7 +171,7 @@ export default function FilterForm(props: any) {
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
                                     <span>Email</span><br/>
-                                    <input className="filter-input-text" id="email" type="email" name="email" onChange={handleFilterFormChange} />
+                                    <TextField className="filter-input-text" id="email" type="email" name="email" value={filterInputVal?.email} onChange={handleFilterFormChange} fullWidth/>
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
@@ -198,7 +212,7 @@ export default function FilterForm(props: any) {
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
                                     <span>Phone Number</span><br/>
-                                    <input className="filter-input-text" id="phoneno" type="text" name="phoneno" onChange={handleFilterFormChange} />
+                                    <TextField className="filter-input-text" id="phoneno" type="text" name="phoneno" value={filterInputVal?.phoneno} onChange={handleFilterFormChange} fullWidth/>
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
@@ -239,7 +253,7 @@ export default function FilterForm(props: any) {
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
                                     <span>Date Joined</span><br/>
-                                    <input className="filter-input-text" id="date-joined" type="date" name="dateJoined" onChange={handleFilterFormChange} />
+                                    <TextField className="filter-input-text" id="date-joined" type="date" name="dateJoined" value={filterInputVal?.dateJoined} onChange={handleFilterFormChange} fullWidth/>
                                 </div>
                             </div>
                             <div className="btn-cover-flex">

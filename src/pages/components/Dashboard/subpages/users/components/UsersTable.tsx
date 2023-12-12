@@ -51,6 +51,8 @@ export default function UsersTable(props: UserTableProps) {
 
     const [filterInputVal, setFilterInputVal] = useState({});
 
+    console.log("filter input val: ", filterInputVal)
+
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(50);
 
@@ -163,7 +165,10 @@ export default function UsersTable(props: UserTableProps) {
                                         filterFormOpen={filterFormOpen}
                                         filterFormAnchorEl={filterFormAnchorEl} 
                                         filterFormType="organisation" 
-                                        filterFormId={filterFormId} 
+                                        filterFormId={filterFormId}
+                                        filterInputVal={filterInputVal}
+                                        tableData={tableData}
+                                        
                                     />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
@@ -188,7 +193,9 @@ export default function UsersTable(props: UserTableProps) {
                                         filterFormOpen={filterFormOpen} 
                                         filterFormAnchorEl={filterFormAnchorEl} 
                                         filterFormType="username" 
-                                        filterFormId={filterFormId} 
+                                        filterFormId={filterFormId}
+                                        filterInputVal={filterInputVal} 
+                                        tableData={tableData}
                                     />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
@@ -213,7 +220,9 @@ export default function UsersTable(props: UserTableProps) {
                                         filterFormOpen={filterFormOpen} 
                                         filterFormAnchorEl={filterFormAnchorEl} 
                                         filterFormType="email" 
-                                        filterFormId={filterFormId} 
+                                        filterFormId={filterFormId}
+                                        filterInputVal={filterInputVal} 
+                                        tableData={tableData}
                                     />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
@@ -238,7 +247,9 @@ export default function UsersTable(props: UserTableProps) {
                                         filterFormOpen={filterFormOpen} 
                                         filterFormAnchorEl={filterFormAnchorEl} 
                                         filterFormType="phoneno" 
-                                        filterFormId={filterFormId} 
+                                        filterFormId={filterFormId}
+                                        filterInputVal={filterInputVal} 
+                                        tableData={tableData}
                                     />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
@@ -263,7 +274,9 @@ export default function UsersTable(props: UserTableProps) {
                                         filterFormOpen={filterFormOpen} 
                                         filterFormAnchorEl={filterFormAnchorEl} 
                                         filterFormType="date_joined" 
-                                        filterFormId={filterFormId} 
+                                        filterFormId={filterFormId}
+                                        filterInputVal={filterInputVal} 
+                                        tableData={tableData}
                                     />
                                 </TableCell>
                                 <TableCell className="table-cell-cover">
@@ -288,7 +301,9 @@ export default function UsersTable(props: UserTableProps) {
                                         filterFormOpen={filterFormOpen} 
                                         filterFormAnchorEl={filterFormAnchorEl} 
                                         filterFormType="status" 
-                                        filterFormId={filterFormId} 
+                                        filterFormId={filterFormId}
+                                        filterInputVal={filterInputVal} 
+                                        tableData={tableData}
                                     />
                                 </TableCell>
                                 <TableCell className="table-cell-cover"></TableCell>

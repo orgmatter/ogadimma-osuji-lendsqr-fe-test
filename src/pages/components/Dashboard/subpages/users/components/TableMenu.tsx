@@ -32,19 +32,19 @@ export default function TableMenu(props: any) {
                     className="menu-item-cover"
                     onClick={(event) => handleShowUserDetailsPage(event, tData, "view_details")}
                 >
-                    <VisibilityIcon /> View Details
+                    <VisibilityIcon className="menu-item-icon" /> &nbsp; View Details
                 </MenuItem>
                 <MenuItem 
                     className="menu-item-cover"
                     onClick={(event) => handleTableMenuItemClick(event, tData, tDataIndex, "blacklist_user")}
                 >
-                    <PersonOffIcon /> Blacklist User
+                    <PersonOffIcon className="menu-item-icon" /> &nbsp; Blacklist User
                 </MenuItem>
                 <MenuItem 
                     className="menu-item-cover"
                     onClick={(event) => handleTableMenuItemClick(event, tData, tDataIndex, "activate_user")}
                 >
-                    <PersonAddIcon /> Activate User
+                    <PersonAddIcon className="menu-item-icon" /> &nbsp; Activate User
                 </MenuItem>
             </Menu>
         </div>
