@@ -8,9 +8,10 @@ import {
     TableRow,
     Paper,
     IconButton,
-    TablePagination
+    TablePagination,
+    Button
  } from '@mui/material';
- import { FilterList, MoreVert } from "@mui/icons-material";
+ import { FilterList, MoreVert, RestartAlt } from "@mui/icons-material";
  import { UserTableProps } from "../../../../../../types/dashboard";
  import { TableRowData } from "../../../../../../types/dashboard";
  import FilterForm from "./FilterForm";
@@ -99,7 +100,6 @@ export default function UsersTable(props: UserTableProps) {
 
     const handleResetBtnClick = (event:React.MouseEvent<HTMLButtonElement>, btnId:string) => {
         const resetTableData = JSON.parse(getStorageData("tableData") as any);
-        console.log("reset: ", resetTableData)
         dispatchFilter(TableResetAction(resetTableData));
 
         // --> clear storage data
@@ -306,7 +306,11 @@ export default function UsersTable(props: UserTableProps) {
                                         tableData={tableData}
                                     />
                                 </TableCell>
-                                <TableCell className="table-cell-cover"></TableCell>
+                                <TableCell className="table-cell-cover table-cell-cover-reset">
+                                    <Button className="reset-btn" variant="contained" onClick={(event) => handleResetBtnClick(event, "")}>
+                                        Reset <RestartAlt className="reset-icon" />
+                                    </Button>
+                                </TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody className="table-body-cover">

@@ -50,13 +50,13 @@ export default function FilterForm(props: any) {
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
-                                <div className="btn-cover-item">
+                                {/* <div className="btn-cover-item">
                                     <Button 
                                         variant="outlined" 
                                         className="filter-btn"
                                         onClick={(event) => handleResetBtnClick(event, "organisation")} 
                                     >Reset</Button>
-                                </div>
+                                </div> */}
                                 <div className="btn-cover-item">
                                     <Button 
                                         variant="contained" 
@@ -96,13 +96,13 @@ export default function FilterForm(props: any) {
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
-                                <div className="btn-cover-item">
+                                {/* <div className="btn-cover-item">
                                     <Button 
                                         variant="outlined" 
                                         className="filter-btn"
                                         onClick={(event) => handleResetBtnClick(event, "status")} 
                                     >Reset</Button>
-                                </div>
+                                </div> */}
                                 <div className="btn-cover-item">
                                     <Button 
                                         variant="contained" 
@@ -133,17 +133,17 @@ export default function FilterForm(props: any) {
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
                                     <span>Username</span><br/>
-                                    <TextField className="filter-input-text" id="username" type="text" name="username" value={filterInputVal?.username} onChange={handleFilterFormChange} fullWidth/>
+                                    <TextField className="filter-input-text" id="username" type="text" name="username" value={filterInputVal?.username} onChange={handleFilterFormChange} placeholder="Filter by username" fullWidth/>
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
-                                <div className="btn-cover-item">
+                                {/* <div className="btn-cover-item">
                                     <Button 
                                         variant="outlined" 
                                         className="filter-btn"
                                         onClick={(event) => handleResetBtnClick(event, "username")} 
                                     >Reset</Button>
-                                </div>
+                                </div> */}
                                 <div className="btn-cover-item">
                                     <Button 
                                         variant="contained" 
@@ -171,17 +171,17 @@ export default function FilterForm(props: any) {
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
                                     <span>Email</span><br/>
-                                    <TextField className="filter-input-text" id="email" type="email" name="email" value={filterInputVal?.email} onChange={handleFilterFormChange} fullWidth/>
+                                    <TextField className="filter-input-text" id="email" type="email" name="email" value={filterInputVal?.email} onChange={handleFilterFormChange} placeholder="Filter by email" fullWidth/>
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
-                                <div className="btn-cover-item">
+                                {/* <div className="btn-cover-item">
                                     <Button 
                                         variant="outlined" 
                                         className="filter-btn"
                                         onClick={(event) => handleResetBtnClick(event, "email")} 
                                     >Reset</Button>
-                                </div>
+                                </div> */}
                                 <div className="btn-cover-item">
                                     <Button 
                                         variant="contained" 
@@ -212,17 +212,17 @@ export default function FilterForm(props: any) {
                             <div className="form-cover-flex">
                                 <div className="form-cover-item">
                                     <span>Phone Number</span><br/>
-                                    <TextField className="filter-input-text" id="phoneno" type="text" name="phoneno" value={filterInputVal?.phoneno} onChange={handleFilterFormChange} fullWidth/>
+                                    <TextField className="filter-input-text" id="phoneno" type="text" name="phoneno" value={filterInputVal?.phoneno} onChange={handleFilterFormChange} placeholder="Filter by number" fullWidth/>
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
-                                <div className="btn-cover-item">
+                                {/* <div className="btn-cover-item">
                                     <Button 
                                         variant="outlined" 
                                         className="filter-btn"
                                         onClick={(event) => handleResetBtnClick(event, "phoneno")} 
                                     >Reset</Button>
-                                </div>
+                                </div> */}
                                 <div className="btn-cover-item">
                                     <Button 
                                         variant="contained" 
@@ -257,13 +257,13 @@ export default function FilterForm(props: any) {
                                 </div>
                             </div>
                             <div className="btn-cover-flex">
-                                <div className="btn-cover-item">
+                                {/* <div className="btn-cover-item">
                                     <Button 
                                         variant="outlined" 
                                         className="filter-btn"
                                         onClick={(event) => handleResetBtnClick(event, "dateJoined")} 
                                     >Reset</Button>
-                                </div>
+                                </div> */}
                                 <div className="btn-cover-item">
                                     <Button 
                                         variant="contained" 

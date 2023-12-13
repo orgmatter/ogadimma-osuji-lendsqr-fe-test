@@ -581,7 +581,6 @@
                                                                         text-align: center;
                                                                         padding-top: 10px;
                                                                         padding-bottom: 10px;
-                                                                        // width: (100%/6);
     
                                                                         .filter-icon-btn {
     
@@ -590,6 +589,25 @@
                                                                                 font-weight: 400;
                                                                                 color: var(--font-title-color);
                                                                                 font-family: var(--dashboard-font-family);
+                                                                            }
+                                                                        }
+
+                                                                        &-reset {
+
+                                                                            .reset-btn {
+                                                                                background-color: var(--btn-color);
+                                                                                text-transform: capitalize !important;
+                                                                                font-size: 0.75rem;
+                                                                                color: #fff;
+                                                                                font-family: var(--dashboard-font-family);
+                                                                                height: 25px;
+                                                                                padding-left: 8px;
+                                                                                padding-right: 8px;
+                                                                                border-radius: 12px;
+    
+                                                                                .reset-icon {
+                                                                                    font-size: 0.8rem;
+                                                                                }
                                                                             }
                                                                         }
                                                                     }

@@ -26,19 +26,21 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
 
     const { dashboardRouteProps, handleDrawerToggle } = props
 
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [anchorEl, setAnchorEl] = useState<HTMLElement|null>(null);
+    const menuOpen = Boolean(anchorEl)
     const currLocation = useLocation();
 
     const { media } = useMedia("(max-width: 680.20px)");
 
     const handleMenuOpen = (e: React.MouseEvent<HTMLButtonElement>) => {
-        setMenuOpen(prev => !prev)
+        const currTarget = e.currentTarget
+        setAnchorEl(currTarget)
     }
     const handleMenuClose = () => {
-        setMenuOpen(false);
+        setAnchorEl(null);
     }
     const handleMenuSelect = () => {
-        setMenuOpen(false);
+        setAnchorEl(null);
     }
 
     const customerRoutes = dashboardRouteProps?.dashboardRoutes.find(dashboardRoute => dashboardRoute.title === "CUSTOMERS");
@@ -170,7 +172,9 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                                 Switch Organisation <KeyboardArrowDown />
                             </Button>
                             <Menu
+                                id="side-drawer-menu"
                                 className="list-header-menu"
+                                anchorEl={anchorEl}
                                 open={menuOpen}
                                 onClose={handleMenuClose}
                             >

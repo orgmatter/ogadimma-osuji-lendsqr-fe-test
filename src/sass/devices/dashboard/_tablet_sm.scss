@@ -595,6 +595,26 @@
                                                                                 font-family: var(--dashboard-font-family);
                                                                             }
                                                                         }
+
+                                                                        &-reset {
+
+                                                                            .reset-btn {
+                                                                                // box-shadow: none;
+                                                                                background-color: var(--btn-color);
+                                                                                text-transform: capitalize !important;
+                                                                                font-size: 0.75rem;
+                                                                                color: #fff;
+                                                                                font-family: var(--dashboard-font-family);
+                                                                                height: 25px;
+                                                                                padding-left: 8px;
+                                                                                padding-right: 8px;
+                                                                                border-radius: 12px;
+    
+                                                                                .reset-icon {
+                                                                                    font-size: 0.8rem;
+                                                                                }
+                                                                            }
+                                                                        }
                                                                     }
                                                                 }
                                                             }
