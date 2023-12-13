@@ -593,16 +593,18 @@
                                                                         }
 
                                                                         &-reset {
+                                                                            padding-left: 0.5px;
+                                                                            padding-right: 5px;
 
                                                                             .reset-btn {
                                                                                 background-color: var(--btn-color);
                                                                                 text-transform: capitalize !important;
-                                                                                font-size: 0.75rem;
+                                                                                font-size: 0.7rem;
                                                                                 color: #fff;
                                                                                 font-family: var(--dashboard-font-family);
                                                                                 height: 25px;
-                                                                                padding-left: 8px;
-                                                                                padding-right: 8px;
+                                                                                padding-left: 6px;
+                                                                                padding-right: 6px;
                                                                                 border-radius: 12px;
     
                                                                                 .reset-icon {
