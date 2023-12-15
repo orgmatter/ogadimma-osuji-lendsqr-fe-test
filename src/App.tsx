@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import { Routes as ROUTES } from "./routes";
 import './sass/app.scss';
+import Helmet from 'react-helmet';
 
 const dashboardRouteProps = ROUTES.find(dashboardRouteProp => dashboardRouteProp.name === "Dashboard");
 
@@ -14,6 +15,9 @@ const setting = dashboardRouteProps?.dashboardRoutes?.find(dashboardRoute => das
 function App() {
   return (
     <Provider store={store}>
+      <Helmet>
+        <title>Lendsqr Frontend Test</title>
+      </Helmet>
       <div className="app-cover-flex">
         <div className="app-cover-item">
           <Router>
