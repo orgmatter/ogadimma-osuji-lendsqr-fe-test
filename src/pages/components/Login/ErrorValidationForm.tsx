@@ -52,7 +52,7 @@ export const ErrorValidationForm = (props: ErrorValidationProps) => {
                             required
                         />
                         <div className="error-validation-msg">
-                            {errorValidObj.name === "email" && errorValidObj.errorMsg.charAt(0).toUpperCase()+errorValidObj.errorMsg.slice(1)}
+                            {errorValidObj.name === "email" && <span>{errorValidObj.errorMsg.charAt(0).toUpperCase()+errorValidObj.errorMsg.slice(1)}</span>}
                         </div>
                     </div>
                     
@@ -80,7 +80,7 @@ export const ErrorValidationForm = (props: ErrorValidationProps) => {
                             }}
                         />
                         <div className="error-validation-msg">
-                            {errorValidObj.name === "password" && errorValidObj.errorMsg.charAt(0).toUpperCase()+errorValidObj.errorMsg.slice(1)}
+                            {errorValidObj.name === "password" && <span>{errorValidObj.errorMsg.charAt(0).toUpperCase()+errorValidObj.errorMsg.slice(1)}</span>}
                         </div>
                     </div>
                 </>
@@ -101,7 +101,7 @@ export const ErrorValidationForm = (props: ErrorValidationProps) => {
                             required
                         />
                         <div className="error-validation-msg">
-                            {errorValidate.errorMsg.charAt(0).toUpperCase()+errorValidate.errorMsg.slice(1)}
+                            <span dangerouslySetInnerHTML={{__html: errorValidate.errorMsg.charAt(0).toUpperCase()+errorValidate.errorMsg.slice(1)}}></span>
                         </div>
                     </div>
                 ): (
@@ -128,7 +128,7 @@ export const ErrorValidationForm = (props: ErrorValidationProps) => {
                             }}
                         />
                         <div className="error-validation-msg">
-                            {errorValidate.errorMsg.charAt(0).toUpperCase()+errorValidate.errorMsg.slice(1)}
+                            <span dangerouslySetInnerHTML={{__html: errorValidate.errorMsg.charAt(0).toUpperCase()+errorValidate.errorMsg.slice(1)}}></span>
                         </div>
                     </div>
                 )

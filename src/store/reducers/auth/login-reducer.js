@@ -8,6 +8,7 @@ export default function LoginReducer(initialState = state.auth, action) {
         LOGIN_START,
         LOGIN_SUCCESS,
         LOGIN_FAILED,
+        LOGIN_CREDENTIALS_FAILED,
         LOGIN_STOP
     } = useTypes();
 
@@ -21,6 +22,12 @@ export default function LoginReducer(initialState = state.auth, action) {
             return {
                 ...state.auth,
                 status: "login_success"
+            }
+        case LOGIN_CREDENTIALS_FAILED:
+            return {
+                ...state.auth,
+                status: "login_credentials_failed",
+                msg: action.msg
             }
         case LOGIN_FAILED:
             return {

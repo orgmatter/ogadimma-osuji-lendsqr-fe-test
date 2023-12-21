@@ -8,6 +8,7 @@ export const LoginAction = (params) => {
         LOGIN_START,
         LOGIN_SUCCESS,
         LOGIN_FAILED,
+        LOGIN_CREDENTIALS_FAILED,
         LOGIN_STOP
     } = useTypes();
 
@@ -30,10 +31,16 @@ export const LoginAction = (params) => {
         .then(resp => resp.json())
         .then(res => {
             const admin = res.admin.find(admin => admin.email === email && admin.password === password);
-            login(admin);
+            if(admin) {
+                login(admin);
 
+                dispatch({
+                    type: LOGIN_SUCCESS
+                })
+            }
             dispatch({
-                type: LOGIN_SUCCESS
+                type: LOGIN_CREDENTIALS_FAILED,
+                msg: ""
             })
         })
         .catch(e => {

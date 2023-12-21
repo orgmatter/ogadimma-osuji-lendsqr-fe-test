@@ -8,6 +8,7 @@ export const useTypes = () => {
         LOGIN_START: "LOGIN_START",
         LOGIN_SUCCESS: "LOGIN_SUCCESS",
         LOGIN_FAILED: "LOGIN_FAILED",
+        LOGIN_CREDENTIALS_FAILED: "LOGIN_CREDENTIALS_FAILED",
         LOGIN_STOP: "LOGIN_STOP"
     }
 }

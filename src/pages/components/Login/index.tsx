@@ -71,9 +71,26 @@ function LoginComponent(props: any) {
 
     useEffect(() => {
 
+        const failedLoginCredentials = [
+            {
+                email: inputVal.email,
+                name: "email",
+                errorMsg: `You're using a wrong email credential. <br />Pls use this: <strong>admin1@lendsqr.com</strong>`
+            },
+            {
+                password: inputVal.password,
+                name: "password",
+                errorMsg: `You're using a wrong password credential. <br />Pls use this: <strong>password1</strong>`
+            }
+        ];
+
         if(loginState.status === "login_success") {
             window.location.assign("/dashboard/customers/users")
         }
+        if(loginState.status === "login_credentials_failed") {
+            setErrorValidation(failedLoginCredentials);
+        }
+        // window.location.assign('/wrong-login-')
 
     }, [loginState.status, errorValidation])
     

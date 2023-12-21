@@ -17,7 +17,7 @@
             justify-content: center;
 
             .login-comp-cover-item {
-                width: 1250px;
+                width: 1400px;
 
                 .login-comp-inner-cover-flex {
                     width: 100%;
@@ -95,11 +95,11 @@
                                                 justify-content: center;
     
                                                 .body-img-cover-item {
-                                                    width: 550px;
+                                                    width: 600px;
                                                     height: 340px;
 
                                                     .body-img {
-                                                      width: 550px;
+                                                      width: 600px;
                                                       height: 340px;
                                                     }
                                                 }
@@ -110,6 +110,7 @@
                             }
                         }
                         &:last-child {
+                            padding-left: 15px;
 
                             .login-form-cover-flex {
                                 width: 100%;
@@ -227,7 +228,7 @@
                                                         }
     
                                                         .login-input {
-                                                            border: 1px solid #545F7D26 !important;
+                                                            border: 1px solid #d7f3f3 !important;
                                                             border-radius: 5px !important;
                                                             box-shadow: none !important;
                                                         }
