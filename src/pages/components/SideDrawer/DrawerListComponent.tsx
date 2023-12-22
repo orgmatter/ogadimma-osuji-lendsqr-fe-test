@@ -57,7 +57,7 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                             href={customerRoute.url}
                         >
                             <ListItemIcon className="list-item-icon-cover">
-                                <VerifiedUser className="list-item-icon" />
+                                <img className="list-item-icon" src={customerRoute.icon} alt="drawer icon" />
                             </ListItemIcon>
                             <ListItemText className="list-item-text-cover">
                                 {customerRoute.name}
@@ -79,7 +79,7 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                             href={businessRoute.url}
                         >
                             <ListItemIcon className="list-item-icon-cover">
-                                <VerifiedUser className="list-item-icon" />
+                                <img className="list-item-icon" src={businessRoute.icon} alt="drawer icon" />
                             </ListItemIcon>
                             <ListItemText className="list-item-text-cover">
                                 {businessRoute.name}
@@ -101,7 +101,7 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                             href={settingRoute.url}
                         >
                             <ListItemIcon className="list-item-icon-cover">
-                                <VerifiedUser className="list-item-icon" />
+                                <img className="list-item-icon" src={settingRoute.icon} alt="drawer icon" />
                             </ListItemIcon>
                             <ListItemText className="list-item-text-cover">
                                 {settingRoute.name}
@@ -169,7 +169,7 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                                 type="button"
                                 onClick={handleMenuOpen}
                             >
-                                Switch Organisation <KeyboardArrowDown />
+                             <img className="switch-org-img" src={Images.dashboard.sideDrawer.switchOrg} alt="switch org" />  &nbsp; Switch Organisation <KeyboardArrowDown />
                             </Button>
                             <Menu
                                 id="side-drawer-menu"

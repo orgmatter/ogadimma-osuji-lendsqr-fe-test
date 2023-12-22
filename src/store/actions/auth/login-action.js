@@ -31,19 +31,19 @@ export const LoginAction = (params) => {
         .then(resp => resp.json())
         .then(res => {
             const admin = res.admin.find(admin => admin.email === email && admin.password === password);
-            if(admin) {
+            if(Object.keys(admin).length > 0) {
                 login(admin);
-
                 dispatch({
                     type: LOGIN_SUCCESS
                 })
             }
+        })
+        .catch(e => {
+            Object.keys(e).length === 0 ?
             dispatch({
                 type: LOGIN_CREDENTIALS_FAILED,
                 msg: ""
-            })
-        })
-        .catch(e => {
+            }):
             dispatch({
                 type: LOGIN_FAILED,
                 msg: ""

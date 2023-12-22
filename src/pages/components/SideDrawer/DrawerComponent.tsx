@@ -27,7 +27,6 @@ export default function DrawerComponent(props: DrawerProps) {
                 }}
             >
                 <DrawerListComponent dashboardRouteProps={dashboardRouteProps} handleDrawerToggle={handleDrawerToggle} />
-                <h2>Temporary drawer</h2>
             </Drawer>
             <Drawer 
                 id="perm-drawer-cover"

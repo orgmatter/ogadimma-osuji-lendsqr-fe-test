@@ -19,6 +19,36 @@ export const Images = {
                     avatarImg: "/images/user-details-avatar.png"
                 }
             }
+        },
+        sideDrawer: {
+            switchOrg: "/images/side-drawer/briefcase.png",
+            customers: {
+                dashboardHome: "/images/side-drawer/home.png",
+                users: "/images/side-drawer/user-friends.png",
+                guarantors: "/images/side-drawer/users-guaran.png",
+                loans: "/images/side-drawer/sack.png",
+                decisionModel: "/images/side-drawer/handshake.png",
+                savings: "/images/side-drawer/piggy-bank.png",
+                loanRequest: "/images/side-drawer/loan-request.png",
+                whitelist: "/images/side-drawer/user-check.png",
+                karma: "/images/side-drawer/user-times.png"
+            },
+            business: {
+                organisation: "/images/side-drawer/briefcase.png",
+                loanProduct: "/images/side-drawer/sack.png",
+                savingsProduct: "/images/side-drawer/savings-prod.png",
+                feesAndCharges: "/images/side-drawer/coins-stack.png",
+                transactions: "/images/side-drawer/transactions.png",
+                services: "/images/side-drawer/galaxy.png",
+                serviceAcct: "/images/side-drawer/user-cog.png",
+                settlement: "/images/side-drawer/scroll.png",
+                reports: "/images/side-drawer/chart-bar.png"
+            },
+            settings: {
+                preferences: "/images/side-drawer/sliders.png",
+                feesAndPrice: "/images/side-drawer/badge-percent.png",
+                auditLogs: "/images/side-drawer/clipboartd-list.png"
+            }
         }
     },
     header: {

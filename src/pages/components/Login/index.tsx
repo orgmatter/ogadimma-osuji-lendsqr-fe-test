@@ -75,12 +75,12 @@ function LoginComponent(props: any) {
             {
                 email: inputVal.email,
                 name: "email",
-                errorMsg: `You're using a wrong email credential. <br />Pls use this: <strong>admin1@lendsqr.com</strong>`
+                errorMsg: `Your email might be wrong. <br />Pls use this: <strong>admin1@lendsqr.com</strong>`
             },
             {
                 password: inputVal.password,
                 name: "password",
-                errorMsg: `You're using a wrong password credential. <br />Pls use this: <strong>password1</strong>`
+                errorMsg: `Your password might be wrong. <br />Pls use this: <strong>password1</strong>`
             }
         ];
 
@@ -90,7 +90,6 @@ function LoginComponent(props: any) {
         if(loginState.status === "login_credentials_failed") {
             setErrorValidation(failedLoginCredentials);
         }
-        // window.location.assign('/wrong-login-')
 
     }, [loginState.status, errorValidation])
     

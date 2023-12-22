@@ -18,49 +18,49 @@ export const Routes = [
                     {
                         url: "/dashboard/customers/users",
                         name: "Users",
-                        icon: "",
+                        icon: "/images/side-drawer/user-friends.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/guarantors",
                         name: "Guarantors",
-                        icon: "",
+                        icon: "/images/side-drawer/users-guaran.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/loans",
                         name: "Loans",
-                        icon: "",
+                        icon: "/images/side-drawer/sack.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/decision-models",
                         name: "Decision Models",
-                        icon: "",
+                        icon: "/images/side-drawer/handshake.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/savings",
                         name: "Savings",
-                        icon: "",
+                        icon: "/images/side-drawer/piggy-bank.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/loan-requests",
                         name: "Loan Requests",
-                        icon: "",
+                        icon: "/images/side-drawer/loan-request.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/whitelist",
                         name: "Whitelist",
-                        icon: "",
+                        icon: "/images/side-drawer/user-check.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/customers/karma",
                         name: "Karma",
-                        icon: "",
+                        icon: "/images/side-drawer/user-times.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                 ]
@@ -71,55 +71,55 @@ export const Routes = [
                     {
                         url: "/dashboard/businesses/organisation",
                         name: "Organisation",
-                        icon: "",
+                        icon: "/images/side-drawer/briefcase.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/loan-products",
                         name: "Loan Products",
-                        icon: "",
+                        icon: "/images/side-drawer/sack.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/savings-products",
                         name: "Savings Products",
-                        icon: "",
+                        icon: "/images/side-drawer/savings-prod.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/fees-and-charges",
                         name: "Fees and Charges",
-                        icon: "",
+                        icon: "/images/side-drawer/coins-stack.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/transactions",
                         name: "Transactions",
-                        icon: "",
+                        icon: "/images/side-drawer/transactions.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/services",
                         name: "Services",
-                        icon: "",
+                        icon: "/images/side-drawer/galaxy.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/service-account",
                         name: "Service Account",
-                        icon: "",
+                        icon: "/images/side-drawer/user-cog.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/settlements",
                         name: "Settlements",
-                        icon: "",
+                        icon: "/images/side-drawer/scroll.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/businesses/reports",
                         name: "Reports",
-                        icon: "",
+                        icon: "/images/side-drawer/chart-bar.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                 ]
@@ -130,19 +130,19 @@ export const Routes = [
                     {
                         url: "/dashboard/settings/preferences",
                         name: "Preferences",
-                        icon: "",
+                        icon: "/images/side-drawer/sliders.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/settings/fees-and-pricing",
                         name: "Fees and Pricing",
-                        icon: "",
+                        icon: "/images/side-drawer/badge-percent.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                     {
                         url: "/dashboard/settings/audit-logs",
                         name: "Audit Logs",
-                        icon: "",
+                        icon: "/images/side-drawer/clipboard-list.png",
                         component: () => <AuthController dashboardRouteProps={Routes.find(route => route.name === "Dashboard")} />
                     },
                 ]

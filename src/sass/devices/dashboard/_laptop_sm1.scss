@@ -247,14 +247,20 @@
                                                     padding-top: 20px;
     
                                                     .list-header-btn {
-                                                        font-size: 0.85rem;
+                                                        font-size: 0.8rem;
                                                         font-weight: 600;
                                                         color: var(--font-title-color);
                                                         font-family: var(--dashboard-font-family);
                                                         text-transform: capitalize;
+                                                        padding-left: 2px;
+                                                        padding-right: 2px;
     
                                                         &:hover {
                                                             background-color: transparent !important;
+                                                        }
+
+                                                        .switch-org-img {
+                                                            width: 13px;
                                                         }
                                                     }
                                                     .list-header-menu {
@@ -308,7 +314,7 @@
                                                             justify-content: flex-start;
     
                                                             .list-item-icon {
-                                                                width: 72%;
+                                                                width: 60%;
                                                             }
                                                         }
                                                         .list-item-text-cover {
