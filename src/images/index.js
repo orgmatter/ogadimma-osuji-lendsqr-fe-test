@@ -22,8 +22,8 @@ export const Images = {
         },
         sideDrawer: {
             switchOrg: "/images/side-drawer/briefcase.png",
+            dashboardHome: "/images/side-drawer/home.png",
             customers: {
-                dashboardHome: "/images/side-drawer/home.png",
                 users: "/images/side-drawer/user-friends.png",
                 guarantors: "/images/side-drawer/users-guaran.png",
                 loans: "/images/side-drawer/sack.png",

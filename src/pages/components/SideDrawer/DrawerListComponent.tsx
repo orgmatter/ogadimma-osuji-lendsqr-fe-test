@@ -183,7 +183,7 @@ export default function DrawerListComponent(props: DrawerListCompProps) {
                             </Menu>
                         </div>
                         <div className="header2-cover">
-                            <h2 className="page-name-text">{dashboardRouteProps?.name}</h2>
+                            <img className="dashboard-home-img" src={Images.dashboard.sideDrawer.dashboardHome} alt="home" /> <h2 className="page-name-text">{dashboardRouteProps?.name}</h2>
                         </div>
                     </div>
                 </div>
