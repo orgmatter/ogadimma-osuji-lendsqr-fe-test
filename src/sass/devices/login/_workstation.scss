@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1599px) and (max-width: 5099px) {
     body {
-      border: 2px solid red;
+        
     }
   
     .login-page-cover-flex {
@@ -17,8 +17,8 @@
               justify-content: center;
   
               .login-comp-cover-item {
-                  width: 1550px;
-                  max-width: 1550px;
+                  width: 1850px;
+                  max-width: 1850px;
   
                   .login-comp-inner-cover-flex {
                       width: 100%;
@@ -96,12 +96,12 @@
                                                 justify-content: center;
     
                                                 .body-img-cover-item {
-                                                    width: 610px;
-                                                    height: 360px;
+                                                    width: 760px;
+                                                    height: 430px;
 
                                                     .body-img {
-                                                        width: 610px;
-                                                        height: 360px;
+                                                        width: 760px;
+                                                        height: 430px;
                                                     }
                                                 }
                                               }
@@ -141,7 +141,7 @@
                                               align-items: center;
       
                                               .form-cover-item {
-                                                  width: 90%;
+                                                  width: 82%;
                                                   height: 90%;
       
                                                   .form-header-cover {
@@ -149,7 +149,7 @@
                                                       padding-bottom: 35px;
       
                                                       .form-header-text {
-                                                          font-size: 2.7rem;
+                                                          font-size: 2.9rem;
                                                           line-height: 15.64px;
                                                           font-weight: 700;
                                                           font-family: var(--login-font-family);
@@ -182,7 +182,7 @@
       
                                                                       .icon-btn-cover {
                                                                           border-radius: 0px !important;
-                                                                          font-size: 12px !important;
+                                                                          font-size: 15px !important;
                                                                           font-weight: 600;
                                                                           color: var(--btn-color);
       
@@ -237,8 +237,8 @@
                                                         }
                                                         .MuiOutlinedInput-root {
                                                             border: none;
-                                                            height: 60px;
-                                                            font-size: 0.8rem;
+                                                            height: 70px;
+                                                            font-size: 1.2rem;
 
                                                             &:hover {
                                                                 border: none !important;
@@ -253,7 +253,7 @@
       
                                                           .forgot-pwd-text {
                                                               font-weight: 600;
-                                                              font-size: 12px;
+                                                              font-size: 15px;
                                                               letter-spacing: 10%;
                                                               color: var(--btn-color);
                                                           }
@@ -272,7 +272,8 @@
                                                                   background-color: var(--btn-color) !important;
                                                                   color: var(--btn-text-color);
                                                                   text-align: center;
-                                                                  height: 58px;
+                                                                  font-size: 1.2rem;
+                                                                  height: 63px;
                                                                   box-shadow: none !important;
   
                                                                   &:hover {
