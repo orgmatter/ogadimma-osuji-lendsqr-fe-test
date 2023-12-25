@@ -65,10 +65,10 @@
                                                               align-items: center;
       
                                                               .logo-cover-item {
-                                                                  width: 100px;
+                                                                  width: 120px;
       
                                                                   .logo-img {
-                                                                    width: 100px;
+                                                                    width: 120px;
                                                                   }
                                                               }
                                                           }
@@ -88,8 +88,8 @@
                                                                   height: 100%;
       
                                                                   .search-input {
-                                                                      width: 400px;
-                                                                      height: 100% !important;
+                                                                      width: 450px;
+                                                                      height: 45px !important;
       
                                                                       .MuiInputBase-root {
       
@@ -100,7 +100,8 @@
       
                                                                       .MuiOutlinedInput-root {
                                                                           padding: 0px !important;
-                                                                          height: 100% !important;
+                                                                          height: 45px !important;
+                                                                          font-size: 1.15rem;
       
                                                                           &:hover {
                                                                               border: none !important
@@ -120,6 +121,8 @@
                                                                               background-color: var(--btn-color);
                                                                               box-shadow: none !important;
                                                                               border-color: var(--btn-color);
+                                                                              height: 45px;
+                                                                              width: 75px;
                                                                           }
                                                                       }
                                                                   }
@@ -135,7 +138,7 @@
                                               padding-right: 60px;
       
                                               .content2-cover-flex {
-                                                  width: 300px;
+                                                  width: 350px;
                                                   display: flex;
                                                   justify-content: space-between;
                                                   align-items: center;
@@ -148,7 +151,7 @@
                                                           .docs-cover {
       
                                                               .docs-link {
-                                                                  font-size: 0.9rem;
+                                                                  font-size: 1.15rem;
                                                                   font-weight: 400;
                                                                   color: var(--font-title-color);
                                                               }
@@ -161,6 +164,7 @@
       
                                                               .notif-bell-icon {
                                                                   color: var(--font-title-color);
+                                                                  font-size: 1.7rem;
                                                               }
                                                           }
                                                       }
@@ -180,6 +184,8 @@
                                                                       .avatar-div-cover {
       
                                                                           .avatar-cover {
+                                                                              width: 45px;
+                                                                              height: 45px;
                   
                                                                               .avatar-img {
                                                                                   width: 100% !important;
@@ -194,7 +200,7 @@
                                                                       .name-arrow-btn-cover {
       
                                                                           .name-arrow-btn {
-                                                                              font-size: 0.8rem !important;
+                                                                              font-size: 1rem !important;
                                                                               text-transform: capitalize !important;
                                                                               color: var(--font-title-color);
                                                                               font-weight: 600;
@@ -222,6 +228,10 @@
       
                               .drawer-cover {
                                 display: block;
+
+                                .MuiDrawer-paper {
+                                    width: 280px;
+                                }
       
                                   .drawer-list-comp-cover-flex {
       
@@ -237,27 +247,29 @@
                                               justify-content: center;
       
                                               .list-header-cover-item {
-                                                  width: 80%;
+                                                  width: 85%;
       
                                                   .header1-cover {
                                                       width: 100%;
                                                       padding-top: 20px;
       
                                                       .list-header-btn {
-                                                          font-size: 0.8rem;
+                                                          font-size: 1.05rem;
                                                           font-weight: 600;
                                                           color: var(--font-title-color);
                                                           font-family: var(--dashboard-font-family);
                                                           text-transform: capitalize;
-                                                          padding-left: 2px;
-                                                        padding-right: 2px;
+                                                          justify-content: flex-start;
+                                                          padding-left: 0px;
+                                                        padding-right: 0px;
+                                                        width: 100%;
       
                                                           &:hover {
                                                               background-color: transparent !important;
                                                           }
 
                                                           .switch-org-img {
-                                                            width: 13px;
+                                                            width: 15px;
                                                         }
                                                       }
                                                       .list-header-menu {
@@ -272,11 +284,11 @@
                                                     align-items: center;
 
                                                     .dashboard-home-img {
-                                                        width: 14px;
+                                                        width: 17px;
                                                     }
       
                                                       .page-name-text {
-                                                          font-size: 0.95rem;
+                                                          font-size: 1.2rem;
                                                           font-weight: 400;
                                                           color: var(--font-subtitle-color);
                                                           font-family: var(--dashboard-font-family);
@@ -296,7 +308,7 @@
                                                       padding-top: 15px;
                                                       padding-bottom: 8px;
                                                       width: 80%;
-                                                      font-size: 0.75rem;
+                                                      font-size: 0.95rem;
                                                       font-weight: 600;
                                                       color: var(--font-subtitle-color);
                                                       font-family: var(--dashboard-font-family);
@@ -319,13 +331,14 @@
                                                               justify-content: flex-start;
       
                                                               .list-item-icon {
-                                                                  width: 60%;
+                                                                  width: 82%;
                                                               }
                                                           }
                                                           .list-item-text-cover {
+                                                              padding-left: 10px;
       
                                                               .MuiTypography-root {
-                                                                  font-size: 0.9rem !important;
+                                                                  font-size: 1.12rem !important;
                                                                   font-weight: 400;
                                                                   color: var(--font-subtitle-color);
                                                                   font-family: var(--dashboard-font-family);
@@ -373,7 +386,7 @@
                                           justify-content: center;
       
                                           .users-cover-item {
-                                              width: 85%;
+                                              width: 80%;
       
                                               .users-header-cover-flex {
                                                   width: 100%;
@@ -386,7 +399,7 @@
                                                       padding-bottom: 15px;
       
                                                       .users-header-text {
-                                                          font-size: 1.15rem;
+                                                          font-size: 1.35rem;
                                                           font-weight: 600;
                                                           color: var(--font-title-color);
                                                           font-family: var(--dashboard-font-family);
@@ -424,8 +437,8 @@
                                                                           align-items: center;
               
                                                                           .icon-cover {
-                                                                              width: 32px;
-                                                                              height: 32px;
+                                                                              width: 42px;
+                                                                              height: 42px;
               
                                                                               .icon-img {
                                                                                   width: 100%;
@@ -434,9 +447,10 @@
                                                                       }
                                                                       .card-name-cover {
                                                                           width: 100%;
+                                                                          padding-top: 10px;
               
                                                                           .name-cover {
-                                                                              font-size: 0.8rem;
+                                                                              font-size: 1rem;
                                                                               font-weight: 600;
                                                                               color: var(--font-subtitle-color);
                                                                               font-family: var(--dashboard-font-family);
@@ -448,7 +462,7 @@
                                                                           padding-bottom: 15px;
               
                                                                           .value-cover {
-                                                                              font-size: 1.1rem;
+                                                                              font-size: 1.3rem;
                                                                               font-weight: 600;
                                                                               color: var(--font-title-color);
                                                                               font-family: var(--dashboard-font-family);
@@ -467,7 +481,7 @@
       
                                                   .users-table-cover-item {
                                                       width: 100%;
-                                                      padding-top: 35px;
+                                                      padding-top: 45px;
       
                                                       .table-container-cover {
       
@@ -478,7 +492,7 @@
                                                                   .table-row-cover {
       
                                                                       .table-cell-cover {
-                                                                          font-size: 0.75rem;
+                                                                          font-size: 0.9rem;
                                                                           font-weight: 600;
                                                                           color: var(--font-title-color);
                                                                           font-family: var(--dashboard-font-family);
@@ -489,7 +503,7 @@
                                                                           .filter-icon-btn {
       
                                                                               .filter-icon {
-                                                                                  font-size: 1.1rem;
+                                                                                  font-size: 1.25rem;
                                                                                   font-weight: 400;
                                                                                   color: var(--font-title-color);
                                                                                   font-family: var(--dashboard-font-family);
@@ -502,16 +516,16 @@
                                                                                 // box-shadow: none;
                                                                                 background-color: var(--btn-color);
                                                                                 text-transform: capitalize !important;
-                                                                                font-size: 0.75rem;
+                                                                                font-size: 0.9rem;
                                                                                 color: #fff;
                                                                                 font-family: var(--dashboard-font-family);
-                                                                                height: 25px;
-                                                                                padding-left: 8px;
-                                                                                padding-right: 8px;
-                                                                                border-radius: 12px;
+                                                                                height: 30px;
+                                                                                padding-left: 10px;
+                                                                                padding-right: 10px;
+                                                                                border-radius: 15px;
     
                                                                                 .reset-icon {
-                                                                                    font-size: 0.8rem;
+                                                                                    font-size: 1rem;
                                                                                 }
                                                                             }
                                                                         }
@@ -523,14 +537,14 @@
                                                                   .tbody-row-cover {
       
                                                                       .tbody-cell-cover {
-                                                                          font-size: 0.76rem;
+                                                                          font-size: 0.95rem;
                                                                           font-weight: 400;
                                                                           color: var(--font-subtitle-color);
                                                                           font-family: var(--dashboard-font-family);
                                                                           padding-top: 10px;
                                                                           padding-bottom: 10px;
                                                                           position: relative;
-                                                                          padding-left: 60px;
+                                                                          padding-left: 30px;
       
                                                                           .more-btn {
       
@@ -561,12 +575,12 @@
                                                                       .tbody-cell-status-cover {
                                                                           text-align: center;
                                                                           text-transform: capitalize;
-                                                                          font-size: 0.75rem;
+                                                                          font-size: 0.85rem;
       
                                                                           .inactive-status-cover {
                                                                               background-color: var(--user-status-inactive-color);
-                                                                              height: 17px;
-                                                                              width: 55px;
+                                                                              height: 20px;
+                                                                              width: 60px;
                                                                               border-radius: 20px;
                                                                               color: var(--font-subtitle-color);
                                                                               display: flex;
@@ -576,8 +590,8 @@
                                                                           }
                                                                           .active-status-cover {
                                                                               background-color: var(--user-status-active-bgColor);
-                                                                              height: 17px;
-                                                                              width: 50px;
+                                                                              height: 20px;
+                                                                              width: 58px;
                                                                               border-radius: 20px;
                                                                               color: var(--user-status-active-color);
                                                                               display: flex;
@@ -587,8 +601,8 @@
                                                                           }
                                                                           .blacklisted-status-cover {
                                                                               background-color: var(--user-status-blacklisted-bgColor);
-                                                                              height: 17px;
-                                                                              width: 70px;
+                                                                              height: 20px;
+                                                                              width: 85px;
                                                                               border-radius: 20px;
                                                                               color: var(--user-status-blacklisted-color);
                                                                               display: flex;
@@ -612,6 +626,7 @@
       
                                           .user-details-cover-item {
                                               width: 85%;
+                                              padding-left: 75px;
       
                                               .page-header-cover-flex {
                                                   width: 100%;
@@ -635,7 +650,7 @@
                                                                       width: 100%;
       
                                                                       .back-link-btn {
-                                                                          font-size: 0.85rem;
+                                                                          font-size: 1.05rem;
                                                                           color: var(--font-subtitle-color);
                                                                           font-weight: 400;
                                                                           text-transform: capitalize;
@@ -660,7 +675,7 @@
                                                                   &:first-child {
       
                                                                       .desc-text {
-                                                                          font-size: 1.1rem;
+                                                                          font-size: 1.3rem;
                                                                           color: var(--font-title-color);
                                                                           font-weight: 600;
                                                                           font-family: var(--dashboard-font-family);
@@ -671,14 +686,14 @@
                                                                       justify-content: flex-end;
       
                                                                       .header-desc-btn-cover-flex {
-                                                                        width: 350px;
+                                                                        width: 370px;
                                                                           display: flex;
                                                                           justify-content: space-between;
       
                                                                           .header-desc-btn-cover-item {
       
                                                                               .desc-btn {
-                                                                                  font-size: 0.87rem;
+                                                                                  font-size: 1.05rem;
                                                                                   font-weight: 600;
                                                                                   font-family: var(--dashboard-font-family);
                                                                                   border-radius: 8px;
@@ -750,7 +765,7 @@
                                                                                               .avatar-name-cover-item {
           
                                                                                                   &:first-child {
-                                                                                                      width: 48%;
+                                                                                                      width: 40%;
           
                                                                                                       .avatar-img {
                                                                                                           width: 100%;
@@ -765,13 +780,13 @@
                                                                                                       justify-content: center;
           
                                                                                                       .name-text {
-                                                                                                          font-size: 1.4rem;
+                                                                                                          font-size: 1.7rem;
                                                                                                           font-weight: 600;
                                                                                                           color: var(--font-title-color);
                                                                                                           margin-block-end: 0.3rem;
                                                                                                       }
                                                                                                       .userid-text {
-                                                                                                          font-size: 0.8rem;
+                                                                                                          font-size: 1rem;
                                                                                                           font-weight: 500;
                                                                                                           color: var(--font-subtitle-color);
                                                                                                           margin-block-start: 0.3rem;
@@ -792,13 +807,13 @@
                                                                                               font-family: var(--dashboard-font-family);
           
                                                                                               .user-tier-text {
-                                                                                                  font-size: 1rem;
+                                                                                                  font-size: 1.25rem;
                                                                                                   font-weight: 400;
                                                                                                   color: var(--font-title-color);
                                                                                                   margin-block-end: 0.8rem;
                                                                                               }
                                                                                               .rating-cover {
-                                                                                                  font-size: 1.1rem;
+                                                                                                  font-size: 1.2rem;
                                                                                                   margin-block-start: 0rem;
                                                                                               }
                                                                                           }
@@ -814,13 +829,13 @@
                                                                                               margin-left: 25px;
           
                                                                                               .income-text {
-                                                                                                  font-size: 1.7rem;
+                                                                                                  font-size: 2rem;
                                                                                                   font-weight: 500;
                                                                                                   color: var(--font-title-color);
                                                                                                   margin-block-end: 0.5rem;
                                                                                               }
                                                                                               .acct-info-text {
-                                                                                                  font-size: 0.75rem;
+                                                                                                  font-size: 0.95rem;
                                                                                                   font-weight: 600;
                                                                                                   color: var(--font-subtitle-color);
                                                                                                   margin-block-start: 0.3rem;
@@ -850,6 +865,7 @@
                                                                                           width: (100%/6);
                                                                                           text-transform: capitalize;
                                                                                           padding-bottom: 0px;
+                                                                                          font-size: 1.12rem;
       
                                                                                           &-active {
                                                                                               color: var(--btn-color);
@@ -917,7 +933,7 @@
                                                                                                           padding-bottom: 8px;
               
                                                                                                           .header-text {
-                                                                                                              font-size: 0.9rem;
+                                                                                                              font-size: 1.09rem;
                                                                                                               font-weight: 600;
                                                                                                               color: var(--font-title-color);
                                                                                                               font-family: var(--dashboard-font-family);
@@ -935,14 +951,14 @@
                                                                                                           .details-text-cover {
               
                                                                                                               .key-text {
-                                                                                                                  font-size: 0.7rem;
+                                                                                                                  font-size: 0.85rem;
                                                                                                                   font-weight: 400;
                                                                                                                   color: var(--font-subtitle-color);
                                                                                                                   font-family: var(--dashboard-font-family);
                                                                                                                   margin-block-end: 0.5rem;
                                                                                                               }
                                                                                                               .value-text {
-                                                                                                                  font-size: 0.75rem;
+                                                                                                                  font-size: 0.85rem;
                                                                                                                   font-weight: 600;
                                                                                                                   color: var(--font-title-color);
                                                                                                                   font-family: var(--dashboard-font-family);
