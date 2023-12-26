@@ -90,7 +90,7 @@
                                                                   height: 100%;
       
                                                                   .search-input {
-                                                                      width: 480px;
+                                                                      width: 490px;
                                                                       height: 45px !important;
       
                                                                       .MuiInputBase-root {
@@ -103,7 +103,7 @@
                                                                       .MuiOutlinedInput-root {
                                                                           padding: 0px !important;
                                                                           height: 45px !important;
-                                                                          font-size: 1.15rem;
+                                                                          font-size: 1.2rem;
       
                                                                           &:hover {
                                                                               border: none !important
@@ -376,7 +376,7 @@
                           justify-content: flex-end;
       
                           .dashboard-content-cover-item {
-                              width: calc(100% - var(--drawerWidth));
+                              width: calc(100% - 285px);
       
                               .dashboard-subpages-cover-flex {
                                   width: 100%;
@@ -392,7 +392,7 @@
                                           justify-content: center;
       
                                           .users-cover-item {
-                                              width: 80%;
+                                              width: 88%;
       
                                               .users-header-cover-flex {
                                                   width: 100%;
@@ -401,7 +401,7 @@
       
                                                   .users-header-cover-item {
                                                       width: 10%;
-                                                      padding-top: 35px;
+                                                      padding-top: 50px;
                                                       padding-bottom: 15px;
       
                                                       .users-header-text {
@@ -631,14 +631,13 @@
                                           justify-content: center;
       
                                           .user-details-cover-item {
-                                              width: 85%;
-                                              padding-left: 75px;
+                                              width: 88%;
       
                                               .page-header-cover-flex {
                                                   width: 100%;
                                                   display: flex;
                                                   flex-direction: column;
-                                                  padding-top: 50px;
+                                                  padding-top: 70px;
       
                                                   .page-header-cover-item {
                                                       
