@@ -30,6 +30,8 @@
       
                               .toolbar-cover-flex {
                                   width: 100%;
+                                  padding-top: 8px;
+                                  padding-bottom: 7px;
     
                                   .header-drawer-btn {
                                     display: none;
@@ -88,7 +90,7 @@
                                                                   height: 100%;
       
                                                                   .search-input {
-                                                                      width: 450px;
+                                                                      width: 480px;
                                                                       height: 45px !important;
       
                                                                       .MuiInputBase-root {
@@ -230,15 +232,19 @@
                                 display: block;
 
                                 .MuiDrawer-paper {
-                                    width: 280px;
+                                    width: 285px;
                                 }
       
                                   .drawer-list-comp-cover-flex {
       
                                       .drawer-list-comp-cover-item {
 
-                                        .drawer-search-bar-cover-flex {
+                                        .search-toolbar-cover {
                                             display: none;
+
+                                            .drawer-search-bar-cover-flex {
+
+                                            }
                                         }
       
                                           .list-header-cover-flex {
@@ -255,7 +261,7 @@
       
                                                       .list-header-btn {
                                                           font-size: 1.05rem;
-                                                          font-weight: 600;
+                                                          font-weight: 500;
                                                           color: var(--font-title-color);
                                                           font-family: var(--dashboard-font-family);
                                                           text-transform: capitalize;
